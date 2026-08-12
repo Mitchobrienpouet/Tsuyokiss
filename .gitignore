@@ -1,0 +1,17 @@
+# Original game media and extracted proprietary data
+*.iso
+*.zip
+*.zip.[0-9][0-9][0-9]
+*.fpk
+*.exe
+game_extract/
+game_media/
+project_sources/
+data_blocks/
+translated_blocks/
+
+# Generated translation manifests and QA outputs
+translation_template.jsonl
+*.partial
+__pycache__/
+*.pyc
