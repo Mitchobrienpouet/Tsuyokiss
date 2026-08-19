@@ -1,11 +1,19 @@
 # Wave ledger
 
-- Status: NOT FIRED
-- Requested scene count: 4
-- Planned first/last scene: SC_A0100_01_A0100_02 / SC_A0100_04_A0100_05
+- Status: FIRED 2026-08-19T12:06:50Z
+- Requested scene count: 24 (6 shards x 4 contiguous scenes)
+- Planned first/last scene: SC_A0100_01_A0100_02 / SC_A0110_00_A0110_10
 - Intended GitHub remote: Mitchobrienpouet/Tsuyokiss
 - Intended branch: main
-- Last remotely verified commit: 02238a1ea71111df84db5ce2f3e8ccb019b2dcd2
+- Last remotely verified commit: ce009b82ed80bd509eb767a5edd6c3576690e564
+- Claimed shard IDs:
+  - shard-SC_A0100_01_A0100_02-SC_A0100_02_A0100_03-SC_A0100_03_A0100_04-SC_A0100_04_A0100_05-75634a76
+  - shard-SC_A0100_06_A0100_10-SC_A0100_07_A0100_10-SC_A0100_08_A0100_10-SC_A0100_10_A0100_12-7b8e7796
+  - shard-SC_A0100_12_A0100_14-SC_A0100_14_A0100_16-SC_A0100_16_A0100_18-SC_A0100_18_A0100_20-72eb62a6
+  - shard-SC_A0100_20_A0100_22-SC_A0100_22_A0100_24-SC_A0100_24_A0100_30-SC_A0100_30_A0100_32-e2671108
+  - shard-SC_A0100_32_A0100_40-SC_A0100_40_A0100_50-SC_A0100_50_A0100_60-SC_A0100_60_A0100_70-0881c9b2
+  - shard-SC_A0100_70_A0100_80-SC_A0100_80_A0100_90-SC_A0100_90_A0110_00-SC_A0110_00_A0110_10-bdde9009
+- Model run IDs: recorded after process start
 - Translation debt: NONE
 - QC debt: NONE
 - Checkpoint debt: NONE
