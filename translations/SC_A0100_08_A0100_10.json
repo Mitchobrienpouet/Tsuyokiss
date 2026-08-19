@@ -1,0 +1,16 @@
+{
+  "file": "SC_A0100_08_A0100_10",
+  "speaker_map": {
+    "レオ": "Leo",
+    "マダム": "Kinu's mother",
+    "きぬ": "Kinu"
+  },
+  "lines": {
+    "1": "「Ma'am, mind if I borrow some water?」",
+    "2": "「Boiling water would be fine, too.」",
+    "3": "「No, that's a little much. She'd turn into boiled crab.」",
+    "4": "「Come on, wake up. It's water from your homeland.」",
+    "5": "I dump a bucket of water over her.",
+    "6": "「Gblgh! C-cold...」"
+  }
+}
