@@ -598,8 +598,7 @@ def codex_command(task: dict, prompt: str, final: Path) -> list[str]:
         raise RuntimeError("codex executable not found in PATH (or set CODEX_BIN)")
     stage_cfg = config()["models"][task["stage"]]
     return [
-        codex, "exec", "--json", "--sandbox", "workspace-write",
-        "--approve-for-me", "--cd", str(ROOT),
+        codex, "exec", "--json", "--approve-for-me", "--cd", str(ROOT),
         "--model", stage_cfg["model"],
         "--config", f'model_reasoning_effort="{stage_cfg["reasoning"]}"',
         "--output-schema", str(REPORT_SCHEMA),
@@ -834,8 +833,7 @@ def resume_dead(max_parallel: int) -> bool:
         log = ROOT / "state" / "logs" / f"resume-{run['id']}-{uuid.uuid4().hex[:8]}.jsonl"
         prompt = "Resume the interrupted stage. Re-read AGENTS.md and the current files, finish only the original task, preserve idempotency, run its checks, and return the required structured report."
         command = [
-            codex, "exec", "--json", "--sandbox", "workspace-write",
-            "--approve-for-me", "--cd", str(ROOT),
+            codex, "exec", "--json", "--approve-for-me", "--cd", str(ROOT),
             "resume", run["thread_id"], prompt,
         ]
         update_run(run["id"], status="resuming", resumed_at=utcnow())
