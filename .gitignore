@@ -15,6 +15,7 @@ state/logs/
 state/final/
 state/pipeline.json
 state/pipeline.lock
+state/codex_home/
 
 # Generated translation manifests and QA outputs
 translation_template.jsonl
