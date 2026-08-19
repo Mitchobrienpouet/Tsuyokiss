@@ -1,0 +1,5 @@
+{
+  "schema_version": 1,
+  "policy": "Record only source ranges intentionally excluded from model work and builds.",
+  "entries": []
+}

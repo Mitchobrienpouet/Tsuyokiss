@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "scene_glob": "scratchpad/jp_dumps/*.json",
+  "scene_id_regex": ".+",
+  "narrative_block_regex": "^SC_([A-Z])",
+  "row_index_field": "index",
+  "source_text_field": "japanese",
+  "shard_size": 4,
+  "max_parallel": 6,
+  "stale_after_seconds": 900,
+  "codec": "cp932",
+  "content_exclusions": "content_exclusions.json",
+  "narrative_gates": "narrative_gates.json",
+  "quality_profile": "sol-5.6-literary",
+  "required_model": "gpt-5.6-sol",
+  "models": {
+    "preflight": {"model": "gpt-5.6-sol", "reasoning": "max"},
+    "translate": {"model": "gpt-5.6-sol", "reasoning": "xhigh"},
+    "accuracy": {"model": "gpt-5.6-sol", "reasoning": "xhigh"},
+    "literary": {"model": "gpt-5.6-sol", "reasoning": "xhigh"},
+    "arbitrate": {"model": "gpt-5.6-sol", "reasoning": "max"}
+  }
+}

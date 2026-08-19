@@ -9,6 +9,12 @@ game_media/
 project_sources/
 data_blocks/
 translated_blocks/
+scratchpad/jp_dumps/
+scratchpad/model_sources/
+state/logs/
+state/final/
+state/pipeline.json
+state/pipeline.lock
 
 # Generated translation manifests and QA outputs
 translation_template.jsonl

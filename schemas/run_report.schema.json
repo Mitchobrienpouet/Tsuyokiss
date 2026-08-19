@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "status": {"type": "string", "enum": ["completed", "skipped", "blocked"]},
+    "stage": {"type": "string", "enum": ["preflight", "translate", "accuracy", "literary", "arbitrate"]},
+    "scenes": {"type": "array", "items": {"type": "string"}},
+    "files_written": {"type": "array", "items": {"type": "string"}},
+    "issues": {"type": "array", "items": {"type": "string"}},
+    "contested_seqs": {"type": "array", "items": {"type": "string"}}
+  },
+  "required": ["status", "stage", "scenes", "files_written", "issues", "contested_seqs"],
+  "additionalProperties": false
+}
