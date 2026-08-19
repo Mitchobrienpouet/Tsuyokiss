@@ -1,11 +1,11 @@
 # Wave ledger
 
-- Status: FIRED 2026-08-19T12:06:50Z
+- Status: COMPLETED 2026-08-19T12:22:44Z
 - Requested scene count: 24 (6 shards x 4 contiguous scenes)
 - Planned first/last scene: SC_A0100_01_A0100_02 / SC_A0110_00_A0110_10
 - Intended GitHub remote: Mitchobrienpouet/Tsuyokiss
 - Intended branch: main
-- Last remotely verified commit: 4ddb631fe4b08f8418d0d1070611f59a8a8e4d91
+- Last remotely verified commit: 4baa70e19e0477da0d405bca822fb815f0473802
 - Claimed shard IDs:
   - shard-SC_A0100_01_A0100_02-SC_A0100_02_A0100_03-SC_A0100_03_A0100_04-SC_A0100_04_A0100_05-75634a76
   - shard-SC_A0100_06_A0100_10-SC_A0100_07_A0100_10-SC_A0100_08_A0100_10-SC_A0100_10_A0100_12-7b8e7796
@@ -15,6 +15,8 @@
   - shard-SC_A0100_70_A0100_80-SC_A0100_80_A0100_90-SC_A0100_90_A0110_00-SC_A0110_00_A0110_10-bdde9009
 - Execution mode: six claimed shards, processed by three Codex Work workers in rolling pairs
 - CLI bootstrap debt: two preflight launch attempts failed before thread creation; no source or translation file was written
+- Completed coverage: 24/24 scenes, 673/673 source rows
+- Deterministic validation: JSON, exact indexes, duplicate-key guard, QC artifacts, arbitration artifacts, CP932 PASS
 - Translation debt: NONE
 - QC debt: NONE
 - Checkpoint debt: NONE
