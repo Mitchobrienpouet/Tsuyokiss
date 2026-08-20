@@ -542,6 +542,34 @@
         ]
       ],
       "reason": "Explicit pregnancy and contraception discussion involving high-school students; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_C0120_00_K0900_00",
+      "ranges": [
+        [
+          49,
+          49
+        ]
+      ],
+      "reason": "Explicit bestiality-porn scenario targeting a school-age character; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_C0180_00_K0900_00",
+      "ranges": [
+        [
+          3,
+          3
+        ],
+        [
+          96,
+          96
+        ],
+        [
+          121,
+          124
+        ]
+      ],
+      "reason": "Sexual arousal involving a young child and sexualized exposure or coercive erotic framing involving school-age characters; excluded from model work and builds by policy."
     }
   ]
 }
