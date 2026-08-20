@@ -51,6 +51,11 @@
       "scene": "SC_A0430_80_A0430_90",
       "ranges": [[4, 14]],
       "reason": "Explicit sexual discussion involving high-school students; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_B0190_50_B0200_00",
+      "ranges": [[64, 68], [84, 94]],
+      "reason": "Sexualized contact and bondage/arousal material involving high-school students; excluded from model work and builds by policy."
     }
   ]
 }
