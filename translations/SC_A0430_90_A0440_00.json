@@ -1,0 +1,14 @@
+{
+  "file": "SC_A0430_90_A0440_00",
+  "speaker_map": {"スバル": "Subaru", "乙女": "Otome", "レオ": "Leo"},
+  "lines": {
+    "1": "「Afternoon. Leo around?」",
+    "2": "「I sent him out on a roadwork run toward the station.」",
+    "3": "「The station, huh...? Bet he's slacking off.」",
+    "4": "「Might as well check on him while I get my own run in.」",
+    "5": "「Achoo!」",
+    "6": "Hmm. I hardly ever sneeze.",
+    "7": "Well, I guess somebody somewhere must be bad-mouthing me.",
+    "8": "Still, even if this is for conditioning, why do I have to go running?"
+  }
+}

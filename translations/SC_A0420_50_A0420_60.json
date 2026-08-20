@@ -1,0 +1,32 @@
+{
+  "file": "SC_A0420_50_A0420_60",
+  "speaker_map": {
+    "祈": "Inori",
+    "土永さん": "Mr. Tsuchinaga",
+    "声": "Voice",
+    "ロッカー": "Locker",
+    "きぬ": "Kinu"
+  },
+  "lines": {
+    "1": "「It has gotten terribly late.」",
+    "2": "「Nighttime's depressing when I can't see a thing. Inori, if you're done working, let's hurry home.」",
+    "3": "「He... lp... me...」",
+    "4": "「Did you hear something?」",
+    "5": "「Maybe it's a ghost.」",
+    "6": "「My, a ghost.」",
+    "7": "「I have always wanted to meet one. How fortunate.」",
+    "8": "「We could put it on display and make a fortune.」",
+    "9": "「You're scarier than any ghost.」",
+    "10": "「The voice came from over here.」",
+    "11": "「Heeelp meee...」",
+    "12": "「My, my. This locker is talking.」",
+    "13": "「Just help me already!」",
+    "14": "「Move that thing bracing the door.」",
+    "15": "Clunk.",
+    "16": "「Hah... Hah... Hah... Finally, I'm out.」",
+    "17": "「...」",
+    "18": "「There is no bullying here.」",
+    "19": "「Where are you even looking when you say that? There's nobody here!」",
+    "20": "............."
+  }
+}

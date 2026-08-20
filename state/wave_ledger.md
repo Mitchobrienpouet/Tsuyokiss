@@ -2,14 +2,14 @@
 
 ## 200-scene campaign
 
-- Status: FIRED 2026-08-20T04:35:53Z
+- Status: COMPLETED 2026-08-20T06:01:12Z
 - Requested scene count: 200 (50 shards x 4 contiguous scenes)
 - Planned first/last scene: SC_A0130_30_A0130_40 / SC_A0440_60_A0440_70
-- Active concurrency: 6 shards; shards 31-36 are FIRED and shards 37-42 are preflight-cache only / NOT FIRED
-- Completed campaign coverage: 120/200 scenes, 2,836 source rows
+- Active concurrency: NONE; all 50 shards are DONE
+- Completed campaign coverage: 200/200 planned scenes (199 translated, 1 fully excluded), 4,384 permitted source rows
 - Durable shard plan: `state/preflight_cache_plan.md`
 - Intended GitHub remote/branch: Mitchobrienpouet/Tsuyokiss / main
-- Last remotely verified commit: 2ff97424fd959013f92f5a2fd330a273e9e084ec
+- Last remotely verified commit: a588410001df87f7fe20900f9445bd50c211a506
 - Fired shard IDs:
   - shard-SC_A0130_30_A0130_40-SC_A0130_40_A0130_50-SC_A0130_50_A0130_60-SC_A0130_60_A0130_70-f97d2848
   - shard-SC_A0130_70_A0130_80-SC_A0130_80_A0130_90-SC_A0130_90_A0140_00-SC_A0140_00_A0140_10-44b07c85
@@ -47,7 +47,24 @@
   - shard-SC_A0370_00_A0370_10-SC_A0370_10_A0370_20-SC_A0370_20_A0370_30-SC_A0370_30_A0370_40-0c38871c
   - shard-SC_A0370_40_A0370_50-SC_A0370_50_A0370_60-SC_A0370_60_A0370_70-SC_A0370_70_A0370_80-62e719a3
   - shard-SC_A0370_80_A0370_90-SC_A0370_90_A0380_00-SC_A0380_00_A0380_10-SC_A0380_10_A0380_20-4495712f
+  - shard-SC_A0380_20_A0380_30-SC_A0380_30_A0380_40-SC_A0380_40_A0380_50-SC_A0380_50_A0390_50-3f731099
+  - shard-SC_A0390_50_A0390_60-SC_A0390_60_A0390_70-SC_A0390_70_A0390_80-SC_A0390_80_A0390_90-b6854c17
+  - shard-SC_A0390_90_A0400_00-SC_A0400_00_A0400_10-SC_A0400_10_A0400_20-SC_A0400_20_A0400_30-968689be
+  - shard-SC_A0400_30_A0400_40-SC_A0400_40_A0400_50-SC_A0400_50_A0400_60-SC_A0400_60_A0400_70-77e068d6
+  - shard-SC_A0400_70_A0400_80-SC_A0400_80_A0400_90-SC_A0400_90_A0410_00-SC_A0410_00_A0410_10-1c5e735a
+  - shard-SC_A0410_10_A0410_20-SC_A0410_20_A0410_30-SC_A0410_30_A0410_40-SC_A0410_40_A0410_50-360a5cf4
+  - shard-SC_A0410_50_A0410_60-SC_A0410_60_A0410_70-SC_A0410_70_A0410_80-SC_A0410_80_A0410_90-63600c93
+  - shard-SC_A0410_90_A0420_00-SC_A0420_00_A0420_10-SC_A0420_10_A0420_20-SC_A0420_20_A0420_30-07ea67c0
+  - shard-SC_A0420_30_A0420_40-SC_A0420_40_A0420_50-SC_A0420_50_A0420_60-SC_A0420_60_A0420_70-847eb965
+  - shard-SC_A0420_70_A0420_80-SC_A0420_80_A0420_90-SC_A0420_90_A0430_00-SC_A0430_00_A0430_10-4d2c5401
+  - shard-SC_A0430_10_A0430_20-SC_A0430_20_A0430_30-SC_A0430_30_A0430_40-SC_A0430_40_A0430_50-f7f8c6dc
+  - shard-SC_A0430_50_A0430_60-SC_A0430_60_A0430_70-SC_A0430_70_A0430_80-SC_A0430_80_A0430_90-765e27d5
+  - shard-SC_A0430_90_A0440_00-SC_A0440_00_A0440_10-SC_A0440_10_A0440_20-SC_A0440_20_A0440_30-315db8b1
+  - shard-SC_A0440_30_A0440_40-SC_A0440_40_A0440_50-SC_A0440_50_A0440_60-SC_A0440_60_A0440_70-9c29aec4
 - Checkpoint debt: NONE
+- Deterministic closure validation: JSON duplicate-key guard, exact filtered indexes, speaker maps, accuracy QC, literary QC, arbitration artifacts, CP932, exclusion gates PASS
+- Translation debt: NONE within the translatable campaign set
+- QC debt: NONE
 
 ## Wave 2
 

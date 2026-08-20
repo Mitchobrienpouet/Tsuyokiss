@@ -1,0 +1,27 @@
+{
+  "file": "SC_A0440_40_A0440_50",
+  "speaker_map": {
+    "レオ": "Leo",
+    "スバル": "Subaru",
+    "男Ｂ": "Man B"
+  },
+  "lines": {
+    "1": "「Hello? Everything okay over there?」",
+    "2": "「Yeah. I took them all down. Didn't get hurt either.」",
+    "3": "「I see. That's good.」",
+    "4": "Thank goodness.",
+    "5": "「Sorry things got out of hand like this.」",
+    "6": "「Don't be. I only did it because I wanted to cut loose.」",
+    "7": "「Those guys were probably the same. Bored with their lives and itching for a fight.」",
+    "8": "「Will your track club be okay with this?」",
+    "9": "「Hah. If this is enough to cause trouble, I'll gladly quit. My night job is a hell of a lot riskier.」",
+    "10": "「I'm hanging up.」",
+    "11": "Beep.",
+    "12": "「Jeez. He worries about every little thing.」",
+    "13": "「Hey, you skulking around over there. Gonna abandon your fallen friends and run?」",
+    "14": "「Eeeek!」",
+    "15": "「...Pathetic.」",
+    "16": "「Hah... I don't want to go home, but I guess I'll head back and sleep.」",
+    "17": "「Oh. Beautiful woman spotted.」"
+  }
+}

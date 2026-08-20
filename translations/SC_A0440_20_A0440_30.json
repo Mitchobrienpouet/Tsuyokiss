@@ -1,0 +1,21 @@
+{
+  "file": "SC_A0440_20_A0440_30",
+  "speaker_map": {"スバル": "Subaru", "レオ": "Leo", "男Ｃ": "Man C", "男Ｂ": "Man B", "男Ｄ": "Man D", "なごみ": "Nagomi"},
+  "lines": {
+    "1": "「How about we make a substitution on this side too?」",
+    "2": "「Subaru!」",
+    "3": "「Yo. How does it feel to let the adrenaline carry you away?」",
+    "4": "「Why does my body keep moving on its own...? This is the worst.」",
+    "5": "「Thought so. You've got a pretty nasty look in your eyes.」",
+    "6": "「Leave it to me. I'll handle the rest.」",
+    "7": "「I was already pissed off today anyway. Bring on the fight.」",
+    "8": "Subaru charges into the men like a gale.",
+    "9": "「Gwaaah!!!」",
+    "10": "「Who is this guy? He's crazy strong, YO! Hey, somebody go get Hizaki, YO!」",
+    "11": "「Wait, did we even do anything bad enough to get beaten up?」",
+    "12": "「You hit my friend.」",
+    "13": "「That's reason enough. Got a problem with it? Come at me.」",
+    "14": "「Come on. Let's get out of here.」",
+    "15": "「...」"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "file": "SC_A0400_40_A0400_50",
+  "speaker_map": {
+    "エリカ": "Erika",
+    "レオ": "Leo",
+    "スバル": "Subaru",
+    "新一": "Shinichi",
+    "きぬ": "Kinu"
+  },
+  "lines": {
+    "1": "Someone tapped me on the shoulder, so I turned around.",
+    "2": "Poke.",
+    "3": "A finger jabbed my cheek.",
+    "4": "「I heard everything.」",
+    "5": "「Princess.」",
+    "6": "「You're thinking of recruiting that girl who just left, aren't you?」",
+    "7": "「She'd be a fantastic asset. That brazen attitude of hers is perfect.」",
+    "8": "「And she's beautiful. I never imagined we had such a rare specimen among the first-years.」",
+    "9": "「Make absolutely sure you recruit her. Pull it off in style, and I'll give you three Kiriya stamps at once.」",
+    "10": "With that, the Princess skipped away.",
+    "11": "「...Hey, what now? Her Highness really took a liking to that girl.」",
+    "12": "「Three stamps means we've got no choice but to do it.」",
+    "13": "「Getting her on the council and working her to the bone doesn't sound bad either.」",
+    "14": "「I probably don't have anything but a bad reputation. Same goes for Crab.」",
+    "15": "「So either Leo or I has to go...」"
+  }
+}
