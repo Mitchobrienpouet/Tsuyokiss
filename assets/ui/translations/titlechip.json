@@ -1,0 +1,41 @@
+{
+  "asset": "titlechip.kg",
+  "source_archive": "chip.fpk",
+  "class": "UI",
+  "left_buttons": [
+    {"jp": "前回の続きから", "en": "CONTINUE"},
+    {"jp": "はじめから", "en": "NEW GAME"},
+    {"jp": "つづきから", "en": "LOAD GAME"},
+    {"jp": "おまけ", "en": "EXTRAS"},
+    {"jp": "環境設定", "en": "SETTINGS"},
+    {"jp": "初期化", "en": "RESET"},
+    {"jp": "終了", "en": "QUIT"}
+  ],
+  "right_buttons": [
+    {"jp": "ボイスメッセージ", "en": "VOICE MESSAGES"},
+    {"jp": "CGモード", "en": "CG MODE"},
+    {"jp": "SCENEモード", "en": "SCENE MODE"},
+    {"jp": "MUSICモード", "en": "MUSIC MODE"},
+    {"jp": "エンディングコレクション", "en": "ENDING COLLECTION"},
+    {"jp": "チュートリアル", "en": "TUTORIAL"},
+    {"jp": "戻る", "en": "BACK"}
+  ],
+  "reset_all_button": {"jp": "全ゲームデータ初期化", "en": "RESET ALL DATA"},
+  "descriptions": [
+    {"jp": "前回のつづきからはじめます", "en": "Continue from your latest save."},
+    {"jp": "オープニングからはじめます", "en": "Start a new game from the opening."},
+    {"jp": "つづきからはじめます", "en": "Load a saved game."},
+    {"jp": "おまけが閲覧を表示します", "en": "Open the bonus menu."},
+    {"jp": "各種環境設定ができます", "en": "Adjust game settings."},
+    {"jp": "データを初期化します", "en": "Reset game data."},
+    {"jp": "ゲームを終了します", "en": "Quit the game."},
+    {"jp": "豪華声優さん達からのボイスメッセージです", "en": "Hear messages from the voice cast."},
+    {"jp": "イベントCGを閲覧できます", "en": "View unlocked event CGs."},
+    {"jp": "シーンが閲覧できます", "en": "Replay unlocked scenes."},
+    {"jp": "作中BGMを鑑賞できます", "en": "Listen to the soundtrack."},
+    {"jp": "ムービー・エンディングシーンが閲覧できます", "en": "View movies and ending scenes."},
+    {"jp": "ゲームの説明・機能説明をします", "en": "Read the game and feature guide."},
+    {"jp": "一つ前の項目に戻ります", "en": "Return to the previous menu."},
+    {"jp": "全てのデータを初期化します", "en": "Reset all saved data."}
+  ]
+}

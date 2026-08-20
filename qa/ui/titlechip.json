@@ -1,0 +1,41 @@
+{
+  "asset": "titlechip.kg",
+  "class": "UI",
+  "source_archive": "chip.fpk",
+  "dimensions": [
+    1024,
+    1024
+  ],
+  "mode": "RGBA",
+  "alpha_extrema": [
+    0,
+    255
+  ],
+  "font": "/usr/share/fonts/opentype/urw-base35/NimbusSansNarrow-Bold.otf",
+  "font_sha256": "6d7cec07f5a9035e208532dab35a51312aef4a7f26eb524dd614c9fcd97c3264",
+  "source_sha256": "1139cd44c1c8a3c0a6e2bbceb3172de20523573af8191b29b22ddbc978ce2e15",
+  "localized_png_sha256": "d56184ff53db01d056730e92c18fadae38c4847a303173bb27ceb7b33524f2fa",
+  "localized_kg_sha256": "60b704af9825215489b8c2c88087685cb41976a2f5dfa6bd856486f394cf0fd4",
+  "localized_zlc2_sha256": "f09e56cb30980ab2d5d684c2c843b63225e0d73be926f2d1e81a50c8ac62ed99",
+  "kg_pixel_roundtrip": "PASS",
+  "zlc2_roundtrip": "PASS",
+  "zlc2_payload_size": 387527,
+  "retail_zlc2_size": 350619,
+  "in_place_slot_fit": "REBUILD_REQUIRED",
+  "injection_mode": "rebuild chip.fpk with replace-member",
+  "allowed_change_pixels": 201687,
+  "outside_allowed_change_pixels": 0,
+  "geometry": {
+    "button_columns_x": [
+      0,
+      232
+    ],
+    "button_group_stride_y": 129,
+    "button_state_stride_y": 43,
+    "button_size": [
+      231,
+      42
+    ],
+    "canvas_unchanged": true
+  }
+}
