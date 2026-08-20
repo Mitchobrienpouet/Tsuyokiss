@@ -335,6 +335,21 @@ def initialize() -> dict:
             })
             if fully_excluded and entry.get("status") == "pending":
                 entry.update(status="excluded", shard_id=None)
+            elif entry.get("status") == "pending":
+                required_artifacts = (
+                    ROOT / "qc" / "accuracy" / f"{scene}.md",
+                    ROOT / "qc" / "literary" / f"{scene}.md",
+                    ROOT / "scratchpad" / "contested" / f"{scene}.md",
+                )
+                artifacts_complete = all(
+                    artifact.exists() and artifact.stat().st_size > 0
+                    for artifact in required_artifacts
+                )
+                if artifacts_complete and validate_scene(scene, quiet=True)[0]:
+                    # The durable translation/QC outputs are authoritative when
+                    # ephemeral orchestration state was pruned.  Recover them as
+                    # done so a resume can never reclaim or overwrite the scene.
+                    entry.update(status="done", shard_id=None)
         return state
 
     state = mutate_state(update)
