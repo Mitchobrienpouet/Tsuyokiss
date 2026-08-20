@@ -673,6 +673,14 @@
       "scene": "SC_C0600_40_C0650_00",
       "ranges": [
         [
+          42,
+          49
+        ],
+        [
+          191,
+          192
+        ],
+        [
           754,
           754
         ],
@@ -816,6 +824,80 @@
         ]
       ],
       "reason": "Continuous explicit sexual scene involving high-school students; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_C0810_00_C0820_00",
+      "ranges": [
+        [
+          1,
+          7
+        ]
+      ],
+      "reason": "Explicit sexual aftermath involving high-school students; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_C0820_00_C0850_00",
+      "ranges": [
+        [
+          193,
+          208
+        ],
+        [
+          485,
+          510
+        ]
+      ],
+      "reason": "Explicit sexual content involving high-school students; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_C0850_00_C0860_00",
+      "ranges": [
+        [
+          1,
+          184
+        ]
+      ],
+      "reason": "Continuous explicit sexual scene involving high-school students; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_C0860_00_C0900_00",
+      "ranges": [
+        [
+          1,
+          13
+        ]
+      ],
+      "reason": "Explicit sexual aftermath involving high-school students; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_C0900_00_C0910_00",
+      "ranges": [
+        [
+          40,
+          58
+        ]
+      ],
+      "reason": "Explicit sexual content involving high-school students; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_C0910_00_C0920_00",
+      "ranges": [
+        [
+          1,
+          253
+        ]
+      ],
+      "reason": "Continuous explicit sexual scene involving high-school students; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_C0920_00_C0930_00",
+      "ranges": [
+        [
+          1,
+          15
+        ]
+      ],
+      "reason": "Explicit sexual aftermath involving high-school students; excluded from model work and builds by policy."
     }
   ]
 }
