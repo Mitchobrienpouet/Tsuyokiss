@@ -1,0 +1,30 @@
+{
+  "file": "SC_A0370_00_A0370_10",
+  "speaker_map": {
+    "レオ": "Leo",
+    "良美": "Yoshimi",
+    "スバル": "Subaru",
+    "新一": "Shinichi",
+    "きぬ": "Kinu"
+  },
+  "lines": {
+    "1": "「Yoshimi, do we have a roster of all the first-years?」",
+    "2": "「A roster? Here you go.」",
+    "3": "She handed me a file.",
+    "4": "「The reference materials are on this shelf, so feel free to look through them.」",
+    "5": "The student council really did have everything on file.",
+    "6": "「Put it back where you found it when you're done. Or you can just return it to me.」",
+    "7": "「Got it.」",
+    "8": "The brisk clatter of touch-typing had been going on for some time.",
+    "9": "The Princess was putting some kind of document together.",
+    "10": "Better not disturb her.",
+    "11": "「So the plan is to look at the first-year roster and pick someone at random?」",
+    "12": "「Well, this should be more efficient.」",
+    "13": "「Look. It even lists every club they're in.」",
+    "14": "「First-years in sports clubs won't have any free time under Ryuumeikan's strict hierarchy.」",
+    "15": "「We can rule people out that way, then choose from the names left over.」",
+    "16": "「Sounds good. Not to show off my learning or anything, but you know what they say: a name lays the body bare.」",
+    "17": "「Wow, you're pretty learned for Fukahire.」",
+    "18": "「Crab, you need to study more. And the saying is, 'The name reveals the nature.'」"
+  }
+}
