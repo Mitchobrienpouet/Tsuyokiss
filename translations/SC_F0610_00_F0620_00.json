@@ -1,0 +1,25 @@
+{
+  "file": "SC_F0610_00_F0620_00",
+  "speaker_map": {
+    "レオ": "Leo",
+    "エリカ": "Erika",
+    "良美": "Yoshimi",
+    "きぬ": "Kinu",
+    "スバル": "Subaru"
+  },
+  "lines": {
+    "1": "「...」",
+    "2": "「Hm? What is it?」",
+    "3": "「...」",
+    "4": "「Could it be that you want to stay beside me?」",
+    "5": "「(Nod.)」",
+    "6": "「Oh no! He's attached himself to the very person who caused the accident and then abandoned all responsibility!」",
+    "7": "「Well, that's my charisma for you.」",
+    "8": "「First, help us figure out what to do with him!」",
+    "9": "「I still say our only choice is to keep him as the class pet.」",
+    "10": "「No, there's this place called a hospital.」",
+    "11": "「Yoppi, you're in charge of feeding him.」",
+    "12": "「Well... if there really is no other choice. Yes... perhaps I could take care of him.」",
+    "13": "「This is bad. At this rate, the students will treat Leo Tsushima the same way as Tanishi, the pond snail in that tank over there. In other words, he'll become the class pet.」"
+  }
+}
