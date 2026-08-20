@@ -59,9 +59,10 @@ Commit and push narrow, verified batches. Do not modify or commit retail archive
 |---|---|---|---|---|---|---|
 | `chip.fpk:titlechip.kg` | UI | Title/bonus menu buttons and descriptions | 15 buttons and 15 descriptions | 1024x1024 RGBA, alpha retained | GCGK and ZLC2 round-trips PASS; rebuilt FPK index/re-extraction PASS; engine name retained | Source/layout comparison PASS; runtime pending |
 | `chip.fpk:CGChip.kg` | UI | CG gallery character/content filters | 10 categories across 4 visual states | 1024x1024 RGBA, alpha retained | GCGK and ZLC2 round-trips PASS; rebuilt FPK index/re-extraction PASS; engine name retained | Source/layout comparison PASS; runtime pending |
+| `chip.fpk:EDChip.kg` | UI / STORY | Opening, route-ending, and bonus-ending labels | 21 titles across 3 visual states | 1024x1024 RGBA, alpha retained | GCGK and ZLC2 round-trips PASS; rebuilt FPK index/re-extraction PASS; engine name retained | Source/layout comparison PASS; runtime pending |
 
 The image-generation draft for `titlechip.kg` was rejected because it changed the canvas to 1254x1254 RGB, moved button geometry, and omitted copy. The committed asset is rebuilt deterministically from the retail 1024x1024 RGBA sheet with fixed coordinates and byte-proven GCGK re-encoding.
 
 The localized ZLC2 payload is 387,527 bytes versus the retail member's 350,619 bytes. Injection therefore uses the checked `replace-member` FPK rebuild path rather than unsafe in-place overwrite. The rebuilt 97-member archive reparses successfully, the localized member re-extracts byte-identically, and every untouched packed member remains byte-identical to retail. The rebuilt retail archive itself remains local-only and is never committed.
 
-The combined title/gallery reconstruction also passes as one archive: both localized members re-extract byte-identically and the other 95 packed members remain byte-identical to retail.
+The combined title/gallery/endings reconstruction also passes as one archive: all three localized members re-extract byte-identically and the other 94 packed members remain byte-identical to retail.

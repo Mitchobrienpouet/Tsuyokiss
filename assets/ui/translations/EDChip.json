@@ -1,0 +1,34 @@
+{
+  "asset": "EDChip.kg",
+  "source_archive": "chip.fpk",
+  "class": "UI_STORY",
+  "columns": [
+    [
+      {"jp": "つよきす Full Edition版オープニング", "en": "TSUYOKISS FULL EDITION OPENING"},
+      {"jp": "つよきす版オープニング", "en": "TSUYOKISS OPENING"},
+      {"jp": "乙女 エンディング", "en": "OTOME ENDING"},
+      {"jp": "きぬ エンディング", "en": "KINU ENDING"},
+      {"jp": "エリカ エンディング", "en": "ERIKA ENDING"},
+      {"jp": "なごみ エンディング", "en": "NAGOMI ENDING"},
+      {"jp": "祈 エンディング", "en": "INORI ENDING"},
+      {"jp": "良美 エンディング", "en": "YOSHIMI ENDING"},
+      {"jp": "素奈緒 エンディング", "en": "SUNAO ENDING"}
+    ],
+    [
+      {"jp": "姉しよっ!VSつよきす エンディング", "en": "ANE-SHIYO! VS TSUYOKISS ENDING"},
+      {"jp": "乙女のココロ", "en": "OTOME'S HEART"},
+      {"jp": "それぞれの道", "en": "OUR SEPARATE PATHS"},
+      {"jp": "野望の少女", "en": "GIRL OF AMBITION"},
+      {"jp": "あたしの夢・俺の夢", "en": "HER DREAM, MY DREAM"},
+      {"jp": "柳の恋", "en": "LOVE BENEATH THE WILLOW"},
+      {"jp": "白詰草", "en": "WHITE CLOVER"},
+      {"jp": "Mighty Heart", "en": "MIGHTY HEART"},
+      {"jp": "聖域の崩壊", "en": "THE SANCTUARY FALLS"}
+    ],
+    [
+      {"jp": "あ、僕の息子が潰された", "en": "AH, MY SON GOT CRUSHED"},
+      {"jp": "片手に白百合、片手に薔薇", "en": "A WHITE LILY AND A RED ROSE"},
+      {"jp": "幼馴染", "en": "CHILDHOOD FRIENDS"}
+    ]
+  ]
+}
