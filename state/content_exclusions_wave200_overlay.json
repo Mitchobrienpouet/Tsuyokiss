@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "base_manifest": "content_exclusions.json",
+  "policy": "Additive fail-closed findings for the active 200-scene recovery wave. Read together with the canonical manifest until consolidated.",
+  "entries": [
+    {
+      "scene": "SC_G0390_00_G0400_00",
+      "ranges": [[1, 2]],
+      "reason": "Connected explicit sexual self-stimulation aftermath involving a high-school student; fully excluded from model work and builds by policy."
+    }
+  ]
+}
