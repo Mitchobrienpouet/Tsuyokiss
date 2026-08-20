@@ -1,0 +1,23 @@
+{
+  "file": "SC_A0450_10_A0450_20",
+  "speaker_map": {
+    "エリカ": "Erika",
+    "乙女": "Otome",
+    "きぬ": "Kinu",
+    "祈": "Inori",
+    "良美": "Yoshimi",
+    "レオ": "Leo",
+    "なごみ": "Nagomi"
+  },
+  "lines": {
+    "1": "「Well then, here's to us working together from now on. It's only fruit juice, but cheers!」",
+    "2": "「Cheers!」",
+    "3": "「Cheeeers!」",
+    "4": "「Cheers.」",
+    "5": "「Cheers!」",
+    "6": "「Cheers.」",
+    "7": "「............Cheers.」",
+    "8": "「Huh? Come to think of it, am I forgetting someone?」",
+    "9": "「You're imagining things.」"
+  }
+}
