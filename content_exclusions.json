@@ -1682,6 +1682,50 @@
         ]
       ],
       "reason": "Sexualized discussion of a high-school student's bra and breast size; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_E0680_00_E0690_00",
+      "ranges": [
+        [32, 40],
+        [43, 45],
+        [69, 69],
+        [92, 99],
+        [192, 199]
+      ],
+      "reason": "Sexualized role fantasies, breast objectification, and explicit sexual fantasy involving high-school students; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_E0690_00_E0700_00",
+      "ranges": [
+        [60, 63],
+        [78, 80]
+      ],
+      "reason": "Sexualized body appraisal and menstrual speculation involving a high-school student; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_E0700_00_E0710_00",
+      "ranges": [
+        [244, 244],
+        [252, 253],
+        [263, 265]
+      ],
+      "reason": "Breast objectification, eroticized prose, and explicit sexual proposal involving high-school students; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_E0730_00_E0740_00",
+      "ranges": [
+        [9, 12],
+        [18, 21]
+      ],
+      "reason": "Sexualized swimsuit and body appraisal involving a high-school student; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_E0770_00_E0780_00",
+      "ranges": [
+        [269, 284],
+        [430, 462]
+      ],
+      "reason": "Sexualized co-bathing proposal and explicit sexual preparation involving high-school students; excluded from model work and builds by policy."
     }
   ]
 }
