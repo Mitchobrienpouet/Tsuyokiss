@@ -15,3 +15,16 @@ The supervisor must register these exact ranges in `content_exclusions.json`
 and regenerate all four filtered projections before shard 21 can resume. The
 ordinary school, sports-festival, and relationship material outside the listed
 ranges remains translatable.
+
+## Supplemental finding after first refresh
+
+The first regenerated `SC_D0740_00_D0760_00` projection still exposed two
+short sexualized jokes tied to the earlier explicit material. The resumed
+pipeline stopped again before preflight or translation.
+
+| Scene | Additional held ranges | Reason |
+|---|---:|---|
+| `SC_D0740_00_D0760_00` | `33-34`, `41` | Explicit discussion of involuntary genital arousal and a callback comparing Leo's behavior to a morning erection, involving high-school students. |
+
+Register these additional exact indexes and regenerate the partial projection
+again before resuming shard 21.
