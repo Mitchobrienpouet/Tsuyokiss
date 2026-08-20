@@ -1350,6 +1350,70 @@
         ]
       ],
       "reason": "Direct explicit sexual aftermath involving high-school students; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_E0120_00_E0120_10",
+      "ranges": [
+        [
+          32,
+          32
+        ],
+        [
+          47,
+          54
+        ],
+        [
+          63,
+          70
+        ],
+        [
+          79,
+          85
+        ]
+      ],
+      "reason": "Sexualized stripping, voyeurism, fetishized underwear, and sexualized bodily comparison involving high-school students; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_E0200_00_E0300_00",
+      "ranges": [
+        [
+          28,
+          30
+        ]
+      ],
+      "reason": "Non-consensual sexual suggestion involving a sleeping high-school student; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_E0300_00_E0310_00",
+      "ranges": [
+        [
+          61,
+          63
+        ],
+        [
+          76,
+          94
+        ],
+        [
+          99,
+          100
+        ],
+        [
+          218,
+          220
+        ]
+      ],
+      "reason": "Sexualized harem and body objectification, underwear exposure, and breast objectification involving high-school students; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_E0320_00_E0330_00",
+      "ranges": [
+        [
+          5,
+          6
+        ]
+      ],
+      "reason": "Prostitution and sexual-exploitation framing involving a high-school student; excluded from model work and builds by policy."
     }
   ]
 }
