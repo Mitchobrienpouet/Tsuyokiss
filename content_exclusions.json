@@ -1990,6 +1990,20 @@
         [7, 7]
       ],
       "reason": "Sexualized commentary about a high-school student's revealing clothing; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_G0280_00_G0290_00",
+      "ranges": [
+        [3, 23]
+      ],
+      "reason": "Connected changing-room and underwear exposure involving high-school students; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_G0290_00_G0300_00",
+      "ranges": [
+        [1, 42]
+      ],
+      "reason": "Continuous sexualized bodily contact and arousal involving high-school students; fully excluded from model work and builds by policy."
     }
   ]
 }
