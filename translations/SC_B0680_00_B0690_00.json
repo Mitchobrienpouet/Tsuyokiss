@@ -1,0 +1,21 @@
+{
+  "file": "SC_B0680_00_B0690_00",
+  "speaker_map": {"レオ": "Leo", "乙女": "Otome"},
+  "lines": {
+    "1": "The weather feels miserable again today.",
+    "2": "It's really stormy out there.",
+    "4": "「Otome, got a minute?」",
+    "5": "I went into her room.",
+    "6": "「...」",
+    "7": "「What's wrong? There's no thunder.」",
+    "8": "「There is something I have been thinking about.」",
+    "9": "「Hm?」",
+    "10": "「What am I... to you?」",
+    "11": "「What are you talking about?」",
+    "12": "「You're the big sister I love...」",
+    "13": "「And someone very precious to me.」",
+    "14": "「Am I wrong?」",
+    "15": "「No... you're right.」",
+    "22": "「Leo... I don't know what to think anymore.」"
+  }
+}
