@@ -5,8 +5,8 @@
 - Status: FIRED 2026-08-20T09:06:06Z
 - Requested scene count: 300 (77 contiguous shards; short route-terminal shards preserve narrative-block boundaries)
 - Planned first/last scene: SC_C0200_00_C0300_00 / SC_G0920_00_G0930_00
-- Progress checkpoint: 132/300 scenes closed; 168 scenes remain claimed
-- Last remotely verified campaign checkpoint: 05f529efbca526efe43009d87e67e803f11ca399
+- Progress checkpoint: 144/300 scenes closed; 156 scenes remain claimed
+- Last remotely verified campaign checkpoint: abdce3ae57f9a633a095177869619840900a446a
 - Anti-block recovery: SC_C0600_40_C0650_00 was translated in six exact permitted-index segments, mechanically merged, then independently accuracy-QCed, literary-QCed, and arbitrated as one canonical scene
 - Active execution mode: three Codex Work workers in rolling rotation; supervisor-only validation and GitHub checkpoints
 - Global concurrency ceiling: 6 model calls; at most three workers active in this environment
@@ -19,6 +19,7 @@
 - Anti-block recovery: shards 16-18 completed after fail-closed projection refreshes; legacy index drift in SC_D0200_00_D0220_00 and SC_D0430_00_D0440_00 was fully realigned and revalidated.
 - Anti-block recovery: shards 19-21 completed after serial fail-closed refreshes; four scenes were fully excluded and eight permitted scenes/partials were fully gated.
 - Anti-block recovery: shards 22-30 are closed. Shard 29 contains one fully excluded scene; the other eleven scenes/partials passed both QC lenses, arbitration, JSON/index, exclusion, and CP932 gates.
+- Anti-block recovery: shards 31-33 are closed after exact fail-closed filtering in shards 31 and 33; all twelve permitted scene outputs passed both QC lenses, arbitration, JSON/index, exclusion, and CP932 gates.
 - Starting remotely verified commit: 60cc5e1d1833f77ae11584ea9b3c022f500a2630
 - Dead/stalled check at launch: PASS; no active, dead, stalled, or failed runs
 - Translation debt at launch: 300 claimed scenes
