@@ -1,0 +1,25 @@
+{
+  "file": "SC_E0360_00_E0370_00",
+  "speaker_map": {
+    "エリカ": "Erika",
+    "スバル": "Subaru",
+    "きぬ": "Kinu",
+    "良美": "Yoshimi",
+    "レオ": "Leo",
+    "なごみ": "Nagomi"
+  },
+  "lines": {
+    "1": "「The executive committee has tomorrow off. If you come, the building will be closed, so consider yourselves warned. --End of announcement.」",
+    "2": "「Now, there was some commotion at lunch. Date, what did they call you in for?」",
+    "3": "「Oh, it was the track team from Yuihama Academy. They wanted me to transfer there.」",
+    "4": "「They were scouting you! Amazing, right? Yuihama Academy in Shonan is super famous for track and field.」",
+    "5": "「Damn Crab was eavesdropping. What a hopeless little runt.」",
+    "6": "「Wow, that's incredible! They invited you to join them?」",
+    "7": "「That's a wonderful offer. So you accepted?」",
+    "8": "「Nope, I turned them down. Their training is brutal. It doesn't fit my motto: have fun and take it easy.」",
+    "9": "「Well, I'm glad you aren't transferring.」",
+    "10": "「That so? Then I guess staying was worth it.」",
+    "25": "「...What is this conversation beyond human comprehension? It's kind of gross.」",
+    "26": "I decided to ignore them."
+  }
+}
