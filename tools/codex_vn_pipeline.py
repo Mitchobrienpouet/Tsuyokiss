@@ -53,7 +53,9 @@ def read_json(path: Path, *, reject_duplicates: bool = False):
 
 def atomic_json(path: Path, value) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
-    temp = path.with_suffix(path.suffix + f".{os.getpid()}.tmp")
+    temp = path.with_suffix(
+        path.suffix + f".{os.getpid()}.{threading.get_ident()}.{uuid.uuid4().hex}.tmp"
+    )
     temp.write_text(json.dumps(value, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     os.replace(temp, path)
 
@@ -613,7 +615,8 @@ def codex_command(task: dict, prompt: str, final: Path) -> list[str]:
         raise RuntimeError("codex executable not found in PATH (or set CODEX_BIN)")
     stage_cfg = config()["models"][task["stage"]]
     return [
-        codex, "exec", "--json", "--approve-for-me", "--cd", str(ROOT),
+        codex, "exec", "--json", "--approve-for-me",
+        "--cd", str(ROOT),
         "--model", stage_cfg["model"],
         "--config", f'model_reasoning_effort="{stage_cfg["reasoning"]}"',
         "--output-schema", str(REPORT_SCHEMA),
