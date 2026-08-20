@@ -16,6 +16,21 @@
       "scene": "SC_A0240_30_A0240_40",
       "ranges": [[27, 35]],
       "reason": "Explicit sexualized contact involving high-school students; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_A0360_00_A0360_10",
+      "ranges": [[8, 14]],
+      "reason": "Explicit sexualized discussion involving high-school students; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_A0360_10_A0360_20",
+      "ranges": [[9, 18]],
+      "reason": "Explicit sexualized contact involving high-school students; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_A0370_10_A0370_20",
+      "ranges": [[10, 15]],
+      "reason": "Explicit sexual scenario involving high-school students; excluded from model work and builds by policy."
     }
   ]
 }
