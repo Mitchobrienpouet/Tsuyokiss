@@ -1,0 +1,13 @@
+{
+  "file": "SC_A0170_80_A0170_60",
+  "speaker_map": {
+    "レオ": "Leo",
+    "乙女": "Otome"
+  },
+  "lines": {
+    "1": "「...I guess we won't live together.」",
+    "2": "「Hmm. You may reconsider once more, if you wish.」",
+    "3": "「?」",
+    "4": "Could this be... an infinite loop?"
+  }
+}
