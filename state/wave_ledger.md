@@ -5,8 +5,8 @@
 - Status: FIRED 2026-08-20T09:06:06Z
 - Requested scene count: 300 (77 contiguous shards; short route-terminal shards preserve narrative-block boundaries)
 - Planned first/last scene: SC_C0200_00_C0300_00 / SC_G0920_00_G0930_00
-- Progress checkpoint: 266/300 scenes closed; 34 scenes remain claimed
-- Last remotely verified campaign checkpoint: 1788fc93ba57fbe0060e833e9aacf7b0ec9948e5
+- Progress checkpoint: 280/300 scenes closed; 20 scenes remain claimed
+- Last remotely verified campaign checkpoint: f3832d67fd59ab8c28c3e0ea93311fb394bd35cf
 - Anti-block recovery: SC_C0600_40_C0650_00 was translated in six exact permitted-index segments, mechanically merged, then independently accuracy-QCed, literary-QCed, and arbitrated as one canonical scene
 - Active execution mode: three Codex Work workers in rolling rotation; supervisor-only validation and GitHub checkpoints
 - Global concurrency ceiling: 6 model calls; at most three workers active in this environment
@@ -28,6 +28,7 @@
 - Anti-block recovery: shards 52-54 close route E after exact fail-closed filtering. Eight permitted outputs pass both QC lenses and deterministic gates; two explicit mirror variants are fully excluded with no downstream artifacts.
 - Anti-block recovery: shards 55-61 are closed after exact fail-closed filtering. Twenty-three permitted outputs pass both QC lenses and deterministic gates; five full-scene exclusions have no downstream artifacts.
 - Anti-block recovery: shards 62-64 are closed after exact fail-closed filtering. Ten permitted outputs covering 574 lines pass both QC lenses and deterministic gates; two fully excluded scenes have no downstream artifacts.
+- Anti-block recovery: shards 65-67 and 69 are closed after exact fail-closed filtering. Thirteen permitted outputs covering 332 lines pass both QC lenses and deterministic gates; shard 69's fully excluded locker scene has no downstream artifacts.
 - Starting remotely verified commit: 60cc5e1d1833f77ae11584ea9b3c022f500a2630
 - Dead/stalled check at launch: PASS; no active, dead, stalled, or failed runs
 - Translation debt at launch: 300 claimed scenes
