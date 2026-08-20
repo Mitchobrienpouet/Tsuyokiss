@@ -5,8 +5,8 @@
 - Status: FIRED 2026-08-20T09:06:06Z
 - Requested scene count: 300 (77 contiguous shards; short route-terminal shards preserve narrative-block boundaries)
 - Planned first/last scene: SC_C0200_00_C0300_00 / SC_G0920_00_G0930_00
-- Progress checkpoint: 216/300 scenes closed; 84 scenes remain claimed
-- Last remotely verified campaign checkpoint: 4e6dce36098978d102f63778e9b440367a2b9e19
+- Progress checkpoint: 226/300 scenes closed; 74 scenes remain claimed
+- Last remotely verified campaign checkpoint: 440bb2a827c6ac300dea80267abb5489ccc809d2
 - Anti-block recovery: SC_C0600_40_C0650_00 was translated in six exact permitted-index segments, mechanically merged, then independently accuracy-QCed, literary-QCed, and arbitrated as one canonical scene
 - Active execution mode: three Codex Work workers in rolling rotation; supervisor-only validation and GitHub checkpoints
 - Global concurrency ceiling: 6 model calls; at most three workers active in this environment
@@ -25,6 +25,7 @@
 - Anti-block recovery: shards 43-45 are closed after exact fail-closed filtering. Shard 45's 898-line scene was translated in two exact permitted-index segments, mechanically merged, then independently accuracy-QCed, literary-QCed, and arbitrated as one canonical scene; all twelve outputs pass deterministic gates.
 - Anti-block recovery: shards 46-47 are closed after exact fail-closed filtering. Their eight outputs cover 2,026 permitted lines and pass both QC lenses, arbitration, JSON/index, exclusion, and CP932 gates.
 - Anti-block recovery: shards 48-51 are closed after exact fail-closed filtering. Ten permitted outputs pass both QC lenses and deterministic gates; six full-scene exclusions have no downstream artifacts.
+- Anti-block recovery: shards 52-54 close route E after exact fail-closed filtering. Eight permitted outputs pass both QC lenses and deterministic gates; two explicit mirror variants are fully excluded with no downstream artifacts.
 - Starting remotely verified commit: 60cc5e1d1833f77ae11584ea9b3c022f500a2630
 - Dead/stalled check at launch: PASS; no active, dead, stalled, or failed runs
 - Translation debt at launch: 300 claimed scenes
