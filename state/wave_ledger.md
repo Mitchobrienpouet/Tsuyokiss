@@ -1,8 +1,28 @@
 # Wave ledger
 
+## 300-scene continuation campaign
+
+- Status: FIRED 2026-08-20T09:06:06Z
+- Requested scene count: 300 (77 contiguous shards; short route-terminal shards preserve narrative-block boundaries)
+- Planned first/last scene: SC_C0200_00_C0300_00 / SC_G0920_00_G0930_00
+- Active execution mode: three Codex Work workers in rolling rotation; supervisor-only validation and GitHub checkpoints
+- Global concurrency ceiling: 6 model calls; at most three workers active in this environment
+- Existing completed coverage excluded from claims: 322 translated scenes plus 11 fully excluded scenes
+- Rolled-forward debt from the 250-scene campaign: 165 scenes after 75 translations and 10 full-scene exclusions were completed
+- Additional new coverage claimed: 135 scenes, for an exact 300-scene continuation wave
+- Durable shard plan: `state/wave_300_plan.md`
+- Durable claim state: `state/pipeline.json` (local orchestration cache; intentionally ignored by Git)
+- Intended GitHub remote/branch: Mitchobrienpouet/Tsuyokiss / main
+- Starting remotely verified commit: 60cc5e1d1833f77ae11584ea9b3c022f500a2630
+- Dead/stalled check at launch: PASS; no active, dead, stalled, or failed runs
+- Translation debt at launch: 300 claimed scenes
+- QC debt at launch: NONE (no newly translated scene has bypassed QC)
+- Checkpoint debt at launch: NONE
+
 ## 250-scene campaign
 
-- Status: FIRED 2026-08-20T06:56:21Z
+- Status: ROLLED FORWARD 2026-08-20T09:06:06Z
+- Progress at rollover: 85/250 scenes closed (75 translated, 10 fully excluded); the remaining 165 scenes are claimed by the 300-scene continuation campaign
 - Requested scene count: 250 (64 contiguous shards; short terminal shards preserve narrative-block boundaries)
 - Planned first/last scene: SC_A0440_70_A0440_80 / SC_E0570_30_E0580_00
 - Active execution mode: three Codex Work workers in rolling rotation; supervisor-only validation and GitHub checkpoints
