@@ -1070,6 +1070,36 @@
         ]
       ],
       "reason": "Explicit genital violence and coercive fetish roleplay involving high-school students; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_D0760_40_D0770_00",
+      "ranges": [
+        [
+          8,
+          18
+        ]
+      ],
+      "reason": "Explicit sexual activity involving high-school students; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_D0760_70_D0760_40",
+      "ranges": [
+        [
+          1,
+          7
+        ]
+      ],
+      "reason": "Continuous explicit sexual activity involving high-school students; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_D0760_80_Z9999_99",
+      "ranges": [
+        [
+          1,
+          19
+        ]
+      ],
+      "reason": "Continuous explicit sexual activity involving high-school students; excluded from model work and builds by policy."
     }
   ]
 }
