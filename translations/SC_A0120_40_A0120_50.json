@@ -1,0 +1,19 @@
+{
+  "file": "SC_A0120_40_A0120_50",
+  "speaker_map": {
+    "良美": "Yoshimi",
+    "エリカ": "Erika",
+    "レオ": "Leo",
+    "きぬ": "Kinu"
+  },
+  "lines": {
+    "1": "「The other classes have already finished afternoon homeroom. Inori's late again today...」",
+    "2": "「Leo. Go fetch her.」",
+    "3": "「Huh? Me?」",
+    "4": "「You were the umpire in PE, weren't you? Surely you have plenty of energy left.」",
+    "5": "...Well, why not?",
+    "6": "「Move it! Double time! Quit dragging your feet, you dope!」",
+    "7": "I'd make her cry later.",
+    "8": "And so, to the faculty room."
+  }
+}
