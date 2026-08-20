@@ -1,5 +1,11 @@
 {
   "schema_version": 1,
   "policy": "Record only source ranges intentionally excluded from model work and builds.",
-  "entries": []
+  "entries": [
+    {
+      "scene": "SC_A0160_80_A0160_90",
+      "indexes": ["24"],
+      "reason": "Explicit sexualized content involving school-age characters; excluded from model work and builds by policy."
+    }
+  ]
 }
