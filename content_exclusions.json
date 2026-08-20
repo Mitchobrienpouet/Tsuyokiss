@@ -1830,6 +1830,121 @@
         [39, 39]
       ],
       "reason": "Sexualized romantic contact involving high-school students; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_F0680_00_F0690_00",
+      "ranges": [
+        [33, 65]
+      ],
+      "reason": "Continuous sexual proposition and love-hotel setup between an adult teacher and a high-school student; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_F0690_00_F0700_00",
+      "ranges": [
+        [1, 47]
+      ],
+      "reason": "Continuous love-hotel and undressing sexual setup involving an adult teacher and a high-school student; fully excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_F0700_00_F0710_00",
+      "ranges": [
+        [1, 308]
+      ],
+      "reason": "Continuous explicit sexual activity between an adult teacher and a high-school student; fully excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_F0710_00_F0720_00",
+      "ranges": [
+        [1, 40]
+      ],
+      "reason": "Direct sexual aftermath and love-hotel secrecy involving an adult teacher and a high-school student; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_F0720_00_F0730_00",
+      "ranges": [
+        [1, 8]
+      ],
+      "reason": "Continuous explicit genital recollection involving a high-school student; fully excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_F0730_00_F0740_00",
+      "ranges": [
+        [1, 20]
+      ],
+      "reason": "Connected explicit sexual aftermath involving an adult teacher and a high-school student; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_F0740_00_F0750_00",
+      "ranges": [
+        [4, 5],
+        [11, 15],
+        [30, 31],
+        [44, 62]
+      ],
+      "reason": "Sexualized relationship and intercourse aftermath involving an adult teacher and a high-school student; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_F0750_00_F0760_00",
+      "ranges": [
+        [1, 37]
+      ],
+      "reason": "Continuous explicit sexual aftermath involving an adult teacher and a high-school student; fully excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_F0760_00_F0770_00",
+      "ranges": [
+        [14, 20]
+      ],
+      "reason": "Sexualized strip-game setup involving high-school students; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_F0780_00_F0790_00",
+      "ranges": [
+        [10, 15]
+      ],
+      "reason": "Sexualized strip-game beat involving high-school students; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_F0810_00_F0820_00",
+      "ranges": [
+        [22, 26]
+      ],
+      "reason": "Explicit virginity and prior sexual-overwhelm discussion in an adult-teacher/high-school-student relationship; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_F0820_00_F0830_00",
+      "ranges": [
+        [14, 14]
+      ],
+      "reason": "Sexualized teacher objectification by a high-school student; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_F0860_00_F0870_00",
+      "ranges": [
+        [16, 30]
+      ],
+      "reason": "Hotel invitation and prior sexual-activity discussion in an adult-teacher/high-school-student relationship; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_F0880_00_F0900_00",
+      "ranges": [
+        [84, 86]
+      ],
+      "reason": "Sexualized kissing between an adult teacher and a high-school student; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_F0910_00_F0920_00",
+      "ranges": [
+        [1, 16]
+      ],
+      "reason": "Love-hotel sexual setup involving an adult teacher and a high-school student; fully excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_F0920_00_F0930_00",
+      "ranges": [
+        [1, 175]
+      ],
+      "reason": "Continuous explicit sexual activity between an adult teacher and a high-school student; fully excluded from model work and builds by policy."
     }
   ]
 }
