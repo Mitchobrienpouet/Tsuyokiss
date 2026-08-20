@@ -186,8 +186,8 @@ def main() -> int:
     ap.add_argument("--margin", type=float, default=0.0, help="reserved fraction, 0..0.03")
     ap.add_argument("--lines", type=int, default=3)
     ap.add_argument("--face", default="MS UI Gothic")
-    ap.add_argument("--height", type=int, default=26)
-    ap.add_argument("--min-height", type=int, default=23)
+    ap.add_argument("--height", type=int, default=22)
+    ap.add_argument("--min-height", type=int, default=22)
     ap.add_argument("--font-file", type=Path, help="portable QA backend instead of native GDI")
     args = ap.parse_args()
     if not 0 <= args.margin <= 0.03:
