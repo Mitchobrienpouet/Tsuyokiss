@@ -1,0 +1,17 @@
+{
+  "asset": "CGChip.kg",
+  "source_archive": "chip.fpk",
+  "class": "UI",
+  "categories": [
+    {"jp": "乙女", "en": "OTOME"},
+    {"jp": "きぬ", "en": "KINU"},
+    {"jp": "エリカ", "en": "ERIKA"},
+    {"jp": "なごみ", "en": "NAGOMI"},
+    {"jp": "祈", "en": "INORI"},
+    {"jp": "良美", "en": "YOSHIMI"},
+    {"jp": "素奈緒", "en": "SUNAO"},
+    {"jp": "その他", "en": "OTHER"},
+    {"jp": "アイテム", "en": "ITEMS"},
+    {"jp": "背景", "en": "BACKGROUNDS"}
+  ]
+}

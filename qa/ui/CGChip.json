@@ -1,0 +1,42 @@
+{
+  "asset": "CGChip.kg",
+  "class": "UI",
+  "source_archive": "chip.fpk",
+  "dimensions": [
+    1024,
+    1024
+  ],
+  "mode": "RGBA",
+  "alpha_extrema": [
+    0,
+    255
+  ],
+  "font": "/usr/share/fonts/opentype/urw-base35/NimbusSansNarrow-Bold.otf",
+  "font_sha256": "6d7cec07f5a9035e208532dab35a51312aef4a7f26eb524dd614c9fcd97c3264",
+  "source_sha256": "f03bc54973626f4ac195a76efe69c3f2d4313c5627cad8471e4718747e7dd628",
+  "localized_png_sha256": "62a0104edecafd01a841aec5a26db9f33492c3029f5d28e8dad9655a486a757c",
+  "localized_kg_sha256": "3b29bd967f861ab4d740ed397d7966ec87ffe2b63ffb7590c87c0883a8a74e56",
+  "localized_zlc2_sha256": "495575779c908b8ab0bea7046c5e107f288611fc71976673fafbff2948aa1bde",
+  "kg_pixel_roundtrip": "PASS",
+  "zlc2_roundtrip": "PASS",
+  "zlc2_payload_size": 291538,
+  "retail_zlc2_size": 260637,
+  "in_place_slot_fit": "REBUILD_REQUIRED",
+  "injection_mode": "rebuild chip.fpk with replace-member",
+  "allowed_change_pixels": 55600,
+  "outside_allowed_change_pixels": 0,
+  "geometry": {
+    "state_columns_x": [
+      0,
+      123,
+      246,
+      369
+    ],
+    "row_stride_y": 35,
+    "button_size": [
+      123,
+      35
+    ],
+    "canvas_unchanged": true
+  }
+}
