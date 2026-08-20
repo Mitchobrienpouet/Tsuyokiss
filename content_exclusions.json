@@ -502,6 +502,36 @@
         ]
       ],
       "reason": "Sexualized breast objectification, non-consensual molestation, and coerced underwear removal involving high-school students; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_B0900_30_B0910_00",
+      "ranges": [
+        [
+          8,
+          45
+        ]
+      ],
+      "reason": "Sexual planning and fetish roleplay escalating to erotic contact involving high-school students; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_B0910_00_B0920_00",
+      "ranges": [
+        [
+          1,
+          244
+        ]
+      ],
+      "reason": "Continuous explicit sexual scene involving high-school students; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_B0920_00_B0930_00",
+      "ranges": [
+        [
+          1,
+          2
+        ]
+      ],
+      "reason": "Explicit sexual aftermath and ejaculation recollection involving high-school students; excluded from model work and builds by policy."
     }
   ]
 }
