@@ -1570,6 +1570,118 @@
         ]
       ],
       "reason": "Continuous explicit sexualized bathing content involving high-school students; fully excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_E0520_60_E0530_00",
+      "ranges": [
+        [
+          1,
+          14
+        ]
+      ],
+      "reason": "Continuous non-consensual nudity-voyeurism aftermath involving high-school students; fully excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_E0530_00_E0540_00",
+      "ranges": [
+        [
+          17,
+          23
+        ],
+        [
+          30,
+          35
+        ],
+        [
+          361,
+          374
+        ],
+        [
+          500,
+          517
+        ],
+        [
+          528,
+          533
+        ],
+        [
+          548,
+          548
+        ],
+        [
+          559,
+          560
+        ]
+      ],
+      "reason": "Explicit arousal, sexualized body-access jokes, coercive harassment and aftermath, and swimsuit objectification involving high-school students; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_E0550_00_E0560_00",
+      "ranges": [
+        [
+          118,
+          124
+        ]
+      ],
+      "reason": "Involuntary intimate exposure and bath voyeurism involving high-school students; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_E0560_00_E0570_00",
+      "ranges": [
+        [
+          78,
+          80
+        ]
+      ],
+      "reason": "Sexual and reproductive discussion involving a pregnant high-school student; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_E0580_00_E0590_00",
+      "ranges": [
+        [
+          6,
+          8
+        ],
+        [
+          45,
+          49
+        ]
+      ],
+      "reason": "Explicit genital comparison and coercive sexualized bondage/voyeurism staging involving high-school students; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_E0610_00_E0620_00",
+      "ranges": [
+        [
+          107,
+          118
+        ]
+      ],
+      "reason": "Involuntary intimate exposure and bath voyeurism involving high-school students; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_E0620_00_E0630_00",
+      "ranges": [
+        [
+          79,
+          81
+        ],
+        [
+          110,
+          120
+        ]
+      ],
+      "reason": "Sexualized breast dialogue and sustained sexual double entendre involving a high-school student; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_E0650_00_E0650_50",
+      "ranges": [
+        [
+          479,
+          486
+        ]
+      ],
+      "reason": "Sexualized discussion of a high-school student's bra and breast size; excluded from model work and builds by policy."
     }
   ]
 }
