@@ -1,0 +1,205 @@
+{
+  "schema_version": 1,
+  "authoritative": false,
+  "backend": "portable-preflight:/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+  "contract": {
+    "font_face": "MS UI Gothic",
+    "physical_width_px": 659,
+    "max_lines_per_page": 3,
+    "policy": "nominal size, slight local reduction, then word-boundary pagination",
+    "nominal_font_height": 26,
+    "minimum_font_height": 23,
+    "textbox_and_backlog_share_breaks": true,
+    "pagination": {
+      "backlog_entry_per_page": true,
+      "repeat_speaker": true,
+      "repeat_voice_replay": true
+    }
+  },
+  "results": [
+    {
+      "scene": "SC_A0110_90_A0120_00",
+      "seq": "32",
+      "text": "「Regular copies are five hundred yen. The rare one... has the sort of signature where she scribbled something in hiragana, so bidding starts at ten thousand. The last signed one with a cat doodle went for a hundred thousand, though.」",
+      "font_height": 23,
+      "page_count": 2,
+      "pages": [
+        {
+          "lines": [
+            "「Regular copies are five hundred yen. The rare one...",
+            "has the sort of signature where she scribbled something",
+            "in hiragana, so bidding starts at ten thousand. The last"
+          ],
+          "widths_px": [
+            614,
+            650,
+            634
+          ]
+        },
+        {
+          "lines": [
+            "signed one with a cat doodle went for a hundred",
+            "thousand, though.」"
+          ],
+          "widths_px": [
+            560,
+            225
+          ]
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "scene": "SC_A0110_90_A0120_00",
+      "seq": "11",
+      "text": "「She graciously allowed the boys' synchronized swimming club--all two members of it--to operate despite school regulations. When a teacher complained, she drove him off by declaring, 'I gave them permission, so it is fine.'」",
+      "font_height": 23,
+      "page_count": 2,
+      "pages": [
+        {
+          "lines": [
+            "「She graciously allowed the boys' synchronized",
+            "swimming club--all two members of it--to operate",
+            "despite school regulations. When a teacher complained,"
+          ],
+          "widths_px": [
+            551,
+            571,
+            649
+          ]
+        },
+        {
+          "lines": [
+            "she drove him off by declaring, 'I gave them permission,",
+            "so it is fine.'」"
+          ],
+          "widths_px": [
+            651,
+            153
+          ]
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "scene": "SC_A0130_40_A0130_50",
+      "seq": "19",
+      "text": "「Page seventeen of the student handbook: Special Authority of the Disciplinary Committee. A committee member may punish any student who disobeys a caution or warning, provided that no injury is inflicted.」",
+      "font_height": 23,
+      "page_count": 2,
+      "pages": [
+        {
+          "lines": [
+            "「Page seventeen of the student handbook: Special",
+            "Authority of the Disciplinary Committee. A committee",
+            "member may punish any student who disobeys a"
+          ],
+          "widths_px": [
+            587,
+            620,
+            569
+          ]
+        },
+        {
+          "lines": [
+            "caution or warning, provided that no injury is inflicted.」"
+          ],
+          "widths_px": [
+            640
+          ]
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "scene": "SC_A0130_40_A0130_50",
+      "seq": "24",
+      "text": "「Students must enter and leave through the designated entrances when arriving at or departing from school. Students must not climb over the walls surrounding the school grounds. You violated both rules.」",
+      "font_height": 23,
+      "page_count": 2,
+      "pages": [
+        {
+          "lines": [
+            "「Students must enter and leave through the designated",
+            "entrances when arriving at or departing from school.",
+            "Students must not climb over the walls surrounding the"
+          ],
+          "widths_px": [
+            649,
+            609,
+            642
+          ]
+        },
+        {
+          "lines": [
+            "school grounds. You violated both rules.」"
+          ],
+          "widths_px": [
+            473
+          ]
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "scene": "SC_A0100_32_A0100_40",
+      "seq": "10",
+      "text": "「Oh, there are plenty. While the track team, karate club, and everyone else are working their butts off, we saunter home without a care. Then we get there, and suddenly a thought crosses our minds.」",
+      "font_height": 23,
+      "page_count": 2,
+      "pages": [
+        {
+          "lines": [
+            "「Oh, there are plenty. While the track team, karate club,",
+            "and everyone else are working their butts off, we",
+            "saunter home without a care. Then we get there, and"
+          ],
+          "widths_px": [
+            651,
+            568,
+            617
+          ]
+        },
+        {
+          "lines": [
+            "suddenly a thought crosses our minds.」"
+          ],
+          "widths_px": [
+            461
+          ]
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "scene": "SC_A0110_80_A0110_90",
+      "seq": "5",
+      "text": "The school cafeteria was already famous for its good food, and then it had a facility like this. No wonder the students loved it. (There were plenty of ordinary seats inside the building too.)",
+      "font_height": 23,
+      "page_count": 2,
+      "pages": [
+        {
+          "lines": [
+            "The school cafeteria was already famous for its good",
+            "food, and then it had a facility like this. No wonder the",
+            "students loved it. (There were plenty of ordinary seats"
+          ],
+          "widths_px": [
+            610,
+            627,
+            627
+          ]
+        },
+        {
+          "lines": [
+            "inside the building too.)"
+          ],
+          "widths_px": [
+            273
+          ]
+        }
+      ],
+      "status": "PASS"
+    }
+  ]
+}

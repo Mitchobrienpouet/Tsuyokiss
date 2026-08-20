@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "selection": "Longest currently committed non-excluded English messages by portable 26px preflight width; text copied verbatim",
+  "engine_contract": {
+    "font_face": "MS UI Gothic",
+    "physical_width_px": 659,
+    "max_lines_per_page": 3,
+    "policy": "nominal size, slight local reduction, then word-boundary pagination",
+    "nominal_font_height": 26,
+    "minimum_font_height": 23,
+    "textbox_and_backlog_share_breaks": true,
+    "pagination": {
+      "backlog_entry_per_page": true,
+      "repeat_speaker": true,
+      "repeat_voice_replay": true
+    }
+  },
+  "cases": [
+    {
+      "scene": "SC_A0110_90_A0120_00",
+      "seq": "32",
+      "text": "「Regular copies are five hundred yen. The rare one... has the sort of signature where she scribbled something in hiragana, so bidding starts at ten thousand. The last signed one with a cat doodle went for a hundred thousand, though.」"
+    },
+    {
+      "scene": "SC_A0110_90_A0120_00",
+      "seq": "11",
+      "text": "「She graciously allowed the boys' synchronized swimming club--all two members of it--to operate despite school regulations. When a teacher complained, she drove him off by declaring, 'I gave them permission, so it is fine.'」"
+    },
+    {
+      "scene": "SC_A0130_40_A0130_50",
+      "seq": "19",
+      "text": "「Page seventeen of the student handbook: Special Authority of the Disciplinary Committee. A committee member may punish any student who disobeys a caution or warning, provided that no injury is inflicted.」"
+    },
+    {
+      "scene": "SC_A0130_40_A0130_50",
+      "seq": "24",
+      "text": "「Students must enter and leave through the designated entrances when arriving at or departing from school. Students must not climb over the walls surrounding the school grounds. You violated both rules.」"
+    },
+    {
+      "scene": "SC_A0100_32_A0100_40",
+      "seq": "10",
+      "text": "「Oh, there are plenty. While the track team, karate club, and everyone else are working their butts off, we saunter home without a care. Then we get there, and suddenly a thought crosses our minds.」"
+    },
+    {
+      "scene": "SC_A0110_80_A0110_90",
+      "seq": "5",
+      "text": "The school cafeteria was already famous for its good food, and then it had a facility like this. No wonder the students loved it. (There were plenty of ordinary seats inside the building too.)"
+    }
+  ]
+}
