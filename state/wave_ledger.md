@@ -1,5 +1,21 @@
 # Wave ledger
 
+## 250-scene campaign
+
+- Status: FIRED 2026-08-20T06:56:21Z
+- Requested scene count: 250 (64 contiguous shards; short terminal shards preserve narrative-block boundaries)
+- Planned first/last scene: SC_A0440_70_A0440_80 / SC_E0570_30_E0580_00
+- Active execution mode: three Codex Work workers in rolling rotation; supervisor-only validation and GitHub checkpoints
+- Global concurrency ceiling: 6 model calls; at most three workers active in this environment
+- Existing completed coverage excluded from claims: 247 translated scenes plus 1 fully excluded scene
+- Durable claim state: `state/pipeline.json` (local orchestration cache; intentionally ignored by Git)
+- Intended GitHub remote/branch: Mitchobrienpouet/Tsuyokiss / main
+- Starting remotely verified commit: 083a19ad5a37c822a911c5e39e88ab97f6c4e4c0
+- Dead/stalled check at launch: PASS; no active, dead, stalled, or failed runs
+- Translation debt at launch: 250 claimed scenes
+- QC debt at launch: NONE (no newly translated scene has bypassed QC)
+- Checkpoint debt at launch: NONE
+
 ## 200-scene campaign
 
 - Status: COMPLETED 2026-08-20T06:01:12Z
