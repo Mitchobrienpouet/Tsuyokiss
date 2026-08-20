@@ -594,6 +594,32 @@
         ]
       ],
       "reason": "Paid sexual encounters and sexual exploitation involving a high-school student; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_C0450_00_C0500_00",
+      "ranges": [
+        [
+          135,
+          145
+        ],
+        [
+          162,
+          166
+        ],
+        [
+          177,
+          185
+        ],
+        [
+          203,
+          225
+        ],
+        [
+          243,
+          280
+        ]
+      ],
+      "reason": "Explicit genital observation and discussion, shared nudity, sexualized body contact, and exposed bodies involving school-age characters; excluded from model work and builds by policy."
     }
   ]
 }
