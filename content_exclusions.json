@@ -1154,6 +1154,66 @@
         ]
       ],
       "reason": "Explicit sexual activity, coercive sexual contact, and direct sexual recollection involving high-school students; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_D0830_00_D0840_00",
+      "ranges": [
+        [
+          8,
+          10
+        ],
+        [
+          14,
+          14
+        ],
+        [
+          54,
+          54
+        ],
+        [
+          62,
+          64
+        ],
+        [
+          74,
+          190
+        ]
+      ],
+      "reason": "Sexualized bodily discussion and explicit sexual activity involving high-school students; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_D0840_00_D0850_00",
+      "ranges": [
+        [
+          1,
+          451
+        ]
+      ],
+      "reason": "Continuous explicit sexual activity involving high-school students; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_D0850_00_D0860_00",
+      "ranges": [
+        [
+          6,
+          17
+        ]
+      ],
+      "reason": "Explicit sexual aftermath involving high-school students; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_D0860_00_D0870_00",
+      "ranges": [
+        [
+          1,
+          50
+        ],
+        [
+          57,
+          63
+        ]
+      ],
+      "reason": "Explicit sexual activity and sexualized discussion involving high-school students; excluded from model work and builds by policy."
     }
   ]
 }
