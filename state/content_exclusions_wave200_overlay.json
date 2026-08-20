@@ -42,6 +42,51 @@
       "scene": "SC_G0700_00_G0720_00",
       "ranges": [[1, 38]],
       "reason": "Continuous sexualized body appraisal, arousal framing, and sexual invitation involving school-age characters; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_G0750_00_G0760_00",
+      "ranges": [[1, 362]],
+      "reason": "Continuous explicit sexual activity involving high-school students; fully excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_G0760_00_G0800_00",
+      "ranges": [[1, 7], [96, 97], [115, 116], [124, 124]],
+      "reason": "Explicit sexual aftermath, sexualized contact, and sexual-desire references involving high-school students; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_G0800_00_G0850_00",
+      "ranges": [[1, 52], [91, 94], [113, 117], [132, 141], [158, 170], [189, 190], [202, 202], [290, 292], [372, 384], [433, 434], [481, 481], [506, 514]],
+      "reason": "Explicit sexual activity and aftermath, masturbation, sexualized body contact, genital-focused content, and explicit sexual discussion involving high-school students; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_G0850_00_G0860_00",
+      "ranges": [[99, 101]],
+      "reason": "Sexualized voyeuristic setup involving high-school students; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_G0860_20_G0950_00",
+      "ranges": [[33, 59]],
+      "reason": "Explicit sexual discussion and sexualized setup involving high-school students; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_G0870_00_G0900_00",
+      "ranges": [[122, 125], [191, 191]],
+      "reason": "Sexual desire/masturbation disclosure and explicit sexual-activity reference involving a high-school student; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_G0900_00_G0910_00",
+      "ranges": [[79, 84]],
+      "reason": "Sexual proposition involving high-school students; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_G0910_00_G0920_00",
+      "ranges": [[1, 99]],
+      "reason": "Continuous explicit sexual activity and fetishized bodily-function content involving high-school students; fully excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_G0920_00_G0930_00",
+      "ranges": [[1, 5], [41, 43], [49, 53]],
+      "reason": "Explicit sexual aftermath, fetishized bodily-function recap, and masturbation/sexualized contact discussion involving high-school students; excluded from model work and builds by policy."
     }
   ]
 }
