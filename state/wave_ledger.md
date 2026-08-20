@@ -5,11 +5,11 @@
 - Status: FIRED 2026-08-20T04:35:53Z
 - Requested scene count: 200 (50 shards x 4 contiguous scenes)
 - Planned first/last scene: SC_A0130_30_A0130_40 / SC_A0440_60_A0440_70
-- Active concurrency: 6 shards; shards 7-12 are FIRED and shards 13-18 are preflight-cache only / NOT FIRED
-- Completed campaign coverage: 24/200 scenes, 652 source rows
+- Active concurrency: 6 shards; shards 13-18 are FIRED and shards 19-24 are preflight-cache only / NOT FIRED
+- Completed campaign coverage: 48/200 scenes, 1,212 source rows
 - Durable shard plan: `state/preflight_cache_plan.md`
 - Intended GitHub remote/branch: Mitchobrienpouet/Tsuyokiss / main
-- Last remotely verified commit: ceb33a7bfad07cb6043d200da1e463902901b6f9
+- Last remotely verified commit: 036d41574eb12560b6487c9876e2ded8c40182f1
 - Fired shard IDs:
   - shard-SC_A0130_30_A0130_40-SC_A0130_40_A0130_50-SC_A0130_50_A0130_60-SC_A0130_60_A0130_70-f97d2848
   - shard-SC_A0130_70_A0130_80-SC_A0130_80_A0130_90-SC_A0130_90_A0140_00-SC_A0140_00_A0140_10-44b07c85
@@ -23,6 +23,12 @@
   - shard-SC_A0160_90_A0170_00-SC_A0170_00_A0170_10-SC_A0170_10_A0170_20-SC_A0170_20_A0170_30-161d4b6b
   - shard-SC_A0170_30_A0170_40-SC_A0170_40_A0170_50-SC_A0170_50_A0170_60-SC_A0170_70_A0180_00-054399e9
   - shard-SC_A0170_80_A0170_60-SC_A0180_00_A0180_10-SC_A0180_10_A0180_20-SC_A0180_20_A0180_30-b47dbac3
+  - shard-SC_A0180_30_A0180_40-SC_A0180_40_A0180_50-SC_A0180_50_A0180_60-SC_A0180_60_A0180_70-5513aa88
+  - shard-SC_A0180_70_A0180_80-SC_A0180_80_A0180_90-SC_A0180_90_A0190_00-SC_A0190_00_A0190_10-47fe666a
+  - shard-SC_A0190_10_A0190_20-SC_A0190_20_A0190_30-SC_A0190_30_A0190_40-SC_A0190_40_A0190_50-33272ab4
+  - shard-SC_A0190_50_A0190_60-SC_A0190_60_A0190_70-SC_A0190_70_A0190_80-SC_A0190_80_A0190_90-36b3027e
+  - shard-SC_A0190_90_A0200_00-SC_A0200_00_A0200_10-SC_A0200_10_A0200_20-SC_A0200_20_A0200_30-2eead99a
+  - shard-SC_A0200_30_A0200_40-SC_A0200_40_A0200_50-SC_A0200_50_A0200_60-SC_A0200_60_A0200_70-d81c2317
 - Checkpoint debt: NONE
 
 ## Wave 2
