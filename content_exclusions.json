@@ -1823,6 +1823,13 @@
         [1, 166]
       ],
       "reason": "Continuous explicit sexual activity involving high-school students; fully excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_E0960_00_E0990_00",
+      "ranges": [
+        [39, 39]
+      ],
+      "reason": "Sexualized romantic contact involving high-school students; excluded from model work and builds by policy."
     }
   ]
 }
