@@ -1,0 +1,21 @@
+{
+  "file": "SC_A0110_50_A0110_60",
+  "speaker_map": {
+    "レオ": "Leo",
+    "きぬ": "Kinu",
+    "新一": "Shinichi",
+    "祈": "Inori"
+  },
+  "lines": {
+    "1": "\"Damn it... One look at Fukahire's score will soothe my wounded heart.\"",
+    "2": "\"I wonder what Fukahire got. I really don't want to lose to him.\"",
+    "3": "I could hear the groans of everyone who had gotten a bad score.",
+    "4": "「The line to compare scores with Fukahire starts here! No pushing, please!」",
+    "5": "「First five people, raise your right hands! All right, move along in order!」",
+    "6": "「Man, crowd control is hard work.」",
+    "7": "「You really are popular whenever tests come back, Fukahire.」",
+    "8": "「Like I keep saying... that doesn't make me happy!」",
+    "9": "「All right, all right. You can lick each other's wounds later. Take your seats now, please. We are resuming class.」",
+    "10": "............"
+  }
+}
