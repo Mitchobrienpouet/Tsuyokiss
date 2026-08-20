@@ -4,58 +4,174 @@
   "entries": [
     {
       "scene": "SC_A0160_80_A0160_90",
-      "indexes": ["24"],
+      "indexes": [
+        "24"
+      ],
       "reason": "Explicit sexualized content involving school-age characters; excluded from model work and builds by policy."
     },
     {
       "scene": "SC_A0240_10_A0240_20",
-      "ranges": [[1, 24]],
+      "ranges": [
+        [
+          1,
+          24
+        ]
+      ],
       "reason": "Explicit sexualized content involving high-school students; excluded from model work and builds by policy."
     },
     {
       "scene": "SC_A0240_30_A0240_40",
-      "ranges": [[27, 35]],
+      "ranges": [
+        [
+          27,
+          35
+        ]
+      ],
       "reason": "Explicit sexualized contact involving high-school students; excluded from model work and builds by policy."
     },
     {
       "scene": "SC_A0360_00_A0360_10",
-      "ranges": [[8, 14]],
+      "ranges": [
+        [
+          8,
+          14
+        ]
+      ],
       "reason": "Explicit sexualized discussion involving high-school students; excluded from model work and builds by policy."
     },
     {
       "scene": "SC_A0360_10_A0360_20",
-      "ranges": [[9, 18]],
+      "ranges": [
+        [
+          9,
+          18
+        ]
+      ],
       "reason": "Explicit sexualized contact involving high-school students; excluded from model work and builds by policy."
     },
     {
       "scene": "SC_A0370_10_A0370_20",
-      "ranges": [[10, 15]],
+      "ranges": [
+        [
+          10,
+          15
+        ]
+      ],
       "reason": "Explicit sexual scenario involving high-school students; excluded from model work and builds by policy."
     },
     {
       "scene": "SC_A0400_20_A0400_30",
-      "ranges": [[1, 10]],
+      "ranges": [
+        [
+          1,
+          10
+        ]
+      ],
       "reason": "Explicit sexual scenario involving high-school students; excluded from model work and builds by policy."
     },
     {
       "scene": "SC_A0400_30_A0400_40",
-      "ranges": [[5, 8]],
+      "ranges": [
+        [
+          5,
+          8
+        ]
+      ],
       "reason": "Explicit sexualized contact involving high-school students; excluded from model work and builds by policy."
     },
     {
       "scene": "SC_A0430_50_A0430_60",
-      "ranges": [[2, 24]],
+      "ranges": [
+        [
+          2,
+          24
+        ]
+      ],
       "reason": "Explicit sexualized contact involving high-school students; excluded from model work and builds by policy."
     },
     {
       "scene": "SC_A0430_80_A0430_90",
-      "ranges": [[4, 14]],
+      "ranges": [
+        [
+          4,
+          14
+        ]
+      ],
       "reason": "Explicit sexual discussion involving high-school students; excluded from model work and builds by policy."
     },
     {
       "scene": "SC_B0190_50_B0200_00",
-      "ranges": [[64, 68], [84, 94]],
+      "ranges": [
+        [
+          64,
+          68
+        ],
+        [
+          84,
+          94
+        ]
+      ],
       "reason": "Sexualized contact and bondage/arousal material involving high-school students; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_B0390_00_B0400_00",
+      "ranges": [
+        [
+          429,
+          431
+        ],
+        [
+          557,
+          560
+        ],
+        [
+          565,
+          570
+        ]
+      ],
+      "reason": "Sexualized exposure, planned non-consensual touching, and explicit harassment discussion involving high-school students; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_B0400_00_B0500_00",
+      "ranges": [
+        [
+          94,
+          97
+        ],
+        [
+          155,
+          172
+        ],
+        [
+          184,
+          190
+        ],
+        [
+          202,
+          202
+        ],
+        [
+          205,
+          205
+        ],
+        [
+          240,
+          243
+        ],
+        [
+          246,
+          249
+        ],
+        [
+          261,
+          264
+        ],
+        [
+          346,
+          350
+        ]
+      ],
+      "reason": "Explicit sexual desire, forced intimate contact, arousal, masturbation, and breast contact involving high-school students; excluded from model work and builds by policy."
     }
   ]
 }
