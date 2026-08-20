@@ -1414,6 +1414,162 @@
         ]
       ],
       "reason": "Prostitution and sexual-exploitation framing involving a high-school student; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_E0360_00_E0370_00",
+      "ranges": [
+        [
+          11,
+          24
+        ]
+      ],
+      "reason": "Sexualized and coercive sexual fantasy involving high-school students; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_E0380_00_E0390_00",
+      "ranges": [
+        [
+          10,
+          12
+        ]
+      ],
+      "reason": "Sexualized swimsuit display and bodily reaction involving high-school students; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_E0400_10_E0410_00",
+      "ranges": [
+        [
+          163,
+          167
+        ],
+        [
+          175,
+          175
+        ]
+      ],
+      "reason": "Non-consensual voyeurism, underwear exposure, and sexualized objectification involving high-school students; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_E0430_00_E0440_00",
+      "ranges": [
+        [
+          29,
+          31
+        ]
+      ],
+      "reason": "Sexualized swimsuit commentary involving a high-school student; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_E0450_00_E0460_00",
+      "ranges": [
+        [
+          26,
+          29
+        ],
+        [
+          52,
+          53
+        ]
+      ],
+      "reason": "Explicit sexual pun and pornographic discussion involving high-school students; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_E0460_00_E0470_00",
+      "ranges": [
+        [
+          37,
+          40
+        ],
+        [
+          74,
+          80
+        ],
+        [
+          123,
+          128
+        ]
+      ],
+      "reason": "Sexual solicitation, non-consensual underwear exposure, and sexualized harassment involving high-school students; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_E0490_00_E0500_00",
+      "ranges": [
+        [
+          45,
+          54
+        ],
+        [
+          87,
+          98
+        ],
+        [
+          101,
+          137
+        ],
+        [
+          150,
+          183
+        ],
+        [
+          189,
+          192
+        ],
+        [
+          312,
+          315
+        ]
+      ],
+      "reason": "Voyeurism, sexualized swimsuit and body appraisal, breast-focused harassment, and eroticized contact involving high-school students; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_E0510_00_E0520_00",
+      "ranges": [
+        [
+          87,
+          101
+        ]
+      ],
+      "reason": "Mixed-bathing nudity and repeated voyeuristic desire involving high-school students; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_E0520_10_E0520_30",
+      "ranges": [
+        [
+          1,
+          23
+        ]
+      ],
+      "reason": "Continuous non-consensual bath voyeurism and explicit nudity involving high-school students; fully excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_E0520_30_E0520_40",
+      "ranges": [
+        [
+          1,
+          16
+        ]
+      ],
+      "reason": "Continuous non-consensual bath voyeurism and explicit nudity involving high-school students; fully excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_E0520_40_E0520_60",
+      "ranges": [
+        [
+          1,
+          68
+        ]
+      ],
+      "reason": "Continuous explicit sexualized bathing, nudity, and touching involving high-school students; fully excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_E0520_50_E0520_60",
+      "ranges": [
+        [
+          1,
+          5
+        ]
+      ],
+      "reason": "Continuous explicit sexualized bathing content involving high-school students; fully excluded from model work and builds by policy."
     }
   ]
 }
