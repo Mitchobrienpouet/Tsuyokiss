@@ -5,8 +5,8 @@
 - Status: FIRED 2026-08-20T09:06:06Z
 - Requested scene count: 300 (77 contiguous shards; short route-terminal shards preserve narrative-block boundaries)
 - Planned first/last scene: SC_C0200_00_C0300_00 / SC_G0920_00_G0930_00
-- Progress checkpoint: 160/300 scenes closed; 140 scenes remain claimed
-- Last remotely verified campaign checkpoint: 912d019b40805b55e3b49502cd38ad0e5be825cc
+- Progress checkpoint: 180/300 scenes closed; 120 scenes remain claimed
+- Last remotely verified campaign checkpoint: e5b2922608084e54c5625851f7e2c6cc85357cca
 - Anti-block recovery: SC_C0600_40_C0650_00 was translated in six exact permitted-index segments, mechanically merged, then independently accuracy-QCed, literary-QCed, and arbitrated as one canonical scene
 - Active execution mode: three Codex Work workers in rolling rotation; supervisor-only validation and GitHub checkpoints
 - Global concurrency ceiling: 6 model calls; at most three workers active in this environment
@@ -21,6 +21,7 @@
 - Anti-block recovery: shards 22-30 are closed. Shard 29 contains one fully excluded scene; the other eleven scenes/partials passed both QC lenses, arbitration, JSON/index, exclusion, and CP932 gates.
 - Anti-block recovery: shards 31-33 are closed after exact fail-closed filtering in shards 31 and 33; all twelve permitted scene outputs passed both QC lenses, arbitration, JSON/index, exclusion, and CP932 gates.
 - Anti-block recovery: shards 34-36 are closed after exact fail-closed filtering; shard 39 was independently classified as four fully excluded bath-voyeurism scenes. Twelve permitted outputs passed both QC lenses, arbitration, JSON/index, exclusion, and CP932 gates.
+- Anti-block recovery: shards 37-38 and 40-42 are closed after exact fail-closed filtering. Shard 40 contains one fully excluded scene; nineteen permitted outputs passed both QC lenses, arbitration, JSON/index, exclusion, and CP932 gates.
 - Starting remotely verified commit: 60cc5e1d1833f77ae11584ea9b3c022f500a2630
 - Dead/stalled check at launch: PASS; no active, dead, stalled, or failed runs
 - Translation debt at launch: 300 claimed scenes
