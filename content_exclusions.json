@@ -316,6 +316,82 @@
         ]
       ],
       "reason": "Continuous explicit sexual scene involving high-school students; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_B0680_00_B0690_00",
+      "ranges": [
+        [
+          3,
+          3
+        ],
+        [
+          16,
+          21
+        ]
+      ],
+      "reason": "Sexual request and coercive physical pressure involving high-school students; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_B0690_00_B0700_00",
+      "ranges": [
+        [
+          15,
+          16
+        ],
+        [
+          22,
+          46
+        ],
+        [
+          49,
+          49
+        ],
+        [
+          53,
+          55
+        ]
+      ],
+      "reason": "Sexual proposition, forced stripping and oral contact, and explicit objectification involving high-school students; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_B0700_00_B0720_00",
+      "ranges": [
+        [
+          32,
+          48
+        ],
+        [
+          66,
+          68
+        ],
+        [
+          233,
+          247
+        ]
+      ],
+      "reason": "Explicit sexual acts, coercion, masturbation, and sexual-control discussion involving high-school students; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_B0720_00_B0800_00",
+      "ranges": [
+        [
+          22,
+          25
+        ],
+        [
+          82,
+          92
+        ],
+        [
+          98,
+          110
+        ],
+        [
+          116,
+          134
+        ]
+      ],
+      "reason": "Pornography, arousal, sexual planning, and escalating sexual contact involving high-school students; excluded from model work and builds by policy."
     }
   ]
 }
