@@ -6,7 +6,7 @@
 - Requested scene count: 300 (77 contiguous shards; short route-terminal shards preserve narrative-block boundaries)
 - Planned first/last scene: SC_C0200_00_C0300_00 / SC_G0920_00_G0930_00
 - Progress checkpoint: 97/300 scenes closed (85 translated, 12 fully excluded); 203 scenes remain claimed
-- Last remotely verified campaign checkpoint: 28bf6c403277fcfc9bc75c227d238afa9d9002aa
+- Last remotely verified campaign checkpoint: 05f529efbca526efe43009d87e67e803f11ca399
 - Anti-block recovery: SC_C0600_40_C0650_00 was translated in six exact permitted-index segments, mechanically merged, then independently accuracy-QCed, literary-QCed, and arbitrated as one canonical scene
 - Active execution mode: three Codex Work workers in rolling rotation; supervisor-only validation and GitHub checkpoints
 - Global concurrency ceiling: 6 model calls; at most three workers active in this environment
