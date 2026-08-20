@@ -37,7 +37,7 @@ Corpus extrait : 13 blocs scénario (0028–0040), 299 627 lignes physiques, 59 
 Exemple Windows, après avoir renseigné les traductions dans le champ `text` :
 
 ```powershell
-python scripts/tsuyokiss_wrap.py translations.jsonl wrapped.jsonl --face "MS UI Gothic" --height 26 --width 659 --margin 0.00
+python scripts/tsuyokiss_wrap.py translations.jsonl wrapped.jsonl --face "MS UI Gothic" --height 22 --min-height 22 --width 659 --margin 0.00
 python scripts/tsuyokiss_scenario.py apply data_blocks wrapped.jsonl translated_blocks
 python scripts/zlc2_repack_inplace.py data.fpk data_blocks/manifest.json translated_blocks data.patched.fpk
 ```
@@ -53,6 +53,6 @@ python scripts/zlc2_repack_inplace.py data.fpk data_blocks/manifest.json transla
 
 ## Limites à ne pas masquer
 
-La preuve statique établit le comportement de mesure/rendu, mais une validation visuelle native reste obligatoire pour figer la hauteur de police et confirmer la borne droite exacte. Le défaut proposé (`MS UI Gothic`, hauteur 26, largeur 659) est une hypothèse étayée par la géométrie et le corpus japonais, pas encore une mesure runtime.
+La preuve statique établit le comportement de mesure/rendu, mais une validation visuelle native reste obligatoire pour figer la hauteur de police et confirmer la borne droite exacte. Le profil anglais demandé utilise désormais `MS UI Gothic`, hauteur nominale et minimale 22 px, largeur 659 px. La largeur est étayée par la géométrie et le corpus japonais ; l’application effective des 22 px dans `tkfe.exe` reste à confirmer et à valider au runtime.
 
 La réinjection FPK en place est sûre mais volontairement restrictive : une traduction qui rend un bloc compressé plus grand que son créneau est rejetée. Le test anglais volontairement plus long a bien déclenché ce garde-fou. Pour supprimer cette contrainte, il faudra reconstruire puis prouver la table d'index RLE/chiffrée du FPK, ou patcher le chargeur afin de lire un conteneur externe. Aucun de ces deux changements n'est présenté ici comme terminé.
