@@ -440,6 +440,68 @@
         ]
       ],
       "reason": "Sexualized breast contact, explicit sexual-activity discussion, and shared-nudity transition involving high-school students; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_B0860_00_B0870_00",
+      "ranges": [
+        [
+          1,
+          41
+        ]
+      ],
+      "reason": "Continuous explicit manual sexual activity and nudity involving high-school students; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_B0870_00_B0880_00",
+      "ranges": [
+        [
+          26,
+          28
+        ],
+        [
+          32,
+          32
+        ],
+        [
+          35,
+          38
+        ],
+        [
+          41,
+          41
+        ],
+        [
+          48,
+          48
+        ],
+        [
+          50,
+          50
+        ],
+        [
+          53,
+          53
+        ]
+      ],
+      "reason": "Sexualized kissing, fondling, and arousal involving high-school students; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_B0880_00_B0900_00",
+      "ranges": [
+        [
+          65,
+          68
+        ],
+        [
+          122,
+          139
+        ],
+        [
+          198,
+          203
+        ]
+      ],
+      "reason": "Sexualized breast objectification, non-consensual molestation, and coerced underwear removal involving high-school students; excluded from model work and builds by policy."
     }
   ]
 }
