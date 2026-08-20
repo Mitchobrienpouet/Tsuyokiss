@@ -1,0 +1,20 @@
+{
+  "file": "SC_G0340_00_G0350_00",
+  "speaker_map": {
+    "良美": "Yoshimi",
+    "レオ": "Leo"
+  },
+  "lines": {
+    "1": "「Tsushima, are you okay?」",
+    "2": "「Y-yeah. I'm fine.」",
+    "10": "「Tsushima, what should we do...」",
+    "11": "「What's wrong?」",
+    "12": "「I feel a sneeze coming on...」",
+    "13": "「H-hold it in with sheer willpower.」",
+    "14": "「C-could you rub my back? Maybe that'll help...」",
+    "15": "「Mm, okay.」",
+    "16": "I gently rubbed Sato's back.",
+    "17": "「How's that?」",
+    "18": "「I think... I'm okay.」"
+  }
+}
