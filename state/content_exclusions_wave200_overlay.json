@@ -20,6 +20,10 @@
     {"scene":"SC_G0870_00_G0900_00","ranges":[[122,125],[191,191]],"reason":"Sexual desire/masturbation disclosure and explicit sexual-activity reference involving a high-school student; excluded from model work and builds by policy."},
     {"scene":"SC_G0900_00_G0910_00","ranges":[[79,84]],"reason":"Sexual proposition involving high-school students; excluded from model work and builds by policy."},
     {"scene":"SC_G0910_00_G0920_00","ranges":[[1,99]],"reason":"Continuous explicit sexual activity and fetishized bodily-function content involving high-school students; fully excluded from model work and builds by policy."},
-    {"scene":"SC_G0920_00_G0930_00","ranges":[[1,5],[41,43],[49,53]],"reason":"Explicit sexual aftermath, fetishized bodily-function recap, and masturbation/sexualized contact discussion involving high-school students; excluded from model work and builds by policy."}
+    {"scene":"SC_G0920_00_G0930_00","ranges":[[1,5],[41,43],[49,53]],"reason":"Explicit sexual aftermath, fetishized bodily-function recap, and masturbation/sexualized contact discussion involving high-school students; excluded from model work and builds by policy."},
+    {"scene":"SC_G0950_00_G0960_00","ranges":[[1,191]],"reason":"Continuous explicit sexual activity involving high-school students; fully excluded from model work and builds by policy."},
+    {"scene":"SC_G0960_00_G0970_00","ranges":[[1,5]],"reason":"Direct connected aftermath of the preceding explicit sexual scene involving high-school students; fully excluded from model work and builds by policy."},
+    {"scene":"SC_G0970_00_Z9999_99","ranges":[[1,90],[102,116]],"reason":"Connected explicit sexual aftermath and sexualized punishment/recap involving high-school students; only the non-sexual reconciliation coda remains eligible."},
+    {"scene":"SC_G0990_00_Z9999_99","ranges":[[42,45]],"reason":"Explicit sexual invitation and sexualized relationship remarks involving high-school students; excluded from model work and builds by policy."}
   ]
 }
