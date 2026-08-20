@@ -1,0 +1,27 @@
+{
+  "file": "SC_F0760_00_F0770_00",
+  "speaker_map": {
+    "エリカ": "Erika",
+    "乙女": "Otome",
+    "良美": "Yoshimi"
+  },
+  "lines": {
+    "1": "「All right, Otome gets nine handicap stones and Yoppi gets three. I'll play both boards at once.」",
+    "2": "「Nine stones? Do not underestimate me.」",
+    "3": "「Well, I'm freakishly strong at Go too.」",
+    "4": "「Hmph. I'll make the Princess's next words, '...I resign.' (That's how you concede a game of Go.)」",
+    "5": "...............",
+    "6": "「...I resign.」",
+    "7": "「You're surprisingly weak, Otome.」",
+    "8": "「One more game.」",
+    "9": "「By the way, where are Tsushima and the other boys?」",
+    "10": "「Leo has remedial lessons and Subaru has club practice. I think Shinichi went home.」",
+    "11": "「Princess, are you listening? One more game.」",
+    "12": "「Yoppi, lock the door.」",
+    "13": "「?」",
+    "21": "「Hm, come to think of it, Leo said something about remedial lessons earlier.」",
+    "22": "「Yes. Inori assigned them to him personally...」",
+    "23": "「I see. His academic ability still falls short. Perhaps I should tutor him at home as well...」",
+    "24": "................"
+  }
+}
