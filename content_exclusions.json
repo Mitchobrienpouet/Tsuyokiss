@@ -392,6 +392,54 @@
         ]
       ],
       "reason": "Pornography, arousal, sexual planning, and escalating sexual contact involving high-school students; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_B0800_00_B0810_00",
+      "ranges": [
+        [
+          1,
+          220
+        ]
+      ],
+      "reason": "Continuous explicit sexual scene involving high-school students; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_B0810_00_B0820_00",
+      "ranges": [
+        [
+          1,
+          12
+        ]
+      ],
+      "reason": "Continuous explicit post-sex aftermath and repeated-intercourse discussion involving high-school students; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_B0820_00_B0850_00",
+      "ranges": [
+        [
+          1,
+          26
+        ]
+      ],
+      "reason": "Explicit post-sex aftermath and repeated-sex discussion involving high-school students; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_B0850_00_B0860_00",
+      "ranges": [
+        [
+          178,
+          178
+        ],
+        [
+          196,
+          215
+        ],
+        [
+          244,
+          248
+        ]
+      ],
+      "reason": "Sexualized breast contact, explicit sexual-activity discussion, and shared-nudity transition involving high-school students; excluded from model work and builds by policy."
     }
   ]
 }
