@@ -1,0 +1,14 @@
+{
+  "file": "SC_A0200_90_A0210_00",
+  "speaker_map": {"レオ": "Leo", "乙女": "Otome"},
+  "lines": {
+    "1": "「Well, I'll do enough to meet my quota.」",
+    "2": "「How is it going? Making progress?」",
+    "3": "「Yeah.」",
+    "4": "「Hm. There are still small stains left. Look, for example, at this mark on the wall.」",
+    "5": "Otome sprayed cleaner on it and scrubbed hard with a cloth.",
+    "6": "「If you work carefully like this, it will come clean.」",
+    "7": "「This is the house you live in. Put some spirit into it.」",
+    "8": "Damn. She would not allow any compromise."
+  }
+}
