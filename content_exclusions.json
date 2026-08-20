@@ -1316,6 +1316,40 @@
         ]
       ],
       "reason": "Sexualized bodily recollection and under-skirt exposure involving high-school students; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_D0940_00_D0950_00",
+      "ranges": [
+        [
+          13,
+          14
+        ],
+        [
+          75,
+          81
+        ]
+      ],
+      "reason": "Sexualized shared-undressing and direct transition into sexual activity involving high-school students; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_D0950_00_D0960_00",
+      "ranges": [
+        [
+          1,
+          186
+        ]
+      ],
+      "reason": "Continuous explicit sexual activity involving high-school students; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_D0960_00_D0990_00",
+      "ranges": [
+        [
+          1,
+          19
+        ]
+      ],
+      "reason": "Direct explicit sexual aftermath involving high-school students; excluded from model work and builds by policy."
     }
   ]
 }
