@@ -1,0 +1,21 @@
+{
+  "file": "SC_B0170_20_B0180_00",
+  "speaker_map": {
+    "レオ": "Leo",
+    "良美": "Yoshimi",
+    "エリカ": "Erika",
+    "きぬ": "Kinu"
+  },
+  "lines": {
+    "1": "「Actually, Sato.」",
+    "2": "「What...? Me...?」",
+    "3": "「Oh? Good for you, Yoppi.」",
+    "4": "Shove!",
+    "5": "「D-Don't push me!」",
+    "6": "「Can't let your guard down around Yoppi.」",
+    "7": "Shove!",
+    "8": "「Oww... It hurts when you push that hard...」",
+    "9": "Either way, Sato was the one getting bullied.",
+    "10": "Poor girl."
+  }
+}
