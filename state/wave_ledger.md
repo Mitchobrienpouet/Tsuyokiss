@@ -5,6 +5,8 @@
 - Status: FIRED 2026-08-20T09:06:06Z
 - Requested scene count: 300 (77 contiguous shards; short route-terminal shards preserve narrative-block boundaries)
 - Planned first/last scene: SC_C0200_00_C0300_00 / SC_G0920_00_G0930_00
+- Progress checkpoint: 57/300 scenes closed (49 translated, 8 fully excluded); 243 scenes remain claimed
+- Anti-block recovery: SC_C0600_40_C0650_00 was translated in six exact permitted-index segments, mechanically merged, then independently accuracy-QCed, literary-QCed, and arbitrated as one canonical scene
 - Active execution mode: three Codex Work workers in rolling rotation; supervisor-only validation and GitHub checkpoints
 - Global concurrency ceiling: 6 model calls; at most three workers active in this environment
 - Existing completed coverage excluded from claims: 322 translated scenes plus 11 fully excluded scenes
@@ -12,7 +14,7 @@
 - Additional new coverage claimed: 135 scenes, for an exact 300-scene continuation wave
 - Durable shard plan: `state/wave_300_plan.md`
 - Durable claim state: `state/pipeline.json` (local orchestration cache; intentionally ignored by Git)
-- Intended GitHub remote/branch: Mitchobrienpouet/Tsuyokiss / main
+- Intended GitHub remote/branch: Mitchobrienpouet/Tsuyokiss / codex/wave-300-continuation-20260820 (default `main` is protected)
 - Starting remotely verified commit: 60cc5e1d1833f77ae11584ea9b3c022f500a2630
 - Dead/stalled check at launch: PASS; no active, dead, stalled, or failed runs
 - Translation debt at launch: 300 claimed scenes
