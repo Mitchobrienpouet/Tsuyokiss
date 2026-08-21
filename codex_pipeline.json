@@ -11,7 +11,6 @@
   "codec": "cp932",
   "content_exclusions": "content_exclusions.json",
   "content_exclusion_overlays": [
-    "state/content_exclusions_wave200_overlay.json",
     "state/content_exclusions_wave500_overlay.json"
   ],
   "narrative_gates": "narrative_gates.json",
