@@ -1,0 +1,868 @@
+{
+  "schema_version": 1,
+  "branch": "codex/wave-300-continuation-20260820",
+  "base_checkpoint": 72,
+  "shards": {
+    "72": [
+      {
+        "scene": "SC_G0390_00_G0400_00",
+        "translation_exists": false,
+        "accuracy_qc_exists": false,
+        "literary_qc_exists": false,
+        "canonical_exclusion": {
+          "scene": "SC_G0390_00_G0400_00",
+          "ranges": [
+            [
+              1,
+              2
+            ]
+          ],
+          "reason": "Connected explicit sexual self-stimulation aftermath involving a high-school student; fully excluded from model work and builds by policy."
+        },
+        "ever_committed_translation": false,
+        "tracked_references": [
+          ".github/workflows/audit-wave300-tail.yml",
+          "content_exclusions.json",
+          "scratchpad/specs/SC_G0390_00_G0400_00-SC_G0400_00_G0420_00-SC_G0420_00_G0440_00-SC_G0440_00_G0460_00.md",
+          "state/checkpoint_250campaign_shard72.md",
+          "state/content_exclusions_wave200_overlay.json",
+          "state/restricted_findings_shard71.md",
+          "state/restricted_findings_shard72.md",
+          "state/wave_200_continuation_20260820.md",
+          "state/wave_300_plan.md"
+        ],
+        "accuracy_summary": [],
+        "literary_summary": []
+      },
+      {
+        "scene": "SC_G0400_00_G0420_00",
+        "translation_exists": true,
+        "accuracy_qc_exists": true,
+        "literary_qc_exists": true,
+        "canonical_exclusion": null,
+        "ever_committed_translation": true,
+        "tracked_references": [
+          ".github/workflows/audit-wave300-tail.yml",
+          "qc/accuracy/SC_G0400_00_G0420_00.md",
+          "qc/literary/SC_G0400_00_G0420_00.md",
+          "scratchpad/specs/SC_G0390_00_G0400_00-SC_G0400_00_G0420_00-SC_G0420_00_G0440_00-SC_G0440_00_G0460_00.md",
+          "state/checkpoint_250campaign_shard72.md",
+          "state/restricted_findings_shard72.md",
+          "state/wave_200_continuation_20260820.md",
+          "state/wave_300_plan.md",
+          "translations/SC_G0400_00_G0420_00.json"
+        ],
+        "translation_row_count": 25,
+        "translation_first_index": 1,
+        "translation_last_index": 25,
+        "translation_missing_inside_span": [],
+        "accuracy_summary": [
+          "PASS for all 25/25 permitted rows. Homeroom chatter, Yoshimi's unexplained absence, Leo's heightened awareness of her arrival, the class's reliance on her, Erika's concern, and the after-school worry sequence preserve speaker, agency, tense, and uncertainty. `Yoppi`, `Princess`, homeroom register, Mana's morbid joke, and Tonfa's clipped grammar are consistent with locks.",
+          "No excluded row is present. Exact indexes, JSON structure, ASCII typography, and CP932 encoding pass. Materially defensible alternatives: NONE."
+        ],
+        "literary_summary": []
+      },
+      {
+        "scene": "SC_G0420_00_G0440_00",
+        "translation_exists": true,
+        "accuracy_qc_exists": true,
+        "literary_qc_exists": true,
+        "canonical_exclusion": null,
+        "ever_committed_translation": true,
+        "tracked_references": [
+          ".github/workflows/audit-wave300-tail.yml",
+          "qc/accuracy/SC_G0420_00_G0440_00.md",
+          "qc/literary/SC_G0420_00_G0440_00.md",
+          "scratchpad/specs/SC_G0390_00_G0400_00-SC_G0400_00_G0420_00-SC_G0420_00_G0440_00-SC_G0440_00_G0460_00.md",
+          "state/checkpoint_250campaign_shard72.md",
+          "state/restricted_findings_shard72.md",
+          "state/wave_200_continuation_20260820.md",
+          "state/wave_300_plan.md",
+          "translations/SC_G0420_00_G0440_00.json"
+        ],
+        "translation_row_count": 19,
+        "translation_first_index": 1,
+        "translation_last_index": 19,
+        "translation_missing_inside_span": [],
+        "accuracy_summary": [
+          "PASS for all 19/19 permitted rows. The blackboard, flowers, lectern area, window locking, and repeated discovery that Yoshimi normally handles each task preserve source sequence and attribution. The `以下略` repetition remains `et cetera`, while Kinu's `イカ` is retained as the deliberate sound-pun non sequitur `Squid.`. Erika's inability to reach Yoshimi remains unresolved.",
+          "Exact indexes, JSON structure, ASCII typography, exclusion boundary, and CP932 encoding pass. Materially defensible alternatives: NONE."
+        ],
+        "literary_summary": []
+      },
+      {
+        "scene": "SC_G0440_00_G0460_00",
+        "translation_exists": true,
+        "accuracy_qc_exists": true,
+        "literary_qc_exists": true,
+        "canonical_exclusion": null,
+        "ever_committed_translation": true,
+        "tracked_references": [
+          ".github/workflows/audit-wave300-tail.yml",
+          "qc/accuracy/SC_G0440_00_G0460_00.md",
+          "qc/literary/SC_G0440_00_G0460_00.md",
+          "scratchpad/specs/SC_G0390_00_G0400_00-SC_G0400_00_G0420_00-SC_G0420_00_G0440_00-SC_G0440_00_G0460_00.md",
+          "state/checkpoint_250campaign_shard72.md",
+          "state/restricted_findings_shard72.md",
+          "state/wave_200_continuation_20260820.md",
+          "state/wave_300_plan.md",
+          "translations/SC_G0440_00_G0460_00.json"
+        ],
+        "translation_row_count": 41,
+        "translation_first_index": 1,
+        "translation_last_index": 41,
+        "translation_missing_inside_span": [],
+        "accuracy_summary": [
+          "PASS for all 41/41 permitted rows. Erika's business conflict, her inference that Yoshimi seems to like/trust Leo, the request to check on Yoshimi, repeated warnings not to enter, emergency phone-number handoff, repeated returns to add instructions, and Leo's resolve all preserve agency and modality. References to the preceding event remain deliberately generic and do not reconstruct filtered material. Erika's concern is strong but is not converted into a romantic claim.",
+          "Exact indexes, JSON structure, speaker map, exclusion boundary, ASCII typography, and CP932 encoding pass. Materially defensible alternatives: NONE."
+        ],
+        "literary_summary": []
+      }
+    ],
+    "73": [
+      {
+        "scene": "SC_G0460_00_G0480_00",
+        "translation_exists": true,
+        "accuracy_qc_exists": true,
+        "literary_qc_exists": true,
+        "canonical_exclusion": null,
+        "ever_committed_translation": true,
+        "tracked_references": [
+          ".github/workflows/audit-wave300-tail.yml",
+          "qc/accuracy/SC_G0460_00_G0480_00.md",
+          "qc/literary/SC_G0460_00_G0480_00.md",
+          "scratchpad/specs/SC_G0460_00_G0480_00-SC_G0480_00_G0500_00-SC_G0500_00_G0520_00-SC_G0520_00_G0540_00.md",
+          "state/content_exclusions_wave200_overlay.json",
+          "state/restricted_findings_wave200_shard02.md",
+          "state/wave_200_continuation_20260820.md",
+          "state/wave_300_plan.md",
+          "translations/SC_G0460_00_G0480_00.json"
+        ],
+        "translation_row_count": 97,
+        "translation_first_index": 1,
+        "translation_last_index": 97,
+        "translation_missing_inside_span": [],
+        "accuracy_summary": [
+          "PASS for all 97/97 permitted rows. Apartment number, dummy-name safety explanation, delayed cleanup, slight-fever check, Erika's message, Yoshimi's loneliness, school conversation, and Leo's attempt to leave at night preserve speaker, agency, sequence, and uncertainty. The locker reference remains limited to the source's generic close-contact statement and does not reconstruct filtered detail. `Gonorego` is retained as the source parody-name transliteration rather than normalized to a real title.",
+          "The output stops exactly at index 97. Excluded indexes 98-116 are absent. JSON structure, exact indexes, ASCII typography, and CP932 encoding pass. Materially defensible alternatives: NONE."
+        ],
+        "literary_summary": []
+      },
+      {
+        "scene": "SC_G0480_00_G0500_00",
+        "translation_exists": false,
+        "accuracy_qc_exists": false,
+        "literary_qc_exists": false,
+        "canonical_exclusion": null,
+        "ever_committed_translation": false,
+        "tracked_references": [
+          ".github/workflows/audit-wave300-tail.yml",
+          "scratchpad/specs/SC_G0460_00_G0480_00-SC_G0480_00_G0500_00-SC_G0500_00_G0520_00-SC_G0520_00_G0540_00.md",
+          "state/content_exclusions_wave200_overlay.json",
+          "state/restricted_findings_wave200_shard02.md",
+          "state/wave_200_continuation_20260820.md",
+          "state/wave_300_plan.md"
+        ],
+        "accuracy_summary": [],
+        "literary_summary": []
+      },
+      {
+        "scene": "SC_G0500_00_G0520_00",
+        "translation_exists": true,
+        "accuracy_qc_exists": true,
+        "literary_qc_exists": true,
+        "canonical_exclusion": null,
+        "ever_committed_translation": true,
+        "tracked_references": [
+          ".github/workflows/audit-wave300-tail.yml",
+          "qc/accuracy/SC_G0500_00_G0520_00.md",
+          "qc/literary/SC_G0500_00_G0520_00.md",
+          "scratchpad/specs/SC_G0460_00_G0480_00-SC_G0480_00_G0500_00-SC_G0500_00_G0520_00-SC_G0520_00_G0540_00.md",
+          "state/content_exclusions_wave200_overlay.json",
+          "state/restricted_findings_wave200_shard02.md",
+          "state/wave_200_continuation_20260820.md",
+          "state/wave_300_plan.md",
+          "translations/SC_G0500_00_G0520_00.json"
+        ],
+        "translation_row_count": 41,
+        "translation_first_index": 1,
+        "translation_last_index": 55,
+        "translation_missing_inside_span": [
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40
+        ],
+        "accuracy_summary": [
+          "PASS for all 41/41 permitted rows. Kinu and Otome's concern over Leo's absence, homeroom discussion of Yoshimi's cold, Erika's private update, the two attempted phone calls, Erika's later failure to reach Yoshimi, the after-school email, and Kinu's attempt to visit all preserve speaker, sequence, and uncertainty. The permitted projection resumes only at index 41 after the filtered middle range; no omitted event is described or inferred.",
+          "Exact indexes `1-26,41-55` are present. Excluded indexes `27-40` are absent. JSON structure, speaker map, ASCII typography, and CP932 encoding pass. Materially defensible alternatives: NONE."
+        ],
+        "literary_summary": []
+      },
+      {
+        "scene": "SC_G0520_00_G0540_00",
+        "translation_exists": false,
+        "accuracy_qc_exists": false,
+        "literary_qc_exists": false,
+        "canonical_exclusion": null,
+        "ever_committed_translation": false,
+        "tracked_references": [
+          ".github/workflows/audit-wave300-tail.yml",
+          "scratchpad/specs/SC_G0460_00_G0480_00-SC_G0480_00_G0500_00-SC_G0500_00_G0520_00-SC_G0520_00_G0540_00.md",
+          "state/content_exclusions_wave200_overlay.json",
+          "state/restricted_findings_wave200_shard02.md",
+          "state/wave_200_continuation_20260820.md",
+          "state/wave_300_plan.md"
+        ],
+        "accuracy_summary": [],
+        "literary_summary": []
+      }
+    ],
+    "74": [
+      {
+        "scene": "SC_G0540_00_G0600_00",
+        "translation_exists": true,
+        "accuracy_qc_exists": true,
+        "literary_qc_exists": true,
+        "canonical_exclusion": null,
+        "ever_committed_translation": true,
+        "tracked_references": [
+          ".github/workflows/audit-wave300-tail.yml",
+          "qc/accuracy/SC_G0540_00_G0600_00.md",
+          "qc/literary/SC_G0540_00_G0600_00.md",
+          "state/content_exclusions_wave200_overlay.json",
+          "state/restricted_findings_wave200_shard03.md",
+          "state/wave_200_continuation_20260820.md",
+          "state/wave_300_plan.md",
+          "translations/SC_G0540_00_G0600_00.json"
+        ],
+        "translation_row_count": 304,
+        "translation_first_index": 63,
+        "translation_last_index": 416,
+        "translation_missing_inside_span": [
+          86,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119,
+          120,
+          121,
+          122,
+          123,
+          124,
+          125,
+          126,
+          127,
+          128,
+          129,
+          130,
+          131,
+          132,
+          353,
+          354,
+          355,
+          356,
+          357,
+          358,
+          359,
+          360,
+          361,
+          362,
+          363,
+          364,
+          365,
+          366,
+          367,
+          368,
+          369,
+          370,
+          371,
+          372,
+          373,
+          374,
+          375,
+          380,
+          381,
+          382,
+          383,
+          384
+        ],
+        "accuracy_summary": [
+          "PASS for all 304 permitted rows. The apartment-key and bracelet thread, Leo's discovery of the bracelet's price, Yoshimi's relationship announcement to Erika, the lion tattoo/bracelet symbolism, Otome's school-and-fidelity warning, class rumor spread, lunch/bento comedy, Erika's jealous friendship beat, classroom note gag, Noriko's dropped-handout sequence, Yohei's reluctant help, and the public-couple questions preserve source order, agency, and voice. Post-gap rows resume only at exact permitted indexes. `Headband Teacher`, `Yoppi`, `Ellie`, `Princess`, `Fukahire`, `Dragon Gate`, and the `S = sleeping side by side` joke are consistent.",
+          "Excluded indexes `1-62`, `86`, `112-132`, `353-375`, and `380-384` are absent and are neither bridged nor summarized. JSON duplicate-key, exact-index, speaker-map, ASCII typography, and CP932 gates pass. Materially defensible alternatives: NONE."
+        ],
+        "literary_summary": []
+      },
+      {
+        "scene": "SC_G0600_00_G0650_00",
+        "translation_exists": true,
+        "accuracy_qc_exists": true,
+        "literary_qc_exists": true,
+        "canonical_exclusion": null,
+        "ever_committed_translation": true,
+        "tracked_references": [
+          ".github/workflows/audit-wave300-tail.yml",
+          "qc/accuracy/SC_G0600_00_G0650_00.md",
+          "qc/literary/SC_G0600_00_G0650_00.md",
+          "state/restricted_findings_wave200_shard03.md",
+          "state/wave_200_continuation_20260820.md",
+          "state/wave_300_plan.md",
+          "translations/SC_G0600_00_G0650_00.json"
+        ],
+        "translation_row_count": 74,
+        "translation_first_index": 1,
+        "translation_last_index": 74,
+        "translation_missing_inside_span": [],
+        "accuracy_summary": [
+          "PASS for all 74/74 rows. The soccer-betting exchange, Yoshimi's visible reaction to Mana touching Leo's forehead, Tonfa's warning, the private lunch confrontation, Yoshimi's request that Leo stop acting so friendly with Mana, Leo's denial of romantic interest, the tie adjustment, brief kiss, and return to normal demeanor preserve speaker, agency, and escalation. The five-wins/two-losses record and match choices are intact.",
+          "No restricted range is present in this scene. Exact indexes, JSON structure, speaker map, ASCII typography, and CP932 encoding pass. Materially defensible alternatives: NONE."
+        ],
+        "literary_summary": []
+      },
+      {
+        "scene": "SC_G0650_00_G0700_00",
+        "translation_exists": true,
+        "accuracy_qc_exists": true,
+        "literary_qc_exists": true,
+        "canonical_exclusion": null,
+        "ever_committed_translation": true,
+        "tracked_references": [
+          ".github/workflows/audit-wave300-tail.yml",
+          "qc/accuracy/SC_G0650_00_G0700_00.md",
+          "qc/literary/SC_G0650_00_G0700_00.md",
+          "state/content_exclusions_wave200_overlay.json",
+          "state/restricted_findings_wave200_shard03.md",
+          "state/wave_200_continuation_20260820.md",
+          "state/wave_300_plan.md",
+          "translations/SC_G0650_00_G0700_00.json"
+        ],
+        "translation_row_count": 246,
+        "translation_first_index": 1,
+        "translation_last_index": 321,
+        "translation_missing_inside_span": [
+          35,
+          36,
+          37,
+          38,
+          39,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111,
+          241,
+          242,
+          290,
+          291,
+          292,
+          293,
+          294,
+          295,
+          296,
+          297,
+          298,
+          299,
+          300,
+          301,
+          302,
+          303,
+          304,
+          305,
+          306
+        ],
+        "accuracy_summary": [
+          "PASS for all 246 permitted rows. Yoshimi's increasingly possessive route behavior, Kinu wake-up sequence, Otome breakfast handoff, Noriko photography/injury sequence, Yoshimi's jealous intervention, Yohei/Subaru field exchange, and remedial-class comedy preserve source order, agency, and characterization. `Kani`, `Yoppi`, `Kurogane-senpai`, `Headband Teacher`, `Mr. Tsuchinaga`, and `Fukahire` remain consistent with adjacent route work.",
+          "Excluded indexes `35-39`, `61-111`, `241-242`, and `290-306` are absent and are neither bridged nor summarized. Exact index set, speaker map, JSON duplicate-key guard, ASCII typography, and CP932 encoding pass. Materially defensible alternatives: NONE."
+        ],
+        "literary_summary": []
+      },
+      {
+        "scene": "SC_G0700_00_G0720_00",
+        "translation_exists": true,
+        "accuracy_qc_exists": true,
+        "literary_qc_exists": true,
+        "canonical_exclusion": null,
+        "ever_committed_translation": true,
+        "tracked_references": [
+          ".github/workflows/audit-wave300-tail.yml",
+          "qc/accuracy/SC_G0700_00_G0720_00.md",
+          "qc/literary/SC_G0700_00_G0720_00.md",
+          "state/content_exclusions_wave200_overlay.json",
+          "state/restricted_findings_wave200_shard03.md",
+          "state/wave_200_continuation_20260820.md",
+          "state/wave_300_plan.md",
+          "translations/SC_G0700_00_G0720_00.json"
+        ],
+        "translation_row_count": 4,
+        "translation_first_index": 39,
+        "translation_last_index": 42,
+        "translation_missing_inside_span": [],
+        "accuracy_summary": [
+          "PASS for all 4/4 permitted rows. Tonfa's parting compliment and Chinese farewell, Leo and Yoshimi's goodbyes, and Yoshimi's smiling close preserve the exact post-filter source content without describing the omitted tutoring/jealousy sequence.",
+          "Exact indexes `39-42` are present; excluded `1-38` are absent. JSON, speaker map, ASCII typography, and CP932 encoding pass. Materially defensible alternatives: NONE."
+        ],
+        "literary_summary": []
+      }
+    ],
+    "75": [
+      {
+        "scene": "SC_G0720_00_G0750_00",
+        "translation_exists": true,
+        "accuracy_qc_exists": true,
+        "literary_qc_exists": true,
+        "canonical_exclusion": null,
+        "ever_committed_translation": true,
+        "tracked_references": [
+          ".github/workflows/audit-wave300-tail.yml",
+          "qc/accuracy/SC_G0720_00_G0750_00.md",
+          "qc/literary/SC_G0720_00_G0750_00.md",
+          "scratchpad/specs/SC_G0720_00_G0750_00-SC_G0750_00_G0760_00-SC_G0760_00_G0800_00-SC_G0800_00_G0850_00.md",
+          "state/content_exclusions_wave200_overlay.json",
+          "state/wave_200_continuation_20260820.md",
+          "state/wave_300_plan.md",
+          "translations/SC_G0720_00_G0750_00.json"
+        ],
+        "translation_row_count": 27,
+        "translation_first_index": 1,
+        "translation_last_index": 28,
+        "translation_missing_inside_span": [
+          4
+        ],
+        "accuracy_summary": [
+          "PASS for all 27 permitted rows. The hand-holding beat, Erika departure, Yoshimi's escalating isolation ritual, and Leo's uneasy narration preserve source agency and order without inventing motive. Index 4 is excluded and absent; no downstream line reconstructs it.",
+          "Exact index set, speaker map, JSON duplicate-key guard, ASCII typography, and CP932 encoding pass. Materially defensible alternatives: NONE."
+        ],
+        "literary_summary": []
+      },
+      {
+        "scene": "SC_G0750_00_G0760_00",
+        "translation_exists": false,
+        "accuracy_qc_exists": false,
+        "literary_qc_exists": false,
+        "canonical_exclusion": null,
+        "ever_committed_translation": false,
+        "tracked_references": [
+          ".github/workflows/audit-wave300-tail.yml",
+          "scratchpad/specs/SC_G0720_00_G0750_00-SC_G0750_00_G0760_00-SC_G0760_00_G0800_00-SC_G0800_00_G0850_00.md",
+          "state/content_exclusions_wave200_overlay.json",
+          "state/wave_200_continuation_20260820.md",
+          "state/wave_300_plan.md"
+        ],
+        "accuracy_summary": [],
+        "literary_summary": []
+      },
+      {
+        "scene": "SC_G0760_00_G0800_00",
+        "translation_exists": true,
+        "accuracy_qc_exists": true,
+        "literary_qc_exists": true,
+        "canonical_exclusion": null,
+        "ever_committed_translation": true,
+        "tracked_references": [
+          ".github/workflows/audit-wave300-tail.yml",
+          "qc/accuracy/SC_G0760_00_G0800_00.md",
+          "qc/literary/SC_G0760_00_G0800_00.md",
+          "state/content_exclusions_wave200_overlay.json",
+          "state/wave_200_continuation_20260820.md",
+          "state/wave_300_plan.md",
+          "translations/SC_G0760_00_G0800_00.json"
+        ],
+        "translation_row_count": 121,
+        "translation_first_index": 8,
+        "translation_last_index": 133,
+        "translation_missing_inside_span": [
+          96,
+          97,
+          115,
+          116,
+          124
+        ],
+        "accuracy_summary": [
+          "PASS for all 121 permitted rows. The argument about trust, Yoshimi's anxious repetition, Leo's attempt to set limits, the one-week cohabitation request, Otome's rule-bound response, and the later family-conditioning hints preserve source agency and sequence. Existing route terminology and address forms remain consistent.",
+          "Excluded indexes `1-7`, `96-97`, `115-116`, and `124` are absent and are neither paraphrased nor bridged. Exact indexes, JSON duplicate-key guard, speaker map, ASCII typography, and CP932 encoding pass. Materially defensible alternatives: NONE."
+        ],
+        "literary_summary": []
+      },
+      {
+        "scene": "SC_G0800_00_G0850_00",
+        "translation_exists": true,
+        "accuracy_qc_exists": true,
+        "literary_qc_exists": true,
+        "canonical_exclusion": null,
+        "ever_committed_translation": true,
+        "tracked_references": [
+          ".github/workflows/audit-wave300-tail.yml",
+          "qc/accuracy/SC_G0800_00_G0850_00.md",
+          "qc/literary/SC_G0800_00_G0850_00.md",
+          "state/content_exclusions_wave200_overlay.json",
+          "state/wave_200_continuation_20260820.md",
+          "state/wave_300_plan.md",
+          "translations/SC_G0800_00_G0850_00.json"
+        ],
+        "translation_row_count": 408,
+        "translation_first_index": 53,
+        "translation_last_index": 529,
+        "translation_missing_inside_span": [
+          91,
+          92,
+          93,
+          94,
+          113,
+          114,
+          115,
+          116,
+          117,
+          132,
+          133,
+          134,
+          135,
+          136,
+          137,
+          138,
+          139,
+          140,
+          141,
+          149,
+          150,
+          158,
+          159,
+          160,
+          161,
+          162,
+          163,
+          164,
+          165,
+          166,
+          167,
+          168,
+          169,
+          170,
+          171,
+          189,
+          190,
+          202,
+          203,
+          290,
+          291,
+          292,
+          372,
+          373,
+          374,
+          375,
+          376,
+          377,
+          378,
+          379,
+          380,
+          381,
+          382,
+          383,
+          384,
+          433,
+          434,
+          481,
+          506,
+          507,
+          508,
+          509,
+          510,
+          511,
+          512,
+          513,
+          514,
+          515,
+          516
+        ],
+        "accuracy_summary": [
+          "PASS for all 408 permitted rows. The domestic routine and breakdown, Leo's reassurance, Shinichi/Igaguri amusement-park comedy, Erika/Baaya friendship beat, Yoshimi's family hints, the return to school, Mana/Otome classroom continuity, Yoshimi's phone-checking fixation, the class-rumor comedy, childhood clover memory, morning Erika beat, Sports and Martial Arts Festival, and the later jealousy argument preserve source order, agency, callbacks, and speaker identity.",
+          "The filtered ranges `1-52`, `91-94`, `113-117`, `132-141`, `149-150`, `158-171`, `189-190`, `202-203`, `290-292`, `372-384`, `433-434`, `481`, and `506-516` are absent. No permitted resumption reconstructs or summarizes a filtered range. Exact index set, speaker map, JSON duplicate-key guard, ASCII typography, and CP932 encoding pass. Materially defensible alternatives: NONE."
+        ],
+        "literary_summary": []
+      }
+    ],
+    "76": [
+      {
+        "scene": "SC_G0850_00_G0860_00",
+        "translation_exists": true,
+        "accuracy_qc_exists": true,
+        "literary_qc_exists": true,
+        "canonical_exclusion": null,
+        "ever_committed_translation": true,
+        "tracked_references": [
+          ".github/workflows/audit-wave300-tail.yml",
+          "qc/accuracy/SC_G0850_00_G0860_00.md",
+          "qc/literary/SC_G0850_00_G0860_00.md",
+          "state/content_exclusions_wave200_overlay.json",
+          "state/wave_200_continuation_20260820.md",
+          "state/wave_300_plan.md",
+          "translations/SC_G0850_00_G0860_00.json"
+        ],
+        "translation_row_count": 98,
+        "translation_first_index": 1,
+        "translation_last_index": 98,
+        "translation_missing_inside_span": [],
+        "accuracy_summary": [
+          "PASS for all 98 permitted rows. Sports-festival continuity, Leo's mistaken hug, Erika's blunt independence, Yoshimi's escalating jealousy, and her later plan to expose Erika's imperfect side preserve source order and agency. The deliberately ambiguous `良美？` reveal remains intact. Excluded indexes `99-101` are absent and not bridged. Exact indexes, speaker map, JSON, ASCII typography, and CP932 pass."
+        ],
+        "literary_summary": [
+          "The mistaken-hug comedy lands cleanly before Yoshimi's jealousy turns the scene colder. Erika remains breezy and self-directed rather than antagonistic; Yoshimi's increasingly alarming logic stays hers, not narrator endorsement. The scene ends exactly at the permitted boundary without foreshadowing the filtered continuation."
+        ]
+      },
+      {
+        "scene": "SC_G0860_10_G0870_00",
+        "translation_exists": true,
+        "accuracy_qc_exists": true,
+        "literary_qc_exists": true,
+        "canonical_exclusion": null,
+        "ever_committed_translation": true,
+        "tracked_references": [
+          ".github/workflows/audit-wave300-tail.yml",
+          "qc/accuracy/SC_G0860_10_G0870_00.md",
+          "qc/literary/SC_G0860_10_G0870_00.md",
+          "state/wave_200_continuation_20260820.md",
+          "state/wave_300_plan.md",
+          "translations/SC_G0860_10_G0870_00.json"
+        ],
+        "translation_row_count": 22,
+        "translation_first_index": 1,
+        "translation_last_index": 22,
+        "translation_missing_inside_span": [],
+        "accuracy_summary": [
+          "PASS for all 22/22 rows. Leo's confrontation, Yoshimi's fixation on 'happiness', and the trust question preserve source agency and emotional sequence. No excluded material is present in this scene. Exact indexes, speaker map, JSON, ASCII typography, and CP932 pass."
+        ],
+        "literary_summary": []
+      },
+      {
+        "scene": "SC_G0860_20_G0950_00",
+        "translation_exists": true,
+        "accuracy_qc_exists": true,
+        "literary_qc_exists": true,
+        "canonical_exclusion": null,
+        "ever_committed_translation": true,
+        "tracked_references": [
+          ".github/workflows/audit-wave300-tail.yml",
+          "qc/accuracy/SC_G0860_20_G0950_00.md",
+          "qc/literary/SC_G0860_20_G0950_00.md",
+          "state/content_exclusions_wave200_overlay.json",
+          "state/wave_200_continuation_20260820.md",
+          "state/wave_300_plan.md",
+          "translations/SC_G0860_20_G0950_00.json"
+        ],
+        "translation_row_count": 32,
+        "translation_first_index": 1,
+        "translation_last_index": 32,
+        "translation_missing_inside_span": [],
+        "accuracy_summary": [
+          "PASS for all 32 permitted rows. The wardrobe concealment, Erika's arrival, Yoshimi's apology, and Erika's easy forgiveness preserve source order and characterization. Excluded indexes `33-59` are absent and not foreshadowed or summarized. Exact indexes, speaker map, JSON, ASCII typography, and CP932 pass."
+        ],
+        "literary_summary": [
+          "The permitted setup reads as tense domestic concealment rather than an explanatory bridge into the filtered continuation. Erika's breezy friendship and Yoshimi's forced normalcy remain audible. Changes after accuracy QC: NONE. Contested alternatives: NONE."
+        ]
+      },
+      {
+        "scene": "SC_G0870_00_G0900_00",
+        "translation_exists": true,
+        "accuracy_qc_exists": true,
+        "literary_qc_exists": true,
+        "canonical_exclusion": null,
+        "ever_committed_translation": true,
+        "tracked_references": [
+          ".github/workflows/audit-wave300-tail.yml",
+          "qc/accuracy/SC_G0870_00_G0900_00.md",
+          "qc/literary/SC_G0870_00_G0900_00.md",
+          "state/content_exclusions_wave200_overlay.json",
+          "state/wave_200_continuation_20260820.md",
+          "state/wave_300_plan.md",
+          "translations/SC_G0870_00_G0900_00.json"
+        ],
+        "translation_row_count": 190,
+        "translation_first_index": 1,
+        "translation_last_index": 195,
+        "translation_missing_inside_span": [
+          122,
+          123,
+          124,
+          125,
+          191
+        ],
+        "accuracy_summary": [
+          "PASS for all 190 permitted rows. Leo's argument about trust, Yoshimi's collapse into self-reproach, the overnight family-history disclosure, the origins of her performative smile, her move to Tokyo, and the first meeting with Erika preserve source sequence, agency, and uncertainty. The family account remains Yoshimi's recollection rather than narrator fact. Excluded indexes `122-125` and `191` are absent and receive no bridge or recap. Exact indexes, speaker map, JSON, ASCII typography, and CP932 pass."
+        ],
+        "literary_summary": []
+      }
+    ],
+    "77": [
+      {
+        "scene": "SC_G0900_00_G0910_00",
+        "translation_exists": true,
+        "accuracy_qc_exists": true,
+        "literary_qc_exists": true,
+        "canonical_exclusion": null,
+        "ever_committed_translation": true,
+        "tracked_references": [
+          ".github/workflows/audit-wave300-tail.yml",
+          "qc/accuracy/SC_G0900_00_G0910_00.md",
+          "qc/literary/SC_G0900_00_G0910_00.md",
+          "state/content_exclusions_wave200_overlay.json",
+          "state/wave_200_continuation_20260820.md",
+          "state/wave_300_plan.md",
+          "translations/SC_G0900_00_G0910_00.json"
+        ],
+        "translation_row_count": 78,
+        "translation_first_index": 1,
+        "translation_last_index": 78,
+        "translation_missing_inside_span": [],
+        "accuracy_summary": [
+          "PASS for all 78 permitted rows. Yoshimi's depressive withdrawal, Leo's practical concern, the four-leaf-clover callback, her rejection of the symbol, and Leo's decision to remain beside her preserve source order and agency. Excluded indexes `79-84` are absent and not bridged. Exact indexes, speaker map, JSON, ASCII typography, and CP932 pass."
+        ],
+        "literary_summary": []
+      },
+      {
+        "scene": "SC_G0910_00_G0920_00",
+        "translation_exists": false,
+        "accuracy_qc_exists": false,
+        "literary_qc_exists": false,
+        "canonical_exclusion": null,
+        "ever_committed_translation": false,
+        "tracked_references": [
+          ".github/workflows/audit-wave300-tail.yml",
+          "state/content_exclusions_wave200_overlay.json",
+          "state/wave_200_continuation_20260820.md",
+          "state/wave_300_plan.md"
+        ],
+        "accuracy_summary": [],
+        "literary_summary": []
+      },
+      {
+        "scene": "SC_G0920_00_G0930_00",
+        "translation_exists": true,
+        "accuracy_qc_exists": true,
+        "literary_qc_exists": true,
+        "canonical_exclusion": null,
+        "ever_committed_translation": true,
+        "tracked_references": [
+          ".github/workflows/audit-wave300-tail.yml",
+          "qc/accuracy/SC_G0920_00_G0930_00.md",
+          "qc/literary/SC_G0920_00_G0930_00.md",
+          "state/content_exclusions_wave200_overlay.json",
+          "state/wave_200_continuation_20260820.md",
+          "state/wave_300_plan.md",
+          "state/wave_ledger.md",
+          "translations/SC_G0920_00_G0930_00.json"
+        ],
+        "translation_row_count": 42,
+        "translation_first_index": 6,
+        "translation_last_index": 55,
+        "translation_missing_inside_span": [
+          41,
+          42,
+          43,
+          49,
+          50,
+          51,
+          52,
+          53
+        ],
+        "accuracy_summary": [
+          "PASS for all 42 permitted rows. The rain pursuit, Leo's alarm, Yoshimi's self-rejection, their argument over trust and distance, and Leo's refusal to abandon her preserve source order and agency. Excluded indexes `1-5`, `41-43`, and `49-53` are absent and receive no bridge or recap. Exact indexes, speaker map, JSON, ASCII typography, and CP932 pass."
+        ],
+        "literary_summary": []
+      }
+    ]
+  },
+  "missing_translations": [
+    "SC_G0390_00_G0400_00",
+    "SC_G0480_00_G0500_00",
+    "SC_G0520_00_G0540_00",
+    "SC_G0750_00_G0760_00",
+    "SC_G0910_00_G0920_00"
+  ],
+  "missing_accuracy_qc": [
+    "SC_G0390_00_G0400_00",
+    "SC_G0480_00_G0500_00",
+    "SC_G0520_00_G0540_00",
+    "SC_G0750_00_G0760_00",
+    "SC_G0910_00_G0920_00"
+  ],
+  "missing_literary_qc": [
+    "SC_G0390_00_G0400_00",
+    "SC_G0480_00_G0500_00",
+    "SC_G0520_00_G0540_00",
+    "SC_G0750_00_G0760_00",
+    "SC_G0910_00_G0920_00"
+  ],
+  "unregistered_qc_exclusions": [
+    "SC_G0400_00_G0420_00",
+    "SC_G0460_00_G0480_00",
+    "SC_G0500_00_G0520_00",
+    "SC_G0540_00_G0600_00",
+    "SC_G0650_00_G0700_00",
+    "SC_G0760_00_G0800_00",
+    "SC_G0850_00_G0860_00",
+    "SC_G0860_10_G0870_00",
+    "SC_G0860_20_G0950_00",
+    "SC_G0870_00_G0900_00",
+    "SC_G0900_00_G0910_00",
+    "SC_G0920_00_G0930_00"
+  ]
+}
