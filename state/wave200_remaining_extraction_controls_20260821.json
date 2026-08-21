@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "validated_at": "2026-08-21",
+  "repository": "Mitchobrienpouet/Tsuyokiss",
+  "branch": "codex/wave-300-continuation-20260820",
+  "scope": {
+    "completed_through_wave200_shard": 28,
+    "first_shard": 29,
+    "last_shard": 52,
+    "shard_count": 24,
+    "first_scene": "SC_M0340_00_M0341_00",
+    "last_scene": "SC_M0663_00_M0664_00",
+    "scene_count": 96
+  },
+  "committed_controls": [
+    {
+      "path": "state/wave200_remaining_source_manifest.json",
+      "commit": "b68ee4cec26a2c767c11e800cbb8314918615086",
+      "purpose": "exact scene and shard inventory"
+    },
+    {
+      "path": "tools/translation/extract_wave200_remaining_sources.py",
+      "commit": "dbe6b6ca8ab29d9246c60dded90ff753f5f91eb4",
+      "purpose": "immutable raw extraction and fail-closed model projection"
+    },
+    {
+      "path": "tools/translation/launch_wave200_remaining_sources.py",
+      "commit": "7c1f09d764f48406e4dfcaad2693171d8c064e00",
+      "purpose": "retail FPK/ZIP/JSONL ingestion and launch-payload generation"
+    },
+    {
+      "path": "tools/translation/run_wave200_remaining_extraction.sh",
+      "commit": "8632f9e2cb6eb2b56271fdf00096e8ec373d0507",
+      "purpose": "single-command runner"
+    }
+  ],
+  "validation": {
+    "python_compile": "PASS",
+    "bash_syntax": "PASS",
+    "manifest_unique_scenes_96": "PASS",
+    "manifest_exact_shards_29_through_52": "PASS",
+    "stable_jsonl_to_96_immutable_raw_files": "PASS",
+    "stable_jsonl_to_24_launch_payloads": "PASS",
+    "encrypted_index_fpk_to_96_immutable_raw_files": "PASS_SYNTHETIC_FIXTURE",
+    "encrypted_index_fpk_to_24_launch_payloads": "PASS_SYNTHETIC_FIXTURE",
+    "canonical_plus_overlay_exclusion_union": "PASS",
+    "partial_exclusion_preserves_original_indexes": "PASS",
+    "fully_excluded_model_source_absent": "PASS",
+    "fully_excluded_shard_payload_null": "PASS",
+    "immutable_source_drift_refusal": "PASS",
+    "source_sha256_drift_refusal": "PASS",
+    "missing_target_scene_refusal": "PASS",
+    "idempotent_second_run": "PASS",
+    "verify_only_second_pass": "PASS",
+    "custom_output_directories": "PASS"
+  },
+  "outputs_after_retail_run": {
+    "raw_sources": "scratchpad/jp_dumps/<scene>.json",
+    "model_sources": "scratchpad/model_sources/<scene>.json",
+    "model_shards": "scratchpad/model_shards/w200-29.json through w200-52.json",
+    "launch_index": "scratchpad/model_shards/launch_index.json",
+    "extraction_report": "state/wave200_remaining_extraction_report.json",
+    "launch_report": "state/wave200_remaining_launch_report.json"
+  },
+  "accepted_inputs": [
+    "data.fpk",
+    "ZIP containing data.fpk",
+    "multipart .001 archive with 7z available",
+    "decoded scenario-member directory",
+    "stable translation_template.jsonl",
+    "complete immutable per-scene JSON directory"
+  ],
+  "real_source_materialization": {
+    "status": "NOT_RUN_NO_RETAIL_SOURCE_MOUNTED",
+    "reason": "The connected execution environment contains no retail data.fpk, stable retail JSONL, decoded retail corpus, or complete immutable per-scene source directory. A recovered Git-history artifact was inspected and rejected because it contains only repository audits, manifests, checkpoints, and workflow YAML rather than Japanese source records.",
+    "safety": "No Japanese source was reconstructed from English, inferred, or fabricated."
+  },
+  "command": "tools/translation/run_wave200_remaining_extraction.sh /path/to/data.fpk"
+}
