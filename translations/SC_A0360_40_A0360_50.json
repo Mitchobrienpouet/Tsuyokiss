@@ -2,12 +2,12 @@
   "file": "SC_A0360_40_A0360_50",
   "speaker_map": {"新一": "Shinichi", "きぬ": "Kinu", "スバル": "Subaru", "レオ": "Leo", "１年女子Ａ": "First-year Girl A", "１年女子Ｂ": "First-year Girl B"},
   "lines": {
-    "1": "For the moment, we followed Fukahire to the school gate.",
+    "1": "For now, we followed Fukahire over to the school gate.",
     "2": "「We wait here for first-years. If a cute one comes by, I'll talk to her.」",
     "3": "「Then I'll reel her in and take her to the student council room. Simple, but effective. Right?」",
     "4": "「Except for the part where it's impossible.」",
     "5": "「If we're going with a pickup plan, we should use handsome Subaru.」",
-    "6": "「No. You're used to him, Crab, but someone seeing Subaru for the first time is extremely likely to be scared.」",
+    "6": "「No. You're used to him, Crab, but Subaru's liable to scare off anyone meeting him for the first time.」",
     "7": "「Leo isn't the type to chatter away with a stranger. In other words, this is a job for me.」",
     "8": "「...If you're that sure, go ahead and try.」",
     "9": "「Leave it to me. I'll show you how cool I can be.」",
@@ -38,7 +38,7 @@
     "34": "「A-are you a member of the student council too?」",
     "35": "「Yeah. I'm Samesuga. Call me Shark.」",
     "36": "「I'm a shark, but I won't eat you.」",
-    "37": "「And I don't mean 'eat' in a dirty way.」",
+    "37": "「And I don't mean 'eat' in the dirty sense, okay?」",
     "38": "「This is bad. He's going off the rails.」",
     "39": "「How does he always manage to sabotage himself?」",
     "40": "「U-um...」"
