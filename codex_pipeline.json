@@ -10,6 +10,9 @@
   "stale_after_seconds": 900,
   "codec": "cp932",
   "content_exclusions": "content_exclusions.json",
+  "content_exclusion_overlays": [
+    "state/content_exclusions_wave200_overlay.json"
+  ],
   "narrative_gates": "narrative_gates.json",
   "quality_profile": "sol-5.6-literary",
   "required_model": "gpt-5.6-sol",

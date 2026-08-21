@@ -16,6 +16,11 @@ read only generated `scratchpad/model_sources/` projections, never excluded
 source rows. Excluded ranges are not translation debt and must stay absent from
 translations, QC, arbitration, and builds.
 
+When `codex_pipeline.json` declares `content_exclusion_overlays`, invoke the
+pipeline through `tools/codex_vn_pipeline.py`. That public entry point merges the
+canonical manifest and every configured overlay fail-closed. Never invoke
+`tools/codex_vn_pipeline_core.py` directly.
+
 Read `narrative_gates.json` before every model-backed stage. Repeated choices
 must remain identical. Translate and fully arbitrate each declared canonical
 mirror before deriving its siblings; never independently retranslate shared
