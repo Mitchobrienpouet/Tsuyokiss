@@ -21,7 +21,7 @@ Total: 88 permitted rows.
 - Saturday morning, Otome leaves early to train martial-arts juniors. Leo is genuinely curious about spending time alone with Sunao, but Heizo's involvement keeps him wary.
 - Sunao arrived twenty minutes early despite claiming the five-minutes-early rule. Preserve the embarrassment without turning it into a confession.
 - Heizo reveals a cruiser. On board, Sunao explicitly reminds Leo that the outing is supposed to repay his debt to her and points out that Heizo is doing all the work so far.
-- Destination reveal: `烏賊島` is conservatively rendered `Ika Island` pending any later official lock. Leo identifies it as the island used for exile; Heizo says it is merely being provided as their playground and praises its clean water / wildlife.
+- Destination reveal: `烏賊島` is locked as `Ikajima` in `bible/glossary.md`. Leo identifies it as the island used for exile; Heizo says it is merely being provided as their playground and praises its clean water / wildlife.
 - On arrival, the island is also identified as a correctional facility with water, flush toilets, a natural hot spring, and no mobile signal. Heizo gives Leo a scroll to open only if they are in serious trouble. Do not reveal the scroll's contents early.
 
 ## Voice / terminology
