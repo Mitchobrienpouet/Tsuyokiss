@@ -18,6 +18,14 @@ Leo's male childhood friend. Laid-back, capable, teasing, and rough-edged withou
 being hostile. Use relaxed contractions and masculine banter; avoid caricatured
 dialect.
 
+## Shinichi Samesuga (鮫氷新一 / 新一 / フカヒレ)
+
+Leo's shameless, excitable male classmate. His canonical surname is `Samesuga`,
+as fixed by the explicit ruby `さめすが`; never render it as `Samehyo`,
+`Samehyou`, or `Samejima`. Preserve `Fukahire` as his recurring comic nickname
+and `Shark` where the source invokes that joke. His boasts should sound grandiose
+and opportunistic without smoothing away their punchlines.
+
 ## Otome Kurogane (鉄乙女)
 
 Leo's older cousin and a third-year. Disciplined, formidable, morally direct,

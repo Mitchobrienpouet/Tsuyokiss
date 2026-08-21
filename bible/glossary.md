@@ -16,8 +16,11 @@
 | 椰子なごみ | Nagomi Yashi | First-year student. |
 | 大江山祈 | Inori Oeyama | Teacher and student-council adviser. |
 | 佐藤良美 | Yoshimi Sato | Erika's close aide; nickname rendering to be locked at first occurrence. |
-| 鮫氷新一 / フカヒレ | Shinichi / Fukahire | Preserve `Fukahire` as the recurring comic nickname until contextual QC locks an English equivalent. |
+| 鮫氷新一 / フカヒレ | Shinichi Samesuga / Fukahire | `Samesuga` is fixed by the explicit ruby `さめすが`. Preserve `Fukahire` as the recurring comic nickname and `Shark` where the source invokes that joke. |
 | 姫 | Princess | Erika's circle's title for her; capitalization signals the nickname/title. |
+| 体育武道祭 | Sports and Martial Arts Festival | Recurring two-day school event; do not vary it to `Sports and Combat Festival` or `Athletics and Martial Arts Festival`. |
+| 竜鳴祭 | Ryuumei Festival | Ryuumeikan Academy's cultural festival; keep it distinct from the school's name. |
+| まつかさ開国祭 / 開国祭 | Matsukasa Port Opening Festival / Port Opening Festival | Retain `Port` in both the full and shortened civic-event names. |
 
 Speaker tags that intentionally conceal identity (`声`, `上級生`, etc.) must
 remain generic in English until the script itself reveals the character.
