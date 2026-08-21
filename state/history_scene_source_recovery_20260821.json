@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "branch": "codex/wave-300-continuation-20260820",
+  "run_id": 32485486547,
+  "run_attempt": 1,
+  "artifact_name": "tsuyokiss-wave200-scene-sources-32485486547",
+  "reachable_objects": 7475,
+  "inspected_blobs": 2578,
+  "target_scene_count": 100,
+  "candidate_count": 0,
+  "recovered_scene_count": 0,
+  "recovered_scenes": [],
+  "jsonl_candidate_count": 0,
+  "candidates": [],
+  "extraction": {
+    "attempted": false,
+    "success": false
+  }
+}
