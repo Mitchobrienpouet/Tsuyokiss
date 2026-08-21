@@ -2,7 +2,7 @@
 
 Date: 2026-08-22  
 Stage: post-QC critical readthrough only  
-Verdict: **FAIL — 1 blocking, 2 major, and 1 minor finding remain open**  
+Verdict: **PASS after repair, independent QC, and arbitration closure**  
 Translation changes: NONE
 
 ## Scope and evidence
@@ -44,18 +44,18 @@ Git.
 | Engine IDs | PASS: 7,989 present, 7,989 unique, 0 malformed scene bindings |
 | Source SHA-256 metadata | PASS: 0 recomputation mismatches |
 | Translation JSON fields and duplicate keys | PASS under the project validator |
-| Translation `file` identity field | **FAIL: 2 values include an invalid `.json` suffix; D-RT-003** |
+| Translation `file` identity field | PASS: 67 / 67 exact scene stems |
 | Speaker-map coverage | PASS: 0 source speakers missing |
 | Project per-scene validator | PASS: 67 / 67 |
 | CP932 encoding | PASS: 0 failures |
 | Forbidden Unicode typography | PASS: 0 failures |
 | Japanese script in English targets | PASS: 0 rows |
 | Placeholder scan | PASS: no TODO, TBD, FIXME, untranslated, placeholder, or replacement-character markers |
-| Dialogue-wrapper audit | 5,430 source dialogue rows checked; **1 mismatch remains; D-RT-002** |
+| Dialogue-wrapper audit | PASS: 5,430 source dialogue rows checked; 0 mismatches |
 | Control-sequence audit | 9 controlled rows checked; 1 intentional mismatch at D0500:163 is explicitly locked by the spec and prior accuracy QC |
 
-The project validator's success does not override the open name, wrapper,
-metadata, and terminology findings below.
+The project validator now also rejects missing or mismatched internal `file`
+identities; the repaired route passes that strengthened gate.
 
 ## Blocking findings
 
@@ -92,7 +92,7 @@ metadata, and terminology findings below.
   preserving `Shinichi`, `Fukahire`, and `Shark` and making no wider prose
   changes. Reconcile the stale D-route locks afterward.
 - systemic: true
-- status: open
+- status: closed by the global surname/D repair and independent QC
 
 ## Major findings
 
@@ -114,7 +114,7 @@ metadata, and terminology findings below.
 - fix_direction: Restore the wrapper only:
   `「So that's what she meant by a harem.」`
 - systemic: false
-- status: open
+- status: closed by the global surname/D repair and independent QC
 
 ### D-RT-003 — Two translation scene IDs contain filename suffixes
 
@@ -137,7 +137,7 @@ metadata, and terminology findings below.
 - fix_direction: Remove only the `.json` suffix from the two `file` values.
   Do not alter lines, speaker maps, hashes, or filenames.
 - systemic: false
-- status: open
+- status: closed by the global surname/D repair and independent QC
 
 ## Minor findings
 
@@ -172,7 +172,7 @@ metadata, and terminology findings below.
   - D0870:102 -> `Matsukasa Port Opening Festival`; D0870:128 and 212 ->
     `Port Opening Festival`.
 - systemic: true
-- status: open
+- status: closed by the global surname/D repair and independent QC
 
 ## Continuous-route checks
 
@@ -278,12 +278,10 @@ checked.
 
 ## Correction routing and pass condition
 
-Route D does not pass the critical-readthrough gate while D-RT-001 through
-D-RT-003 remain open. Route D-RT-001 through naming accuracy plus lock
-reconciliation; D-RT-002 through engine-aware accuracy; D-RT-003 through
-translation metadata repair; and D-RT-004 through targeted terminology cleanup.
-After corrections, rerun deterministic gates and reread the affected blocks. No
-broad rewrite is recommended.
+The required naming, wrapper, metadata, and terminology lanes are complete.
+Their independent QC, targeted arbitration, deterministic reruns, and corrected-
+block reread are recorded in the closure addendum below. No broad rewrite was
+required.
 
 ## Exact translated-scene coverage
 
@@ -366,3 +364,26 @@ Fully excluded zero-debt scenes: `SC_D0720_00_D0730_00`,
 `SC_D0880_00_D0880_50`, and `SC_D0950_00_D0960_00`; permitted NONE.
 
 Coverage checksum: 67 translated scenes; 7,989 permitted rows.
+
+## Repair and closure addendum
+
+All four findings above were repaired in the combined global Samesuga/D
+checkpoint: twelve D surname rows were normalized, the Leo dialogue wrapper was
+restored, both internal scene IDs lost their invalid suffix, and all six event
+names were aligned with the central locks.
+
+Independent accuracy QC then reread the 16 affected B/D scenes in full, covering
+5,959 permitted rows, and added 27 source-faithfulness corrections across nine
+scenes. Independent literary QC reread the same scope, preserved every accuracy
+and D-route lock, and added 34 local prose improvements. Targeted arbitration
+retained the established decisions and found no new conflict.
+
+The corrected D finding rows and their immediate continuity blocks were reread
+in final form. Samesuga is stable, the wrapper and internal file identities are
+exact, and the Sports and Martial Arts Festival, Ryuumei Festival, and Matsukasa
+Port Opening Festival names remain consistent. Exact joins, exclusions, hashes,
+engine IDs, speaker maps, wrappers, CP932, narrative gates, and public
+validation pass. No route-D finding remains open.
+
+This closure remains a static-script result. It does not claim runtime textbox,
+backlog, sprite, CG, background, image-trigger, or reinjection verification.

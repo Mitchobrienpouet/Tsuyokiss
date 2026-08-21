@@ -2,12 +2,11 @@
 
 ## Verdict
 
-**BLOCKED.** All 7,191 permitted rows were read continuously in scene order,
-but the route has `0` blocking, `3` major, and `8` minor open findings. The
-critical narrative gate cannot pass until the major findings are routed through
-the appropriate QC/arbitration lane and the affected blocks are revalidated and
-reread. This audit changed no translation, QC, arbitration, source, manifest,
-pipeline, or configuration artifact.
+**PASS after repair, independent QC, and arbitration closure.** All 7,191
+permitted rows were read continuously in scene order. The original `0`
+blocking, `3` major, and `8` minor findings have all been repaired, recertified,
+arbitrated, and reread. This audit itself changed no translation, QC,
+arbitration, source, manifest, pipeline, or configuration artifact.
 
 ## Scope and exact coverage
 
@@ -111,7 +110,7 @@ through a fail-closed filtered read, never an excluded row.
   `Sports Martial Arts Festival`; render B0370:371 as the tournament/fighting
   tournament without adding a second event name. Recheck all nine indexes as a
   systemic terminology repair.
-- **Systemic/status:** `true / open`
+- **Systemic/status:** `true / closed by repair and independent QC`
 
 ### B-M02 — localized speaker name regresses from `Burrhead` to `Igaguri`
 
@@ -128,7 +127,7 @@ through a fail-closed filtered read, never an excluded row.
   metadata for five permitted lines between two correctly localized blocks.
   Restore `Burrhead` in the three maps and validate the affected nameplates.
   Runtime display is not claimed, but the authored maps themselves diverge.
-- **Systemic/status:** `true / open`
+- **Systemic/status:** `true / closed by repair and independent QC`
 
 ### B-M03 — one spoken Leo line is authored as unquoted narration
 
@@ -142,7 +141,7 @@ through a fail-closed filtered read, never an excluded row.
   dialogue but whose target lacks the dialogue wrapper.
 - **Diagnosis/fix direction:** restore the Japanese corner-quote wrapper around
   the current faithful body text and revalidate textbox/backlog presentation.
-- **Systemic/status:** `false / open`
+- **Systemic/status:** `false / closed by repair and independent QC`
 
 ## Minor findings
 
@@ -156,7 +155,7 @@ through a fail-closed filtered read, never an excluded row.
   location is `Ryugu` at `SC_B0110_00_K0900_00:44` and
   `SC_B0130_00_K0900_00:3-4`.
 - **Fix direction/status:** replace the one ad-hoc literalization with `Ryugu`;
-  `open`.
+  `closed by repair and independent QC`.
 
 ### B-m02 — `Ikajima` proper-name lock is translated ad hoc
 
@@ -166,7 +165,7 @@ through a fail-closed filtered read, never an excluded row.
   here.」`
 - **Source/project evidence:** source `烏賊島`; glossary lock `Ikajima`.
 - **Fix direction/status:** use `Ikajima` without translating half of the
-  proper name; `open`.
+  proper name; `closed by repair and independent QC`.
 
 ### B-m03 — `Tetchan` callback is misspelled and once omitted
 
@@ -178,7 +177,7 @@ through a fail-closed filtered read, never an excluded row.
   `鉄ちゃん`. The nickname is established consistently as `Tetchan` at
   `SC_B0100_50_K0900_00:70-72,78-79,83,85-87,123`.
 - **Fix direction/status:** restore `Tetchan` at 341 and normalize the other
-  three spellings; `open`.
+  three spellings; `closed by repair and independent QC`.
 
 ### B-m04 — `Mr. Tsuchinaga` speaker-map honorific drifts
 
@@ -190,7 +189,7 @@ through a fail-closed filtered read, never an excluded row.
   `SC_B0160_00_B0170_00`, `SC_B0930_00_B0940_00`, and
   `SC_B0990_00_Z9999_99`; the preflight voice lock uses `Mr. Tsuchinaga`.
 - **Fix direction/status:** normalize the two affected speaker maps to the
-  established nameplate; `open`.
+  established nameplate; `closed by repair and independent QC`.
 
 ### B-m05 — generic third-year speaker capitalization drifts
 
@@ -200,7 +199,8 @@ through a fail-closed filtered read, never an excluded row.
 - **Project evidence:** the same source tag is `Third-Year Girl` in
   `SC_B0100_50_K0900_00` and the project otherwise capitalizes school-year
   compounds in generic speaker labels.
-- **Fix direction/status:** normalize the map capitalization; `open`.
+- **Fix direction/status:** normalize the map capitalization; `closed by repair
+  and independent QC`.
 
 ### B-m06 — collective Kurogane reference is unidiomatic
 
@@ -212,7 +212,7 @@ through a fail-closed filtered read, never an excluded row.
 - **Project evidence:** the ending explicitly uses `The Kurogane clan` at
   `SC_B0990_00_Z9999_99:39`.
 - **Fix direction/status:** supply the collective noun (`the Kurogane clan`)
-  without changing the historical claim; `open`.
+  without changing the historical claim; `closed by repair and independent QC`.
 
 ### B-m07 — malformed object/subject order in Otome's confession
 
@@ -223,7 +223,7 @@ through a fail-closed filtered read, never an excluded row.
 - **Source evidence:** `でもな、何故かお前にだけは……つまらないと言われたくはなかった`.
 - **Diagnosis/fix direction:** the intended meaning is recoverable but the
   English assigns `you` the wrong syntactic role. Preserve: she did not want
-  Leo, of all people, to call her boring; `open`.
+  Leo, of all people, to call her boring; `closed by repair and independent QC`.
 
 ### B-m08 — Yohei's comparison is left as translationese
 
@@ -235,7 +235,7 @@ through a fail-closed filtered read, never an excluded row.
 - **Diagnosis/fix direction:** express that matters with women drag on, in
   contrast with Yohei and Date quickly speaking normally again; do not turn it
   into a new claim about women holding objects or necessarily holding grudges;
-  `open`.
+  `closed by repair and independent QC`.
 
 ## Narrative and route-wide checks
 
@@ -283,13 +283,13 @@ through a fail-closed filtered read, never an excluded row.
 - **QC/arbitration inventory:** `PASS` — 49 accuracy records, 49 literary
   records, and 49 arbitration/no-op records, with no missing or extra B scene.
 - **Speaker-map key coverage:** `PASS` — every permitted non-null source speaker
-  has a nonempty map entry. Cross-scene localized-value consistency is `FAIL`
-  at B-M02, B-m04, and B-m05.
+  has a nonempty map entry. The B-M02, B-m04, and B-m05 localized-value drifts
+  are repaired and independently recertified.
 - **Codec/typography:** `PASS` — every target string encodes as CP932; no smart
   quotes, Unicode ellipses, em/en dashes, carriage returns, or manual newlines;
   quote and parenthesis counts balance.
-- **Dialogue wrappers:** `FAIL` — exactly one authoritative dialogue row lacks
-  its required wrapper: B-M03.
+- **Dialogue wrappers:** `PASS` — B-M03's missing wrapper is restored and the
+  full affected QC scope was revalidated.
 - **Narrative gates:** `PASS` — the current gate manifest declares no source
   mirrors or repeated-choice groups.
 
@@ -309,16 +309,24 @@ backlog, wordwrap, image-trigger, build, or reinjection proof was available in
 this audit. Static CP932 and metadata checks do not establish runtime fit or
 visual correctness.
 
-## Required routing
+## Repair and closure addendum
 
-1. Route B-M01 through terminology/continuity correction and targeted
-   arbitration, then search the B corpus for the same event-name drift.
-2. Route B-M02 through localized speaker-map correction and nameplate
-   validation.
-3. Route B-M03 through a narrow wrapper/presentation correction.
-4. Route the eight minor findings through the narrowest accuracy or literary
-   lane; do not mass-rewrite surrounding prose.
-5. Re-run exact indexes, hashes/IDs, speaker maps, wrappers, CP932, and route
-   readthrough on the affected blocks. Runtime/image debt remains open even
-   after textual correction.
+All eleven findings were routed through narrow repair lanes. The original seven
+repair scenes received a 4,051-row independent accuracy reread. The later
+project-wide Samesuga/D repair reopened the two large tournament scenes inside
+a 5,959-row B/D accuracy scope, adding 27 source-faithfulness corrections
+across B and D. Independent literary QC then reread that full scope, preserved
+every accuracy lock, and added 34 localized prose improvements.
 
+Targeted arbitration found no new accuracy-versus-literary conflict and retained
+all earlier scene decisions. The corrected B finding rows and their immediate
+continuity blocks were reread in final form: event names, Burrhead, Ryugu,
+Ikajima, Tetchan, Mr. Tsuchinaga, Third-Year Girl, the Kurogane clan, Otome's
+confession syntax, Yohei's contrast, and the dialogue wrapper are stable.
+Exact joins, hashes, engine IDs, file identities, speaker maps, wrappers,
+exclusions, CP932, narrative gates, and public validation pass. No route-B
+finding remains open.
+
+Runtime/image debt remains explicitly open under the separate feasibility and
+manifest audits; this static closure does not claim live textbox, backlog,
+wordwrap, image-trigger, build, or reinjection proof.
