@@ -2,7 +2,7 @@
 
 Date: 2026-08-22  
 Stage: post-QC critical readthrough only  
-Verdict: **PASS WITH ONE MINOR FINDING**  
+Verdict: **PASS after repair, independent QC, and arbitration closure**  
 Translation changes: NONE
 
 ## Scope and evidence
@@ -80,7 +80,7 @@ Accordingly, this report makes no visual or runtime claim.
   They were my childhood friends--and my friends, too.` Route this through the
   literary repair lane; no accuracy rewrite is indicated.
 - systemic: false
-- status: open
+- status: closed by the route-I literary repair and independent QC
 
 No blocking or major finding remains.
 
@@ -113,12 +113,26 @@ No blocking or major finding remains.
   banter and ends on the continuing journey without implying a later event or
   reconstructing outside material.
 
+## Repair and closure addendum
+
+The single minor finding was repaired at index `54`. Independent accuracy then
+reviewed all 68 permitted rows against the newly generated overlay-aware model
+projection and retained the repaired distinction between childhood friends and
+present friends. Independent literary QC reread the same 68 rows, retained index
+`54` exactly, and made fourteen additional local prose improvements without
+changing meaning, voice, agency, chronology, or the train coda.
+
+Targeted arbitration found no competing accuracy/literary reading and made no
+translation change. The repaired closing block was reread in final form. Exact
+joins, hashes, engine IDs, file identity, speaker maps, wrappers, CP932,
+narrative gates, word-wrap tests, and public validation pass. No route-I finding
+remains open.
+
 ## Pass decision and limitations
 
 The I route passes the mandatory critical narrative gate because all 68
-permitted rows were read, no blocking or major issue remains, and every
-deterministic gate passed. I-RT-001 is a narrow non-systemic minor literary
-repair candidate and does not alter that pass decision.
+permitted rows were read, the sole literary finding is closed, and every
+deterministic gate passed.
 
 This was a static artifact readthrough. No runtime build, injection, textbox,
 backlog, sprite, CG, background, or in-engine rendering was exercised or
