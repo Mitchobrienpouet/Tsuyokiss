@@ -2,7 +2,7 @@
 
 Date: 2026-08-22  
 Stage: post-QC critical readthrough only  
-Verdict: **FAIL -- 4 blocking, 2 major, and 1 minor findings remain open**  
+Verdict: **PASS after repair, independent QC, and arbitration closure**  
 Translation changes: NONE
 
 ## Scope and evidence
@@ -109,7 +109,7 @@ literary findings below.
   translated corpus, and normalize every confirmed occurrence. Preserve
   `Shinichi`, `Fukahire`, and explicit `Shark` uses.
 - systemic: true
-- status: open
+- status: closed by the route-C repair and independent QC
 
 ### C-RT-002 -- `Ikajima` is translated under two ad-hoc names
 
@@ -140,7 +140,7 @@ literary findings below.
   locks, search the corpus for the same source term, then revalidate the island
   arc.
 - systemic: true
-- status: open
+- status: closed by the route-C repair and independent QC
 
 ### C-RT-003 -- neutral unknown crush becomes `she` before the reveal
 
@@ -165,7 +165,7 @@ literary findings below.
   but good luck. I'm rooting for you.」`, and reread the C0330 conversation and
   the later Kinu reveal.
 - systemic: false
-- status: open
+- status: closed by the route-C repair and independent QC
 
 ### C-RT-004 -- the male recruiter is addressed as `Ms. Nakajima`
 
@@ -187,7 +187,7 @@ literary findings below.
 - fix_direction: Minimally change the line to `「Hello? Good evening, Mr.
   Nakajima.」`; retain Subaru's polite call register and the offer timing.
 - systemic: false
-- status: open
+- status: closed by the route-C repair and independent QC
 
 ## Major findings
 
@@ -213,7 +213,7 @@ literary findings below.
   program still has a long way to go.」` Do not replace the source nickname or
   add a new organization.
 - systemic: false
-- status: open
+- status: closed by the route-C repair and independent QC
 
 ### C-RT-006 -- direct-address `Crab/Crabby` lock is flattened or left Japanese
 
@@ -250,7 +250,7 @@ literary findings below.
   terminology/literary arbitration. Do not replace legitimate given-name
   address after Leo explicitly switches to `Kinu`.
 - systemic: true
-- status: open
+- status: closed by the route-C repair and independent QC
 
 ## Minor findings
 
@@ -275,7 +275,7 @@ literary findings below.
   someone punched me years ago is aching again.」`; retain the vague
   `a certain someone` and body-location meaning.
 - systemic: false
-- status: open
+- status: closed by the route-C repair and independent QC
 
 ## Continuous-route checks
 
@@ -409,3 +409,29 @@ Every listed permitted index was read continuously. Counts sum to 6,589.
 | `SC_C0970_00_C0990_00` | `1-29` | 29 |
 | `SC_C0990_00_Z9999_99` | `1-75` | 75 |
 | **Total** |  | **6,589** |
+
+## Repair and closure addendum
+
+All seven findings above were repaired in the route-C repair checkpoint. The
+first independent accuracy pass then reviewed all 4,813 permitted rows in the
+12 touched scenes and added six source-faithfulness corrections. The independent
+literary pass reread the same scope, added ten localized prose improvements,
+and escalated rather than smoothing over one upstream referent defect at
+`SC_C0180_00_K0900_00:43`.
+
+That scene was reopened through the accuracy lane. Its full 124 permitted rows
+were checked again; indexes `13`, `25`, and `43` were corrected, including the
+Leo/Tsushima self-referent error. A fresh literary reread accepted all three
+corrections and cleared the block without further edits.
+
+Targeted arbitration retained the established Heijo-kyo, BayStars, `little
+miss`, and later wordplay decisions. No new accuracy-versus-literary conflict
+survived. The corrected finding rows and their immediate continuity blocks were
+reread after the final QC state: Samesuga and the chant, Ikajima, the withheld
+crush gender, Mr. Nakajima, `The Dragon (Ryuumeikan)`, and Crab/Crabby address
+locks are stable; the repaired sentence opening is grammatical. Exact joins,
+exclusion gaps, hashes, engine IDs, speaker maps, wrappers, CP932 encoding,
+word-wrap tests, and project validation pass. No route-C finding remains open.
+
+This closure remains a static-script result. It does not claim runtime textbox,
+backlog, sprite, CG, background, or in-engine rendering verification.
