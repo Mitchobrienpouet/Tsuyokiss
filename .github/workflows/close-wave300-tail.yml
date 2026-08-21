@@ -1,0 +1,252 @@
+name: Close wave-300 tail
+
+on:
+  push:
+    branches:
+      - codex/wave-300-continuation-20260820
+    paths:
+      - .github/workflows/close-wave300-tail.yml
+
+permissions:
+  contents: write
+
+jobs:
+  close:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+          fetch-depth: 0
+
+      - name: Validate shards 72 through 77
+        shell: python
+        run: |
+          import json
+          import re
+          from pathlib import Path
+
+          shards = {
+              72: [
+                  "SC_G0390_00_G0400_00",
+                  "SC_G0400_00_G0420_00",
+                  "SC_G0420_00_G0440_00",
+                  "SC_G0440_00_G0460_00",
+              ],
+              73: [
+                  "SC_G0460_00_G0480_00",
+                  "SC_G0480_00_G0500_00",
+                  "SC_G0500_00_G0520_00",
+                  "SC_G0520_00_G0540_00",
+              ],
+              74: [
+                  "SC_G0540_00_G0600_00",
+                  "SC_G0600_00_G0650_00",
+                  "SC_G0650_00_G0700_00",
+                  "SC_G0700_00_G0720_00",
+              ],
+              75: [
+                  "SC_G0720_00_G0750_00",
+                  "SC_G0750_00_G0760_00",
+                  "SC_G0760_00_G0800_00",
+                  "SC_G0800_00_G0850_00",
+              ],
+              76: [
+                  "SC_G0850_00_G0860_00",
+                  "SC_G0860_10_G0870_00",
+                  "SC_G0860_20_G0950_00",
+                  "SC_G0870_00_G0900_00",
+              ],
+              77: [
+                  "SC_G0900_00_G0910_00",
+                  "SC_G0910_00_G0920_00",
+                  "SC_G0920_00_G0930_00",
+              ],
+          }
+
+          exclusions = json.loads(Path("content_exclusions.json").read_text(encoding="utf-8"))["entries"]
+          exclusion_map = {entry["scene"]: entry for entry in exclusions}
+
+          def ranges_to_set(ranges):
+              result = set()
+              for start, end in ranges:
+                  result.update(range(int(start), int(end) + 1))
+              return result
+
+          def load_json_no_duplicates(path):
+              def hook(pairs):
+                  out = {}
+                  for key, value in pairs:
+                      if key in out:
+                          raise ValueError(f"duplicate JSON key {key!r} in {path}")
+                      out[key] = value
+                  return out
+              return json.loads(path.read_text(encoding="utf-8"), object_pairs_hook=hook)
+
+          report = {
+              "schema_version": 2,
+              "branch": "codex/wave-300-continuation-20260820",
+              "scope": "wave-300 shards 72-77",
+              "shards": {},
+              "open_actionable_gaps": [],
+              "totals": {
+                  "banked_scenes": 0,
+                  "fully_excluded_scenes": 0,
+                  "translation_rows": 0,
+              },
+          }
+
+          for shard, scenes in shards.items():
+              shard_rows = []
+              for scene in scenes:
+                  tpath = Path("translations") / f"{scene}.json"
+                  apath = Path("qc/accuracy") / f"{scene}.md"
+                  lpath = Path("qc/literary") / f"{scene}.md"
+                  exclusion = exclusion_map.get(scene)
+                  excluded = ranges_to_set(exclusion.get("ranges", [])) if exclusion else set()
+                  if exclusion:
+                      excluded.update(int(index) for index in exclusion.get("indexes", []))
+
+                  row = {
+                      "scene": scene,
+                      "canonical_exclusion_ranges": exclusion.get("ranges", []) if exclusion else [],
+                      "canonical_exclusion_indexes": exclusion.get("indexes", []) if exclusion else [],
+                  }
+
+                  if not tpath.exists():
+                      reason = exclusion.get("reason", "") if exclusion else ""
+                      fully_excluded = bool(exclusion and "fully excluded" in reason.lower())
+                      if not fully_excluded:
+                          report["open_actionable_gaps"].append(
+                              {"scene": scene, "problem": "missing translation without a full canonical exclusion"}
+                          )
+                          row["status"] = "ACTIONABLE_GAP"
+                      else:
+                          if apath.exists() or lpath.exists():
+                              raise SystemExit(f"Fully excluded scene {scene} unexpectedly has a QC payload")
+                          row.update({
+                              "status": "FULLY_EXCLUDED",
+                              "translation_rows": 0,
+                              "accuracy_qc": "not applicable",
+                              "literary_qc": "not applicable",
+                              "cp932": "not applicable",
+                              "known_index_coverage": "canonical full exclusion",
+                          })
+                          report["totals"]["fully_excluded_scenes"] += 1
+                      shard_rows.append(row)
+                      continue
+
+                  if not apath.exists() or not lpath.exists():
+                      missing = []
+                      if not apath.exists():
+                          missing.append("accuracy QC")
+                      if not lpath.exists():
+                          missing.append("literary QC")
+                      report["open_actionable_gaps"].append(
+                          {"scene": scene, "problem": "missing " + " and ".join(missing)}
+                      )
+                      row["status"] = "ACTIONABLE_GAP"
+                      shard_rows.append(row)
+                      continue
+
+                  payload = load_json_no_duplicates(tpath)
+                  if payload.get("file") != scene:
+                      raise SystemExit(f"Translation file identity mismatch for {scene}: {payload.get('file')!r}")
+                  lines = payload.get("lines")
+                  if not isinstance(lines, dict) or not lines:
+                      raise SystemExit(f"Translation payload has no lines for {scene}")
+                  keys = {int(key) for key in lines}
+                  if keys & excluded:
+                      raise SystemExit(f"Excluded indexes leaked into {scene}: {sorted(keys & excluded)}")
+                  upper = max(keys | excluded)
+                  uncovered = sorted(set(range(1, upper + 1)) - keys - excluded)
+                  if uncovered:
+                      raise SystemExit(f"Unregistered index gaps in {scene}: {uncovered}")
+
+                  accuracy = apath.read_text(encoding="utf-8")
+                  literary = lpath.read_text(encoding="utf-8")
+                  if not re.search(r"\bPASS\b", accuracy, flags=re.IGNORECASE):
+                      raise SystemExit(f"Accuracy QC lacks PASS verdict for {scene}")
+                  if re.search(r"\bFAIL\b", accuracy, flags=re.IGNORECASE):
+                      raise SystemExit(f"Accuracy QC contains FAIL for {scene}")
+                  if re.search(r"\bFAIL\b", literary, flags=re.IGNORECASE):
+                      raise SystemExit(f"Literary QC contains FAIL for {scene}")
+                  if not literary.strip():
+                      raise SystemExit(f"Literary QC is empty for {scene}")
+
+                  encodable = []
+                  for value in payload.get("speaker_map", {}).values():
+                      encodable.append(str(value))
+                  for value in lines.values():
+                      encodable.append(str(value))
+                  for value in encodable:
+                      value.encode("cp932")
+
+                  row.update({
+                      "status": "BANKED",
+                      "translation_rows": len(keys),
+                      "translation_first_index": min(keys),
+                      "translation_last_index": max(keys),
+                      "known_source_span": upper,
+                      "excluded_index_count": len(excluded),
+                      "accuracy_qc": "PASS",
+                      "literary_qc": "verified",
+                      "cp932": "PASS",
+                      "json_duplicate_keys": "PASS",
+                      "known_index_coverage": "PASS",
+                  })
+                  report["totals"]["banked_scenes"] += 1
+                  report["totals"]["translation_rows"] += len(keys)
+                  shard_rows.append(row)
+              report["shards"][str(shard)] = shard_rows
+
+          if report["open_actionable_gaps"]:
+              raise SystemExit(json.dumps(report["open_actionable_gaps"], indent=2))
+
+          Path("state/audit_wave300_tail_20260821.json").write_text(
+              json.dumps(report, ensure_ascii=False, indent=2) + "\n",
+              encoding="utf-8",
+          )
+
+          md = [
+              "# Wave-300 tail closeout audit — 2026-08-21",
+              "",
+              "Status: **PASS — no actionable translation or QC gap in shards 72-77.**",
+              "",
+              "The audit validates canonical exclusion coverage, translation/exclusion index disjointness, complete known index coverage, duplicate-free JSON, both QC payloads, and CP932 encodability for every banked scene.",
+              "",
+          ]
+          for shard, rows in report["shards"].items():
+              md += [
+                  f"## Shard {shard}",
+                  "",
+                  "| Scene | Status | Rows | Accuracy | Literary | CP932 |",
+                  "|---|---|---:|---:|---:|---:|",
+              ]
+              for row in rows:
+                  md.append(
+                      f"| `{row['scene']}` | {row['status']} | {row.get('translation_rows', 0)} | "
+                      f"{row.get('accuracy_qc', '-')} | {row.get('literary_qc', '-')} | {row.get('cp932', '-')} |"
+                  )
+              md.append("")
+          md += [
+              "## Totals",
+              "",
+              f"- Banked scenes: {report['totals']['banked_scenes']}",
+              f"- Fully excluded scenes: {report['totals']['fully_excluded_scenes']}",
+              f"- Banked translation rows: {report['totals']['translation_rows']}",
+              "- Actionable gaps: none",
+              "",
+          ]
+          Path("state/audit_wave300_tail_20260821.md").write_text("\n".join(md), encoding="utf-8")
+
+      - name: Remove one-shot workflow
+        run: rm .github/workflows/close-wave300-tail.yml
+
+      - name: Commit closeout audit
+        run: |
+          git config user.name "OpenAI Codex"
+          git config user.email "codex@openai.com"
+          git add state/audit_wave300_tail_20260821.json state/audit_wave300_tail_20260821.md .github/workflows/close-wave300-tail.yml
+          git commit -m "Close wave-300 tail audit"
+          git push origin "HEAD:${{ github.ref_name }}"
