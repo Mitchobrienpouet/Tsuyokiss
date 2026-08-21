@@ -383,9 +383,17 @@ def validate_scene(scene: str, *, quiet: bool = False) -> tuple[bool, list[str]]
     except Exception as exc:
         return False, [f"{scene}: invalid JSON: {exc}"]
 
+    declared_scene = translated.get("file")
+    if declared_scene != scene:
+        problems.append(
+            f"{scene}: translation file identity mismatch: "
+            f"expected {scene!r}, found {declared_scene!r}"
+        )
+
     lines = translated.get("lines")
     if not isinstance(lines, dict):
-        return False, [f"{scene}: lines must be an object"]
+        problems.append(f"{scene}: lines must be an object")
+        return False, problems
     excluded = excluded_indexes(scene)
     required = {row_index(row) for row in src.get("rows", [])} - excluded
     present = set(map(str, lines))
