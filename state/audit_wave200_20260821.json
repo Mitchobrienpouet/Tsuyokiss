@@ -1,0 +1,4055 @@
+{
+  "schema_version": 1,
+  "branch": "codex/wave-300-continuation-20260820",
+  "scope": "wave-200 autonomous continuation, shards 1-52",
+  "shards": {
+    "1": {
+      "ledger_status": "RECOVERY",
+      "claim": "w200-01",
+      "ready": true,
+      "scenes": [
+        {
+          "scene": "SC_G0390_00_G0400_00",
+          "translation": false,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": true,
+          "canonical_ranges": [
+            [
+              1,
+              2
+            ]
+          ],
+          "canonical_indexes": [],
+          "full_exclusion_evidence": [
+            "canonical reason",
+            "canonical range starts at index 1"
+          ],
+          "status": "FULLY_EXCLUDED"
+        },
+        {
+          "scene": "SC_G0400_00_G0420_00",
+          "translation": true,
+          "accuracy_qc": true,
+          "literary_qc": true,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "BANKED",
+          "translation_rows": 25,
+          "known_source_span": 25,
+          "excluded_index_count": 0,
+          "json_duplicate_keys": "PASS",
+          "known_index_coverage": "PASS",
+          "exclusion_overlap": "PASS",
+          "cp932": "PASS",
+          "accuracy_verdict": "PASS",
+          "literary_verdict": "verified"
+        },
+        {
+          "scene": "SC_G0420_00_G0440_00",
+          "translation": true,
+          "accuracy_qc": true,
+          "literary_qc": true,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "BANKED",
+          "translation_rows": 19,
+          "known_source_span": 19,
+          "excluded_index_count": 0,
+          "json_duplicate_keys": "PASS",
+          "known_index_coverage": "PASS",
+          "exclusion_overlap": "PASS",
+          "cp932": "PASS",
+          "accuracy_verdict": "PASS",
+          "literary_verdict": "verified"
+        },
+        {
+          "scene": "SC_G0440_00_G0460_00",
+          "translation": true,
+          "accuracy_qc": true,
+          "literary_qc": true,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "BANKED",
+          "translation_rows": 41,
+          "known_source_span": 41,
+          "excluded_index_count": 0,
+          "json_duplicate_keys": "PASS",
+          "known_index_coverage": "PASS",
+          "exclusion_overlap": "PASS",
+          "cp932": "PASS",
+          "accuracy_verdict": "PASS",
+          "literary_verdict": "verified"
+        }
+      ]
+    },
+    "2": {
+      "ledger_status": "RECOVERY",
+      "claim": "w200-02",
+      "ready": true,
+      "scenes": [
+        {
+          "scene": "SC_G0460_00_G0480_00",
+          "translation": true,
+          "accuracy_qc": true,
+          "literary_qc": true,
+          "canonical_exclusion": true,
+          "canonical_ranges": [
+            [
+              98,
+              116
+            ]
+          ],
+          "canonical_indexes": [],
+          "status": "BANKED",
+          "translation_rows": 97,
+          "known_source_span": 116,
+          "excluded_index_count": 19,
+          "json_duplicate_keys": "PASS",
+          "known_index_coverage": "PASS",
+          "exclusion_overlap": "PASS",
+          "cp932": "PASS",
+          "accuracy_verdict": "PASS",
+          "literary_verdict": "verified"
+        },
+        {
+          "scene": "SC_G0480_00_G0500_00",
+          "translation": false,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": true,
+          "canonical_ranges": [
+            [
+              1,
+              518
+            ]
+          ],
+          "canonical_indexes": [],
+          "full_exclusion_evidence": [
+            "canonical reason",
+            "canonical range starts at index 1",
+            "state/restricted_findings_wave200_shard02.md"
+          ],
+          "status": "FULLY_EXCLUDED"
+        },
+        {
+          "scene": "SC_G0500_00_G0520_00",
+          "translation": true,
+          "accuracy_qc": true,
+          "literary_qc": true,
+          "canonical_exclusion": true,
+          "canonical_ranges": [
+            [
+              27,
+              40
+            ]
+          ],
+          "canonical_indexes": [],
+          "status": "BANKED",
+          "translation_rows": 41,
+          "known_source_span": 55,
+          "excluded_index_count": 14,
+          "json_duplicate_keys": "PASS",
+          "known_index_coverage": "PASS",
+          "exclusion_overlap": "PASS",
+          "cp932": "PASS",
+          "accuracy_verdict": "PASS",
+          "literary_verdict": "verified"
+        },
+        {
+          "scene": "SC_G0520_00_G0540_00",
+          "translation": false,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": true,
+          "canonical_ranges": [
+            [
+              1,
+              126
+            ]
+          ],
+          "canonical_indexes": [],
+          "full_exclusion_evidence": [
+            "canonical reason",
+            "canonical range starts at index 1",
+            "state/restricted_findings_wave200_shard02.md"
+          ],
+          "status": "FULLY_EXCLUDED"
+        }
+      ]
+    },
+    "3": {
+      "ledger_status": "RECOVERY",
+      "claim": "w200-03",
+      "ready": true,
+      "scenes": [
+        {
+          "scene": "SC_G0540_00_G0600_00",
+          "translation": true,
+          "accuracy_qc": true,
+          "literary_qc": true,
+          "canonical_exclusion": true,
+          "canonical_ranges": [
+            [
+              1,
+              62
+            ],
+            [
+              86,
+              86
+            ],
+            [
+              112,
+              132
+            ],
+            [
+              353,
+              375
+            ],
+            [
+              380,
+              384
+            ]
+          ],
+          "canonical_indexes": [],
+          "status": "BANKED",
+          "translation_rows": 304,
+          "known_source_span": 416,
+          "excluded_index_count": 112,
+          "json_duplicate_keys": "PASS",
+          "known_index_coverage": "PASS",
+          "exclusion_overlap": "PASS",
+          "cp932": "PASS",
+          "accuracy_verdict": "PASS",
+          "literary_verdict": "verified"
+        },
+        {
+          "scene": "SC_G0600_00_G0650_00",
+          "translation": true,
+          "accuracy_qc": true,
+          "literary_qc": true,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "BANKED",
+          "translation_rows": 74,
+          "known_source_span": 74,
+          "excluded_index_count": 0,
+          "json_duplicate_keys": "PASS",
+          "known_index_coverage": "PASS",
+          "exclusion_overlap": "PASS",
+          "cp932": "PASS",
+          "accuracy_verdict": "PASS",
+          "literary_verdict": "verified"
+        },
+        {
+          "scene": "SC_G0650_00_G0700_00",
+          "translation": true,
+          "accuracy_qc": true,
+          "literary_qc": true,
+          "canonical_exclusion": true,
+          "canonical_ranges": [
+            [
+              35,
+              39
+            ],
+            [
+              61,
+              111
+            ],
+            [
+              241,
+              242
+            ],
+            [
+              290,
+              306
+            ]
+          ],
+          "canonical_indexes": [],
+          "status": "BANKED",
+          "translation_rows": 246,
+          "known_source_span": 321,
+          "excluded_index_count": 75,
+          "json_duplicate_keys": "PASS",
+          "known_index_coverage": "PASS",
+          "exclusion_overlap": "PASS",
+          "cp932": "PASS",
+          "accuracy_verdict": "PASS",
+          "literary_verdict": "verified"
+        },
+        {
+          "scene": "SC_G0700_00_G0720_00",
+          "translation": true,
+          "accuracy_qc": true,
+          "literary_qc": true,
+          "canonical_exclusion": true,
+          "canonical_ranges": [
+            [
+              1,
+              38
+            ]
+          ],
+          "canonical_indexes": [],
+          "status": "BANKED",
+          "translation_rows": 4,
+          "known_source_span": 42,
+          "excluded_index_count": 38,
+          "json_duplicate_keys": "PASS",
+          "known_index_coverage": "PASS",
+          "exclusion_overlap": "PASS",
+          "cp932": "PASS",
+          "accuracy_verdict": "PASS",
+          "literary_verdict": "verified"
+        }
+      ]
+    },
+    "4": {
+      "ledger_status": "RECOVERY",
+      "claim": "w200-04",
+      "ready": true,
+      "scenes": [
+        {
+          "scene": "SC_G0720_00_G0750_00",
+          "translation": true,
+          "accuracy_qc": true,
+          "literary_qc": true,
+          "canonical_exclusion": true,
+          "canonical_ranges": [
+            [
+              4,
+              4
+            ]
+          ],
+          "canonical_indexes": [],
+          "status": "BANKED",
+          "translation_rows": 27,
+          "known_source_span": 28,
+          "excluded_index_count": 1,
+          "json_duplicate_keys": "PASS",
+          "known_index_coverage": "PASS",
+          "exclusion_overlap": "PASS",
+          "cp932": "PASS",
+          "accuracy_verdict": "PASS",
+          "literary_verdict": "verified"
+        },
+        {
+          "scene": "SC_G0750_00_G0760_00",
+          "translation": false,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": true,
+          "canonical_ranges": [
+            [
+              1,
+              362
+            ]
+          ],
+          "canonical_indexes": [],
+          "full_exclusion_evidence": [
+            "canonical reason",
+            "canonical range starts at index 1"
+          ],
+          "status": "FULLY_EXCLUDED"
+        },
+        {
+          "scene": "SC_G0760_00_G0800_00",
+          "translation": true,
+          "accuracy_qc": true,
+          "literary_qc": true,
+          "canonical_exclusion": true,
+          "canonical_ranges": [
+            [
+              1,
+              7
+            ],
+            [
+              96,
+              97
+            ],
+            [
+              115,
+              116
+            ],
+            [
+              124,
+              124
+            ]
+          ],
+          "canonical_indexes": [],
+          "status": "BANKED",
+          "translation_rows": 121,
+          "known_source_span": 133,
+          "excluded_index_count": 12,
+          "json_duplicate_keys": "PASS",
+          "known_index_coverage": "PASS",
+          "exclusion_overlap": "PASS",
+          "cp932": "PASS",
+          "accuracy_verdict": "PASS",
+          "literary_verdict": "verified"
+        },
+        {
+          "scene": "SC_G0800_00_G0850_00",
+          "translation": true,
+          "accuracy_qc": true,
+          "literary_qc": true,
+          "canonical_exclusion": true,
+          "canonical_ranges": [
+            [
+              1,
+              52
+            ],
+            [
+              91,
+              94
+            ],
+            [
+              113,
+              117
+            ],
+            [
+              132,
+              141
+            ],
+            [
+              149,
+              150
+            ],
+            [
+              158,
+              171
+            ],
+            [
+              189,
+              190
+            ],
+            [
+              202,
+              203
+            ],
+            [
+              290,
+              292
+            ],
+            [
+              372,
+              384
+            ],
+            [
+              433,
+              434
+            ],
+            [
+              481,
+              481
+            ],
+            [
+              506,
+              516
+            ]
+          ],
+          "canonical_indexes": [],
+          "status": "BANKED",
+          "translation_rows": 408,
+          "known_source_span": 529,
+          "excluded_index_count": 121,
+          "json_duplicate_keys": "PASS",
+          "known_index_coverage": "PASS",
+          "exclusion_overlap": "PASS",
+          "cp932": "PASS",
+          "accuracy_verdict": "PASS",
+          "literary_verdict": "verified"
+        }
+      ]
+    },
+    "5": {
+      "ledger_status": "RECOVERY",
+      "claim": "w200-05",
+      "ready": true,
+      "scenes": [
+        {
+          "scene": "SC_G0850_00_G0860_00",
+          "translation": true,
+          "accuracy_qc": true,
+          "literary_qc": true,
+          "canonical_exclusion": true,
+          "canonical_ranges": [
+            [
+              99,
+              101
+            ]
+          ],
+          "canonical_indexes": [],
+          "status": "BANKED",
+          "translation_rows": 98,
+          "known_source_span": 101,
+          "excluded_index_count": 3,
+          "json_duplicate_keys": "PASS",
+          "known_index_coverage": "PASS",
+          "exclusion_overlap": "PASS",
+          "cp932": "PASS",
+          "accuracy_verdict": "PASS",
+          "literary_verdict": "verified"
+        },
+        {
+          "scene": "SC_G0860_10_G0870_00",
+          "translation": true,
+          "accuracy_qc": true,
+          "literary_qc": true,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "BANKED",
+          "translation_rows": 22,
+          "known_source_span": 22,
+          "excluded_index_count": 0,
+          "json_duplicate_keys": "PASS",
+          "known_index_coverage": "PASS",
+          "exclusion_overlap": "PASS",
+          "cp932": "PASS",
+          "accuracy_verdict": "PASS",
+          "literary_verdict": "verified"
+        },
+        {
+          "scene": "SC_G0860_20_G0950_00",
+          "translation": true,
+          "accuracy_qc": true,
+          "literary_qc": true,
+          "canonical_exclusion": true,
+          "canonical_ranges": [
+            [
+              33,
+              59
+            ]
+          ],
+          "canonical_indexes": [],
+          "status": "BANKED",
+          "translation_rows": 32,
+          "known_source_span": 59,
+          "excluded_index_count": 27,
+          "json_duplicate_keys": "PASS",
+          "known_index_coverage": "PASS",
+          "exclusion_overlap": "PASS",
+          "cp932": "PASS",
+          "accuracy_verdict": "PASS",
+          "literary_verdict": "verified"
+        },
+        {
+          "scene": "SC_G0870_00_G0900_00",
+          "translation": true,
+          "accuracy_qc": true,
+          "literary_qc": true,
+          "canonical_exclusion": true,
+          "canonical_ranges": [
+            [
+              122,
+              125
+            ],
+            [
+              191,
+              191
+            ]
+          ],
+          "canonical_indexes": [],
+          "status": "BANKED",
+          "translation_rows": 190,
+          "known_source_span": 195,
+          "excluded_index_count": 5,
+          "json_duplicate_keys": "PASS",
+          "known_index_coverage": "PASS",
+          "exclusion_overlap": "PASS",
+          "cp932": "PASS",
+          "accuracy_verdict": "PASS",
+          "literary_verdict": "verified"
+        }
+      ]
+    },
+    "6": {
+      "ledger_status": "RECOVERY",
+      "claim": "w200-06",
+      "ready": true,
+      "scenes": [
+        {
+          "scene": "SC_G0900_00_G0910_00",
+          "translation": true,
+          "accuracy_qc": true,
+          "literary_qc": true,
+          "canonical_exclusion": true,
+          "canonical_ranges": [
+            [
+              79,
+              84
+            ]
+          ],
+          "canonical_indexes": [],
+          "status": "BANKED",
+          "translation_rows": 78,
+          "known_source_span": 84,
+          "excluded_index_count": 6,
+          "json_duplicate_keys": "PASS",
+          "known_index_coverage": "PASS",
+          "exclusion_overlap": "PASS",
+          "cp932": "PASS",
+          "accuracy_verdict": "PASS",
+          "literary_verdict": "verified"
+        },
+        {
+          "scene": "SC_G0910_00_G0920_00",
+          "translation": false,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": true,
+          "canonical_ranges": [
+            [
+              1,
+              99
+            ]
+          ],
+          "canonical_indexes": [],
+          "full_exclusion_evidence": [
+            "canonical reason",
+            "canonical range starts at index 1"
+          ],
+          "status": "FULLY_EXCLUDED"
+        },
+        {
+          "scene": "SC_G0920_00_G0930_00",
+          "translation": true,
+          "accuracy_qc": true,
+          "literary_qc": true,
+          "canonical_exclusion": true,
+          "canonical_ranges": [
+            [
+              1,
+              5
+            ],
+            [
+              41,
+              43
+            ],
+            [
+              49,
+              53
+            ]
+          ],
+          "canonical_indexes": [],
+          "status": "BANKED",
+          "translation_rows": 42,
+          "known_source_span": 55,
+          "excluded_index_count": 13,
+          "json_duplicate_keys": "PASS",
+          "known_index_coverage": "PASS",
+          "exclusion_overlap": "PASS",
+          "cp932": "PASS",
+          "accuracy_verdict": "PASS",
+          "literary_verdict": "verified"
+        }
+      ]
+    },
+    "7": {
+      "ledger_status": "CLAIMED",
+      "claim": "w200-07",
+      "ready": true,
+      "scenes": [
+        {
+          "scene": "SC_G0930_00_G0990_00",
+          "translation": true,
+          "accuracy_qc": true,
+          "literary_qc": true,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "BANKED",
+          "translation_rows": 38,
+          "known_source_span": 38,
+          "excluded_index_count": 0,
+          "json_duplicate_keys": "PASS",
+          "known_index_coverage": "PASS",
+          "exclusion_overlap": "PASS",
+          "cp932": "PASS",
+          "accuracy_verdict": "PASS",
+          "literary_verdict": "verified"
+        },
+        {
+          "scene": "SC_G0950_00_G0960_00",
+          "translation": false,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": true,
+          "canonical_ranges": [
+            [
+              1,
+              191
+            ]
+          ],
+          "canonical_indexes": [],
+          "full_exclusion_evidence": [
+            "canonical reason",
+            "canonical range starts at index 1"
+          ],
+          "status": "FULLY_EXCLUDED"
+        },
+        {
+          "scene": "SC_G0960_00_G0970_00",
+          "translation": false,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": true,
+          "canonical_ranges": [
+            [
+              1,
+              5
+            ]
+          ],
+          "canonical_indexes": [],
+          "full_exclusion_evidence": [
+            "canonical reason",
+            "canonical range starts at index 1"
+          ],
+          "status": "FULLY_EXCLUDED"
+        },
+        {
+          "scene": "SC_G0970_00_Z9999_99",
+          "translation": true,
+          "accuracy_qc": true,
+          "literary_qc": true,
+          "canonical_exclusion": true,
+          "canonical_ranges": [
+            [
+              1,
+              90
+            ],
+            [
+              102,
+              116
+            ]
+          ],
+          "canonical_indexes": [],
+          "status": "BANKED",
+          "translation_rows": 11,
+          "known_source_span": 116,
+          "excluded_index_count": 105,
+          "json_duplicate_keys": "PASS",
+          "known_index_coverage": "PASS",
+          "exclusion_overlap": "PASS",
+          "cp932": "PASS",
+          "accuracy_verdict": "PASS",
+          "literary_verdict": "verified"
+        }
+      ]
+    },
+    "8": {
+      "ledger_status": "CLAIMED",
+      "claim": "w200-08",
+      "ready": true,
+      "scenes": [
+        {
+          "scene": "SC_G0990_00_Z9999_99",
+          "translation": true,
+          "accuracy_qc": true,
+          "literary_qc": true,
+          "canonical_exclusion": true,
+          "canonical_ranges": [
+            [
+              42,
+              45
+            ]
+          ],
+          "canonical_indexes": [],
+          "status": "BANKED",
+          "translation_rows": 43,
+          "known_source_span": 47,
+          "excluded_index_count": 4,
+          "json_duplicate_keys": "PASS",
+          "known_index_coverage": "PASS",
+          "exclusion_overlap": "PASS",
+          "cp932": "PASS",
+          "accuracy_verdict": "PASS",
+          "literary_verdict": "verified"
+        }
+      ]
+    },
+    "9": {
+      "ledger_status": "CLAIMED",
+      "claim": "w200-09",
+      "ready": true,
+      "scenes": [
+        {
+          "scene": "SC_I0100_00_Z9999_99",
+          "translation": true,
+          "accuracy_qc": true,
+          "literary_qc": true,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "BANKED",
+          "translation_rows": 68,
+          "known_source_span": 68,
+          "excluded_index_count": 0,
+          "json_duplicate_keys": "PASS",
+          "known_index_coverage": "PASS",
+          "exclusion_overlap": "PASS",
+          "cp932": "PASS",
+          "accuracy_verdict": "PASS",
+          "literary_verdict": "verified"
+        }
+      ]
+    },
+    "10": {
+      "ledger_status": "CLAIMED",
+      "claim": "w200-10",
+      "ready": true,
+      "scenes": [
+        {
+          "scene": "SC_J0000_00_J0100_01",
+          "translation": true,
+          "accuracy_qc": true,
+          "literary_qc": true,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "BANKED",
+          "translation_rows": 1,
+          "known_source_span": 1,
+          "excluded_index_count": 0,
+          "json_duplicate_keys": "PASS",
+          "known_index_coverage": "PASS",
+          "exclusion_overlap": "PASS",
+          "cp932": "PASS",
+          "accuracy_verdict": "PASS",
+          "literary_verdict": "verified"
+        },
+        {
+          "scene": "SC_J0100_01_J0100_02",
+          "translation": true,
+          "accuracy_qc": true,
+          "literary_qc": true,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "BANKED",
+          "translation_rows": 109,
+          "known_source_span": 109,
+          "excluded_index_count": 0,
+          "json_duplicate_keys": "PASS",
+          "known_index_coverage": "PASS",
+          "exclusion_overlap": "PASS",
+          "cp932": "PASS",
+          "accuracy_verdict": "PASS",
+          "literary_verdict": "verified"
+        },
+        {
+          "scene": "SC_J0100_02_J0100_03",
+          "translation": true,
+          "accuracy_qc": true,
+          "literary_qc": true,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "BANKED",
+          "translation_rows": 45,
+          "known_source_span": 45,
+          "excluded_index_count": 0,
+          "json_duplicate_keys": "PASS",
+          "known_index_coverage": "PASS",
+          "exclusion_overlap": "PASS",
+          "cp932": "PASS",
+          "accuracy_verdict": "PASS",
+          "literary_verdict": "verified"
+        },
+        {
+          "scene": "SC_J0100_03_J0100_04",
+          "translation": true,
+          "accuracy_qc": true,
+          "literary_qc": true,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "BANKED",
+          "translation_rows": 76,
+          "known_source_span": 76,
+          "excluded_index_count": 0,
+          "json_duplicate_keys": "PASS",
+          "known_index_coverage": "PASS",
+          "exclusion_overlap": "PASS",
+          "cp932": "PASS",
+          "accuracy_verdict": "PASS",
+          "literary_verdict": "verified"
+        }
+      ]
+    },
+    "11": {
+      "ledger_status": "CLAIMED",
+      "claim": "w200-11",
+      "ready": true,
+      "scenes": [
+        {
+          "scene": "SC_J0100_04_J0100_05",
+          "translation": true,
+          "accuracy_qc": true,
+          "literary_qc": true,
+          "canonical_exclusion": true,
+          "canonical_ranges": [
+            [
+              11,
+              37
+            ]
+          ],
+          "canonical_indexes": [],
+          "status": "BANKED",
+          "translation_rows": 34,
+          "known_source_span": 61,
+          "excluded_index_count": 27,
+          "json_duplicate_keys": "PASS",
+          "known_index_coverage": "PASS",
+          "exclusion_overlap": "PASS",
+          "cp932": "PASS",
+          "accuracy_verdict": "PASS",
+          "literary_verdict": "verified"
+        },
+        {
+          "scene": "SC_J0100_05_J0100_06",
+          "translation": true,
+          "accuracy_qc": true,
+          "literary_qc": true,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "BANKED",
+          "translation_rows": 36,
+          "known_source_span": 36,
+          "excluded_index_count": 0,
+          "json_duplicate_keys": "PASS",
+          "known_index_coverage": "PASS",
+          "exclusion_overlap": "PASS",
+          "cp932": "PASS",
+          "accuracy_verdict": "PASS",
+          "literary_verdict": "verified"
+        },
+        {
+          "scene": "SC_J0100_06_J0100_07",
+          "translation": true,
+          "accuracy_qc": true,
+          "literary_qc": true,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "BANKED",
+          "translation_rows": 84,
+          "known_source_span": 84,
+          "excluded_index_count": 0,
+          "json_duplicate_keys": "PASS",
+          "known_index_coverage": "PASS",
+          "exclusion_overlap": "PASS",
+          "cp932": "PASS",
+          "accuracy_verdict": "PASS",
+          "literary_verdict": "verified"
+        },
+        {
+          "scene": "SC_J0100_07_J0100_08",
+          "translation": true,
+          "accuracy_qc": true,
+          "literary_qc": true,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "BANKED",
+          "translation_rows": 60,
+          "known_source_span": 60,
+          "excluded_index_count": 0,
+          "json_duplicate_keys": "PASS",
+          "known_index_coverage": "PASS",
+          "exclusion_overlap": "PASS",
+          "cp932": "PASS",
+          "accuracy_verdict": "PASS",
+          "literary_verdict": "verified"
+        }
+      ]
+    },
+    "12": {
+      "ledger_status": "CLAIMED",
+      "claim": "w200-12",
+      "ready": false,
+      "scenes": [
+        {
+          "scene": "SC_J0100_08_J0100_09",
+          "translation": true,
+          "accuracy_qc": true,
+          "literary_qc": true,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "BANKED",
+          "translation_rows": 47,
+          "known_source_span": 47,
+          "excluded_index_count": 0,
+          "json_duplicate_keys": "PASS",
+          "known_index_coverage": "PASS",
+          "exclusion_overlap": "PASS",
+          "cp932": "PASS",
+          "accuracy_verdict": "PASS",
+          "literary_verdict": "verified"
+        },
+        {
+          "scene": "SC_J0100_09_J0100_10",
+          "translation": true,
+          "accuracy_qc": true,
+          "literary_qc": true,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "BANKED",
+          "translation_rows": 47,
+          "known_source_span": 47,
+          "excluded_index_count": 0,
+          "json_duplicate_keys": "PASS",
+          "known_index_coverage": "PASS",
+          "exclusion_overlap": "PASS",
+          "cp932": "PASS",
+          "accuracy_verdict": "PASS",
+          "literary_verdict": "verified"
+        },
+        {
+          "scene": "SC_J0100_10_J0100_15",
+          "translation": true,
+          "accuracy_qc": true,
+          "literary_qc": true,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "BANKED",
+          "translation_rows": 70,
+          "known_source_span": 70,
+          "excluded_index_count": 0,
+          "json_duplicate_keys": "PASS",
+          "known_index_coverage": "PASS",
+          "exclusion_overlap": "PASS",
+          "cp932": "PASS",
+          "accuracy_verdict": "PASS",
+          "literary_verdict": "verified"
+        },
+        {
+          "scene": "SC_J0100_16_J0100_20",
+          "translation": false,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "MISSING",
+          "error": "no translation, no QC, and no canonical exclusion"
+        }
+      ]
+    },
+    "13": {
+      "ledger_status": "CLAIMED",
+      "claim": "w200-13",
+      "ready": false,
+      "scenes": [
+        {
+          "scene": "SC_J0100_17_J0100_20",
+          "translation": false,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "MISSING",
+          "error": "no translation, no QC, and no canonical exclusion"
+        },
+        {
+          "scene": "SC_J0100_18_J0100_20",
+          "translation": false,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "MISSING",
+          "error": "no translation, no QC, and no canonical exclusion"
+        },
+        {
+          "scene": "SC_J0100_20_Z9999_99",
+          "translation": false,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "MISSING",
+          "error": "no translation, no QC, and no canonical exclusion"
+        }
+      ]
+    },
+    "14": {
+      "ledger_status": "CLAIMED",
+      "claim": "w200-14",
+      "ready": true,
+      "scenes": [
+        {
+          "scene": "SC_M0100_00_K0900_00",
+          "translation": true,
+          "accuracy_qc": true,
+          "literary_qc": true,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "BANKED",
+          "translation_rows": 47,
+          "known_source_span": 47,
+          "excluded_index_count": 0,
+          "json_duplicate_keys": "PASS",
+          "known_index_coverage": "PASS",
+          "exclusion_overlap": "PASS",
+          "cp932": "PASS",
+          "accuracy_verdict": "PASS",
+          "literary_verdict": "verified"
+        },
+        {
+          "scene": "SC_M0110_00_M0110_10",
+          "translation": true,
+          "accuracy_qc": true,
+          "literary_qc": true,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "BANKED",
+          "translation_rows": 39,
+          "known_source_span": 39,
+          "excluded_index_count": 0,
+          "json_duplicate_keys": "PASS",
+          "known_index_coverage": "PASS",
+          "exclusion_overlap": "PASS",
+          "cp932": "PASS",
+          "accuracy_verdict": "PASS",
+          "literary_verdict": "verified"
+        },
+        {
+          "scene": "SC_M0110_10_M0110_20",
+          "translation": true,
+          "accuracy_qc": true,
+          "literary_qc": true,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "BANKED",
+          "translation_rows": 29,
+          "known_source_span": 29,
+          "excluded_index_count": 0,
+          "json_duplicate_keys": "PASS",
+          "known_index_coverage": "PASS",
+          "exclusion_overlap": "PASS",
+          "cp932": "PASS",
+          "accuracy_verdict": "PASS",
+          "literary_verdict": "verified"
+        },
+        {
+          "scene": "SC_M0110_20_M0110_30",
+          "translation": true,
+          "accuracy_qc": true,
+          "literary_qc": true,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "BANKED",
+          "translation_rows": 2,
+          "known_source_span": 2,
+          "excluded_index_count": 0,
+          "json_duplicate_keys": "PASS",
+          "known_index_coverage": "PASS",
+          "exclusion_overlap": "PASS",
+          "cp932": "PASS",
+          "accuracy_verdict": "PASS",
+          "literary_verdict": "verified"
+        }
+      ]
+    },
+    "15": {
+      "ledger_status": "CLAIMED",
+      "claim": "w200-15",
+      "ready": true,
+      "scenes": [
+        {
+          "scene": "SC_M0110_30_K0900_00",
+          "translation": true,
+          "accuracy_qc": true,
+          "literary_qc": true,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "BANKED",
+          "translation_rows": 13,
+          "known_source_span": 13,
+          "excluded_index_count": 0,
+          "json_duplicate_keys": "PASS",
+          "known_index_coverage": "PASS",
+          "exclusion_overlap": "PASS",
+          "cp932": "PASS",
+          "accuracy_verdict": "PASS",
+          "literary_verdict": "verified"
+        },
+        {
+          "scene": "SC_M0120_00_M0120_10",
+          "translation": true,
+          "accuracy_qc": true,
+          "literary_qc": true,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "BANKED",
+          "translation_rows": 26,
+          "known_source_span": 26,
+          "excluded_index_count": 0,
+          "json_duplicate_keys": "PASS",
+          "known_index_coverage": "PASS",
+          "exclusion_overlap": "PASS",
+          "cp932": "PASS",
+          "accuracy_verdict": "PASS",
+          "literary_verdict": "verified"
+        },
+        {
+          "scene": "SC_M0120_20_K0900_00",
+          "translation": true,
+          "accuracy_qc": true,
+          "literary_qc": true,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "BANKED",
+          "translation_rows": 49,
+          "known_source_span": 49,
+          "excluded_index_count": 0,
+          "json_duplicate_keys": "PASS",
+          "known_index_coverage": "PASS",
+          "exclusion_overlap": "PASS",
+          "cp932": "PASS",
+          "accuracy_verdict": "PASS",
+          "literary_verdict": "verified"
+        },
+        {
+          "scene": "SC_M0130_00_M0130_10",
+          "translation": true,
+          "accuracy_qc": true,
+          "literary_qc": true,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "BANKED",
+          "translation_rows": 15,
+          "known_source_span": 15,
+          "excluded_index_count": 0,
+          "json_duplicate_keys": "PASS",
+          "known_index_coverage": "PASS",
+          "exclusion_overlap": "PASS",
+          "cp932": "PASS",
+          "accuracy_verdict": "PASS",
+          "literary_verdict": "verified"
+        }
+      ]
+    },
+    "16": {
+      "ledger_status": "CLAIMED",
+      "claim": "w200-16",
+      "ready": true,
+      "scenes": [
+        {
+          "scene": "SC_M0130_30_K0900_00",
+          "translation": true,
+          "accuracy_qc": true,
+          "literary_qc": true,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "BANKED",
+          "translation_rows": 50,
+          "known_source_span": 50,
+          "excluded_index_count": 0,
+          "json_duplicate_keys": "PASS",
+          "known_index_coverage": "PASS",
+          "exclusion_overlap": "PASS",
+          "cp932": "PASS",
+          "accuracy_verdict": "PASS",
+          "literary_verdict": "verified"
+        },
+        {
+          "scene": "SC_M0140_00_M0141_00",
+          "translation": true,
+          "accuracy_qc": true,
+          "literary_qc": true,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "BANKED",
+          "translation_rows": 7,
+          "known_source_span": 7,
+          "excluded_index_count": 0,
+          "json_duplicate_keys": "PASS",
+          "known_index_coverage": "PASS",
+          "exclusion_overlap": "PASS",
+          "cp932": "PASS",
+          "accuracy_verdict": "PASS",
+          "literary_verdict": "verified"
+        },
+        {
+          "scene": "SC_M0142_00_M0150_00",
+          "translation": true,
+          "accuracy_qc": true,
+          "literary_qc": true,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "BANKED",
+          "translation_rows": 10,
+          "known_source_span": 10,
+          "excluded_index_count": 0,
+          "json_duplicate_keys": "PASS",
+          "known_index_coverage": "PASS",
+          "exclusion_overlap": "PASS",
+          "cp932": "PASS",
+          "accuracy_verdict": "PASS",
+          "literary_verdict": "verified"
+        },
+        {
+          "scene": "SC_M0150_00_M0151_00",
+          "translation": true,
+          "accuracy_qc": true,
+          "literary_qc": true,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "BANKED",
+          "translation_rows": 17,
+          "known_source_span": 17,
+          "excluded_index_count": 0,
+          "json_duplicate_keys": "PASS",
+          "known_index_coverage": "PASS",
+          "exclusion_overlap": "PASS",
+          "cp932": "PASS",
+          "accuracy_verdict": "PASS",
+          "literary_verdict": "verified"
+        }
+      ]
+    },
+    "17": {
+      "ledger_status": "CLAIMED",
+      "claim": "w200-17",
+      "ready": true,
+      "scenes": [
+        {
+          "scene": "SC_M0152_00_M0153_00",
+          "translation": true,
+          "accuracy_qc": true,
+          "literary_qc": true,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "BANKED",
+          "translation_rows": 12,
+          "known_source_span": 12,
+          "excluded_index_count": 0,
+          "json_duplicate_keys": "PASS",
+          "known_index_coverage": "PASS",
+          "exclusion_overlap": "PASS",
+          "cp932": "PASS",
+          "accuracy_verdict": "PASS",
+          "literary_verdict": "verified"
+        },
+        {
+          "scene": "SC_M0153_00_M0154_00",
+          "translation": true,
+          "accuracy_qc": true,
+          "literary_qc": true,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "BANKED",
+          "translation_rows": 50,
+          "known_source_span": 50,
+          "excluded_index_count": 0,
+          "json_duplicate_keys": "PASS",
+          "known_index_coverage": "PASS",
+          "exclusion_overlap": "PASS",
+          "cp932": "PASS",
+          "accuracy_verdict": "PASS",
+          "literary_verdict": "verified"
+        },
+        {
+          "scene": "SC_M0154_00_M0155_00",
+          "translation": true,
+          "accuracy_qc": true,
+          "literary_qc": true,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "BANKED",
+          "translation_rows": 9,
+          "known_source_span": 9,
+          "excluded_index_count": 0,
+          "json_duplicate_keys": "PASS",
+          "known_index_coverage": "PASS",
+          "exclusion_overlap": "PASS",
+          "cp932": "PASS",
+          "accuracy_verdict": "PASS",
+          "literary_verdict": "verified"
+        },
+        {
+          "scene": "SC_M0155_00_M0156_00",
+          "translation": true,
+          "accuracy_qc": true,
+          "literary_qc": true,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "BANKED",
+          "translation_rows": 27,
+          "known_source_span": 27,
+          "excluded_index_count": 0,
+          "json_duplicate_keys": "PASS",
+          "known_index_coverage": "PASS",
+          "exclusion_overlap": "PASS",
+          "cp932": "PASS",
+          "accuracy_verdict": "PASS",
+          "literary_verdict": "verified"
+        }
+      ]
+    },
+    "18": {
+      "ledger_status": "CLAIMED",
+      "claim": "w200-18",
+      "ready": true,
+      "scenes": [
+        {
+          "scene": "SC_M0156_00_M0157_00",
+          "translation": true,
+          "accuracy_qc": true,
+          "literary_qc": true,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "BANKED",
+          "translation_rows": 19,
+          "known_source_span": 19,
+          "excluded_index_count": 0,
+          "json_duplicate_keys": "PASS",
+          "known_index_coverage": "PASS",
+          "exclusion_overlap": "PASS",
+          "cp932": "PASS",
+          "accuracy_verdict": "PASS",
+          "literary_verdict": "verified"
+        },
+        {
+          "scene": "SC_M0157_00_M0160_00",
+          "translation": true,
+          "accuracy_qc": true,
+          "literary_qc": true,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "BANKED",
+          "translation_rows": 51,
+          "known_source_span": 51,
+          "excluded_index_count": 0,
+          "json_duplicate_keys": "PASS",
+          "known_index_coverage": "PASS",
+          "exclusion_overlap": "PASS",
+          "cp932": "PASS",
+          "accuracy_verdict": "PASS",
+          "literary_verdict": "verified"
+        },
+        {
+          "scene": "SC_M0170_00_M0171_00",
+          "translation": true,
+          "accuracy_qc": true,
+          "literary_qc": true,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "BANKED",
+          "translation_rows": 15,
+          "known_source_span": 15,
+          "excluded_index_count": 0,
+          "json_duplicate_keys": "PASS",
+          "known_index_coverage": "PASS",
+          "exclusion_overlap": "PASS",
+          "cp932": "PASS",
+          "accuracy_verdict": "PASS",
+          "literary_verdict": "verified"
+        },
+        {
+          "scene": "SC_M0171_00_M0180_00",
+          "translation": true,
+          "accuracy_qc": true,
+          "literary_qc": true,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "BANKED",
+          "translation_rows": 13,
+          "known_source_span": 13,
+          "excluded_index_count": 0,
+          "json_duplicate_keys": "PASS",
+          "known_index_coverage": "PASS",
+          "exclusion_overlap": "PASS",
+          "cp932": "PASS",
+          "accuracy_verdict": "PASS",
+          "literary_verdict": "verified"
+        }
+      ]
+    },
+    "19": {
+      "ledger_status": "CLAIMED",
+      "claim": "w200-19",
+      "ready": true,
+      "scenes": [
+        {
+          "scene": "SC_M0180_00_M0181_00",
+          "translation": true,
+          "accuracy_qc": true,
+          "literary_qc": true,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "BANKED",
+          "translation_rows": 84,
+          "known_source_span": 84,
+          "excluded_index_count": 0,
+          "json_duplicate_keys": "PASS",
+          "known_index_coverage": "PASS",
+          "exclusion_overlap": "PASS",
+          "cp932": "PASS",
+          "accuracy_verdict": "PASS",
+          "literary_verdict": "verified"
+        },
+        {
+          "scene": "SC_M0181_00_M0182_00",
+          "translation": true,
+          "accuracy_qc": true,
+          "literary_qc": true,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "BANKED",
+          "translation_rows": 30,
+          "known_source_span": 30,
+          "excluded_index_count": 0,
+          "json_duplicate_keys": "PASS",
+          "known_index_coverage": "PASS",
+          "exclusion_overlap": "PASS",
+          "cp932": "PASS",
+          "accuracy_verdict": "PASS",
+          "literary_verdict": "verified"
+        },
+        {
+          "scene": "SC_M0182_00_M0183_00",
+          "translation": true,
+          "accuracy_qc": true,
+          "literary_qc": true,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "BANKED",
+          "translation_rows": 121,
+          "known_source_span": 121,
+          "excluded_index_count": 0,
+          "json_duplicate_keys": "PASS",
+          "known_index_coverage": "PASS",
+          "exclusion_overlap": "PASS",
+          "cp932": "PASS",
+          "accuracy_verdict": "PASS",
+          "literary_verdict": "verified"
+        },
+        {
+          "scene": "SC_M0183_00_M0184_00",
+          "translation": true,
+          "accuracy_qc": true,
+          "literary_qc": true,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "BANKED",
+          "translation_rows": 58,
+          "known_source_span": 58,
+          "excluded_index_count": 0,
+          "json_duplicate_keys": "PASS",
+          "known_index_coverage": "PASS",
+          "exclusion_overlap": "PASS",
+          "cp932": "PASS",
+          "accuracy_verdict": "PASS",
+          "literary_verdict": "verified"
+        }
+      ]
+    },
+    "20": {
+      "ledger_status": "CLAIMED",
+      "claim": "w200-20",
+      "ready": true,
+      "scenes": [
+        {
+          "scene": "SC_M0184_00_M0190_00",
+          "translation": true,
+          "accuracy_qc": true,
+          "literary_qc": true,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "BANKED",
+          "translation_rows": 44,
+          "known_source_span": 44,
+          "excluded_index_count": 0,
+          "json_duplicate_keys": "PASS",
+          "known_index_coverage": "PASS",
+          "exclusion_overlap": "PASS",
+          "cp932": "PASS",
+          "accuracy_verdict": "PASS",
+          "literary_verdict": "verified"
+        },
+        {
+          "scene": "SC_M0190_00_M0200_00",
+          "translation": true,
+          "accuracy_qc": true,
+          "literary_qc": true,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "BANKED",
+          "translation_rows": 12,
+          "known_source_span": 12,
+          "excluded_index_count": 0,
+          "json_duplicate_keys": "PASS",
+          "known_index_coverage": "PASS",
+          "exclusion_overlap": "PASS",
+          "cp932": "PASS",
+          "accuracy_verdict": "PASS",
+          "literary_verdict": "verified"
+        },
+        {
+          "scene": "SC_M0202_00_M0203_00",
+          "translation": true,
+          "accuracy_qc": true,
+          "literary_qc": true,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "BANKED",
+          "translation_rows": 15,
+          "known_source_span": 15,
+          "excluded_index_count": 0,
+          "json_duplicate_keys": "PASS",
+          "known_index_coverage": "PASS",
+          "exclusion_overlap": "PASS",
+          "cp932": "PASS",
+          "accuracy_verdict": "PASS",
+          "literary_verdict": "verified"
+        },
+        {
+          "scene": "SC_M0203_00_M0210_00",
+          "translation": true,
+          "accuracy_qc": true,
+          "literary_qc": true,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "BANKED",
+          "translation_rows": 33,
+          "known_source_span": 33,
+          "excluded_index_count": 0,
+          "json_duplicate_keys": "PASS",
+          "known_index_coverage": "PASS",
+          "exclusion_overlap": "PASS",
+          "cp932": "PASS",
+          "accuracy_verdict": "PASS",
+          "literary_verdict": "verified"
+        }
+      ]
+    },
+    "21": {
+      "ledger_status": "CLAIMED",
+      "claim": "w200-21",
+      "ready": true,
+      "scenes": [
+        {
+          "scene": "SC_M0210_00_M0211_00",
+          "translation": true,
+          "accuracy_qc": true,
+          "literary_qc": true,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "BANKED",
+          "translation_rows": 40,
+          "known_source_span": 40,
+          "excluded_index_count": 0,
+          "json_duplicate_keys": "PASS",
+          "known_index_coverage": "PASS",
+          "exclusion_overlap": "PASS",
+          "cp932": "PASS",
+          "accuracy_verdict": "PASS",
+          "literary_verdict": "verified"
+        },
+        {
+          "scene": "SC_M0211_00_M0220_00",
+          "translation": true,
+          "accuracy_qc": true,
+          "literary_qc": true,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "BANKED",
+          "translation_rows": 9,
+          "known_source_span": 9,
+          "excluded_index_count": 0,
+          "json_duplicate_keys": "PASS",
+          "known_index_coverage": "PASS",
+          "exclusion_overlap": "PASS",
+          "cp932": "PASS",
+          "accuracy_verdict": "PASS",
+          "literary_verdict": "verified"
+        },
+        {
+          "scene": "SC_M0220_00_M0221_00",
+          "translation": true,
+          "accuracy_qc": true,
+          "literary_qc": true,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "BANKED",
+          "translation_rows": 41,
+          "known_source_span": 41,
+          "excluded_index_count": 0,
+          "json_duplicate_keys": "PASS",
+          "known_index_coverage": "PASS",
+          "exclusion_overlap": "PASS",
+          "cp932": "PASS",
+          "accuracy_verdict": "PASS",
+          "literary_verdict": "verified"
+        },
+        {
+          "scene": "SC_M0221_00_M0222_00",
+          "translation": true,
+          "accuracy_qc": true,
+          "literary_qc": true,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "BANKED",
+          "translation_rows": 37,
+          "known_source_span": 37,
+          "excluded_index_count": 0,
+          "json_duplicate_keys": "PASS",
+          "known_index_coverage": "PASS",
+          "exclusion_overlap": "PASS",
+          "cp932": "PASS",
+          "accuracy_verdict": "PASS",
+          "literary_verdict": "verified"
+        }
+      ]
+    },
+    "22": {
+      "ledger_status": "CLAIMED",
+      "claim": "w200-22",
+      "ready": true,
+      "scenes": [
+        {
+          "scene": "SC_M0222_00_M0223_00",
+          "translation": true,
+          "accuracy_qc": true,
+          "literary_qc": true,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "BANKED",
+          "translation_rows": 16,
+          "known_source_span": 16,
+          "excluded_index_count": 0,
+          "json_duplicate_keys": "PASS",
+          "known_index_coverage": "PASS",
+          "exclusion_overlap": "PASS",
+          "cp932": "PASS",
+          "accuracy_verdict": "PASS",
+          "literary_verdict": "verified"
+        },
+        {
+          "scene": "SC_M0223_00_M0224_00",
+          "translation": true,
+          "accuracy_qc": true,
+          "literary_qc": true,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "BANKED",
+          "translation_rows": 37,
+          "known_source_span": 37,
+          "excluded_index_count": 0,
+          "json_duplicate_keys": "PASS",
+          "known_index_coverage": "PASS",
+          "exclusion_overlap": "PASS",
+          "cp932": "PASS",
+          "accuracy_verdict": "PASS",
+          "literary_verdict": "verified"
+        },
+        {
+          "scene": "SC_M0224_00_M0225_00",
+          "translation": true,
+          "accuracy_qc": true,
+          "literary_qc": true,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "BANKED",
+          "translation_rows": 14,
+          "known_source_span": 14,
+          "excluded_index_count": 0,
+          "json_duplicate_keys": "PASS",
+          "known_index_coverage": "PASS",
+          "exclusion_overlap": "PASS",
+          "cp932": "PASS",
+          "accuracy_verdict": "PASS",
+          "literary_verdict": "verified"
+        },
+        {
+          "scene": "SC_M0225_00_M0230_00",
+          "translation": true,
+          "accuracy_qc": true,
+          "literary_qc": true,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "BANKED",
+          "translation_rows": 94,
+          "known_source_span": 94,
+          "excluded_index_count": 0,
+          "json_duplicate_keys": "PASS",
+          "known_index_coverage": "PASS",
+          "exclusion_overlap": "PASS",
+          "cp932": "PASS",
+          "accuracy_verdict": "PASS",
+          "literary_verdict": "verified"
+        }
+      ]
+    },
+    "23": {
+      "ledger_status": "CLAIMED",
+      "claim": "w200-23",
+      "ready": true,
+      "scenes": [
+        {
+          "scene": "SC_M0230_00_M0240_00",
+          "translation": true,
+          "accuracy_qc": true,
+          "literary_qc": true,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "BANKED",
+          "translation_rows": 7,
+          "known_source_span": 7,
+          "excluded_index_count": 0,
+          "json_duplicate_keys": "PASS",
+          "known_index_coverage": "PASS",
+          "exclusion_overlap": "PASS",
+          "cp932": "PASS",
+          "accuracy_verdict": "PASS",
+          "literary_verdict": "verified"
+        },
+        {
+          "scene": "SC_M0240_00_M0241_00",
+          "translation": true,
+          "accuracy_qc": true,
+          "literary_qc": true,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "BANKED",
+          "translation_rows": 26,
+          "known_source_span": 26,
+          "excluded_index_count": 0,
+          "json_duplicate_keys": "PASS",
+          "known_index_coverage": "PASS",
+          "exclusion_overlap": "PASS",
+          "cp932": "PASS",
+          "accuracy_verdict": "PASS",
+          "literary_verdict": "verified"
+        },
+        {
+          "scene": "SC_M0241_00_M0250_00",
+          "translation": true,
+          "accuracy_qc": true,
+          "literary_qc": true,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "BANKED",
+          "translation_rows": 67,
+          "known_source_span": 67,
+          "excluded_index_count": 0,
+          "json_duplicate_keys": "PASS",
+          "known_index_coverage": "PASS",
+          "exclusion_overlap": "PASS",
+          "cp932": "PASS",
+          "accuracy_verdict": "PASS",
+          "literary_verdict": "verified"
+        },
+        {
+          "scene": "SC_M0250_00_M0251_00",
+          "translation": true,
+          "accuracy_qc": true,
+          "literary_qc": true,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "BANKED",
+          "translation_rows": 18,
+          "known_source_span": 18,
+          "excluded_index_count": 0,
+          "json_duplicate_keys": "PASS",
+          "known_index_coverage": "PASS",
+          "exclusion_overlap": "PASS",
+          "cp932": "PASS",
+          "accuracy_verdict": "PASS",
+          "literary_verdict": "verified"
+        }
+      ]
+    },
+    "24": {
+      "ledger_status": "CLAIMED",
+      "claim": "w200-24",
+      "ready": true,
+      "scenes": [
+        {
+          "scene": "SC_M0251_00_M0260_00",
+          "translation": true,
+          "accuracy_qc": true,
+          "literary_qc": true,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "BANKED",
+          "translation_rows": 47,
+          "known_source_span": 47,
+          "excluded_index_count": 0,
+          "json_duplicate_keys": "PASS",
+          "known_index_coverage": "PASS",
+          "exclusion_overlap": "PASS",
+          "cp932": "PASS",
+          "accuracy_verdict": "PASS",
+          "literary_verdict": "verified"
+        },
+        {
+          "scene": "SC_M0260_00_M0261_00",
+          "translation": true,
+          "accuracy_qc": true,
+          "literary_qc": true,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "BANKED",
+          "translation_rows": 12,
+          "known_source_span": 12,
+          "excluded_index_count": 0,
+          "json_duplicate_keys": "PASS",
+          "known_index_coverage": "PASS",
+          "exclusion_overlap": "PASS",
+          "cp932": "PASS",
+          "accuracy_verdict": "PASS",
+          "literary_verdict": "verified"
+        },
+        {
+          "scene": "SC_M0261_00_M0262_00",
+          "translation": true,
+          "accuracy_qc": true,
+          "literary_qc": true,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "BANKED",
+          "translation_rows": 43,
+          "known_source_span": 43,
+          "excluded_index_count": 0,
+          "json_duplicate_keys": "PASS",
+          "known_index_coverage": "PASS",
+          "exclusion_overlap": "PASS",
+          "cp932": "PASS",
+          "accuracy_verdict": "PASS",
+          "literary_verdict": "verified"
+        },
+        {
+          "scene": "SC_M0262_00_M0263_00",
+          "translation": true,
+          "accuracy_qc": true,
+          "literary_qc": true,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "BANKED",
+          "translation_rows": 45,
+          "known_source_span": 45,
+          "excluded_index_count": 0,
+          "json_duplicate_keys": "PASS",
+          "known_index_coverage": "PASS",
+          "exclusion_overlap": "PASS",
+          "cp932": "PASS",
+          "accuracy_verdict": "PASS",
+          "literary_verdict": "verified"
+        }
+      ]
+    },
+    "25": {
+      "ledger_status": "CLAIMED",
+      "claim": "w200-25",
+      "ready": true,
+      "scenes": [
+        {
+          "scene": "SC_M0263_00_M0270_00",
+          "translation": true,
+          "accuracy_qc": true,
+          "literary_qc": true,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "BANKED",
+          "translation_rows": 21,
+          "known_source_span": 21,
+          "excluded_index_count": 0,
+          "json_duplicate_keys": "PASS",
+          "known_index_coverage": "PASS",
+          "exclusion_overlap": "PASS",
+          "cp932": "PASS",
+          "accuracy_verdict": "PASS",
+          "literary_verdict": "verified"
+        },
+        {
+          "scene": "SC_M0270_00_M0271_00",
+          "translation": true,
+          "accuracy_qc": true,
+          "literary_qc": true,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "BANKED",
+          "translation_rows": 41,
+          "known_source_span": 41,
+          "excluded_index_count": 0,
+          "json_duplicate_keys": "PASS",
+          "known_index_coverage": "PASS",
+          "exclusion_overlap": "PASS",
+          "cp932": "PASS",
+          "accuracy_verdict": "PASS",
+          "literary_verdict": "verified"
+        },
+        {
+          "scene": "SC_M0271_00_M0272_00",
+          "translation": true,
+          "accuracy_qc": true,
+          "literary_qc": true,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "BANKED",
+          "translation_rows": 15,
+          "known_source_span": 15,
+          "excluded_index_count": 0,
+          "json_duplicate_keys": "PASS",
+          "known_index_coverage": "PASS",
+          "exclusion_overlap": "PASS",
+          "cp932": "PASS",
+          "accuracy_verdict": "PASS",
+          "literary_verdict": "verified"
+        },
+        {
+          "scene": "SC_M0272_00_M0280_00",
+          "translation": true,
+          "accuracy_qc": true,
+          "literary_qc": true,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "BANKED",
+          "translation_rows": 76,
+          "known_source_span": 76,
+          "excluded_index_count": 0,
+          "json_duplicate_keys": "PASS",
+          "known_index_coverage": "PASS",
+          "exclusion_overlap": "PASS",
+          "cp932": "PASS",
+          "accuracy_verdict": "PASS",
+          "literary_verdict": "verified"
+        }
+      ]
+    },
+    "26": {
+      "ledger_status": "CLAIMED",
+      "claim": "w200-26",
+      "ready": true,
+      "scenes": [
+        {
+          "scene": "SC_M0280_00_M0281_00",
+          "translation": true,
+          "accuracy_qc": true,
+          "literary_qc": true,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "BANKED",
+          "translation_rows": 53,
+          "known_source_span": 53,
+          "excluded_index_count": 0,
+          "json_duplicate_keys": "PASS",
+          "known_index_coverage": "PASS",
+          "exclusion_overlap": "PASS",
+          "cp932": "PASS",
+          "accuracy_verdict": "PASS",
+          "literary_verdict": "verified"
+        },
+        {
+          "scene": "SC_M0281_00_M0282_00",
+          "translation": true,
+          "accuracy_qc": true,
+          "literary_qc": true,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "BANKED",
+          "translation_rows": 29,
+          "known_source_span": 29,
+          "excluded_index_count": 0,
+          "json_duplicate_keys": "PASS",
+          "known_index_coverage": "PASS",
+          "exclusion_overlap": "PASS",
+          "cp932": "PASS",
+          "accuracy_verdict": "PASS",
+          "literary_verdict": "verified"
+        },
+        {
+          "scene": "SC_M0282_00_M0283_00",
+          "translation": true,
+          "accuracy_qc": true,
+          "literary_qc": true,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "BANKED",
+          "translation_rows": 19,
+          "known_source_span": 19,
+          "excluded_index_count": 0,
+          "json_duplicate_keys": "PASS",
+          "known_index_coverage": "PASS",
+          "exclusion_overlap": "PASS",
+          "cp932": "PASS",
+          "accuracy_verdict": "PASS",
+          "literary_verdict": "verified"
+        },
+        {
+          "scene": "SC_M0283_00_M0290_00",
+          "translation": true,
+          "accuracy_qc": true,
+          "literary_qc": true,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "BANKED",
+          "translation_rows": 18,
+          "known_source_span": 18,
+          "excluded_index_count": 0,
+          "json_duplicate_keys": "PASS",
+          "known_index_coverage": "PASS",
+          "exclusion_overlap": "PASS",
+          "cp932": "PASS",
+          "accuracy_verdict": "PASS",
+          "literary_verdict": "verified"
+        }
+      ]
+    },
+    "27": {
+      "ledger_status": "CLAIMED",
+      "claim": "w200-27",
+      "ready": false,
+      "scenes": [
+        {
+          "scene": "SC_M0290_00_M0291_00",
+          "translation": true,
+          "accuracy_qc": true,
+          "literary_qc": true,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "BANKED",
+          "translation_rows": 42,
+          "known_source_span": 42,
+          "excluded_index_count": 0,
+          "json_duplicate_keys": "PASS",
+          "known_index_coverage": "PASS",
+          "exclusion_overlap": "PASS",
+          "cp932": "PASS",
+          "accuracy_verdict": "PASS",
+          "literary_verdict": "verified"
+        },
+        {
+          "scene": "SC_M0291_00_M0300_00",
+          "translation": true,
+          "accuracy_qc": true,
+          "literary_qc": true,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "BANKED",
+          "translation_rows": 93,
+          "known_source_span": 93,
+          "excluded_index_count": 0,
+          "json_duplicate_keys": "PASS",
+          "known_index_coverage": "PASS",
+          "exclusion_overlap": "PASS",
+          "cp932": "PASS",
+          "accuracy_verdict": "PASS",
+          "literary_verdict": "verified"
+        },
+        {
+          "scene": "SC_M0300_00_M0301_00",
+          "translation": true,
+          "accuracy_qc": true,
+          "literary_qc": true,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "BANKED",
+          "translation_rows": 79,
+          "known_source_span": 79,
+          "excluded_index_count": 0,
+          "json_duplicate_keys": "PASS",
+          "known_index_coverage": "PASS",
+          "exclusion_overlap": "PASS",
+          "cp932": "PASS",
+          "accuracy_verdict": "PASS",
+          "literary_verdict": "verified"
+        },
+        {
+          "scene": "SC_M0301_00_M0310_00",
+          "translation": true,
+          "accuracy_qc": true,
+          "literary_qc": true,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "INVALID",
+          "error": "literary QC contains FAIL"
+        }
+      ]
+    },
+    "28": {
+      "ledger_status": "CLAIMED",
+      "claim": "w200-28",
+      "ready": false,
+      "scenes": [
+        {
+          "scene": "SC_M0310_00_M0320_00",
+          "translation": true,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "INVALID",
+          "error": "missing accuracy and literary QC"
+        },
+        {
+          "scene": "SC_M0320_00_M0330_00",
+          "translation": true,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "INVALID",
+          "error": "missing accuracy and literary QC"
+        },
+        {
+          "scene": "SC_M0330_10_M0340_00",
+          "translation": true,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "INVALID",
+          "error": "missing accuracy and literary QC"
+        },
+        {
+          "scene": "SC_M0330_20_M0340_00",
+          "translation": true,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "INVALID",
+          "error": "missing accuracy and literary QC"
+        }
+      ]
+    },
+    "29": {
+      "ledger_status": "CLAIMED",
+      "claim": "w200-29",
+      "ready": false,
+      "scenes": [
+        {
+          "scene": "SC_M0340_00_M0341_00",
+          "translation": false,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "MISSING",
+          "error": "no translation, no QC, and no canonical exclusion"
+        },
+        {
+          "scene": "SC_M0341_00_M0350_00",
+          "translation": false,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "MISSING",
+          "error": "no translation, no QC, and no canonical exclusion"
+        },
+        {
+          "scene": "SC_M0350_10_M0360_00",
+          "translation": false,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "MISSING",
+          "error": "no translation, no QC, and no canonical exclusion"
+        },
+        {
+          "scene": "SC_M0350_20_M0360_00",
+          "translation": false,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "MISSING",
+          "error": "no translation, no QC, and no canonical exclusion"
+        }
+      ]
+    },
+    "30": {
+      "ledger_status": "CLAIMED",
+      "claim": "w200-30",
+      "ready": false,
+      "scenes": [
+        {
+          "scene": "SC_M0360_00_M0370_00",
+          "translation": false,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "MISSING",
+          "error": "no translation, no QC, and no canonical exclusion"
+        },
+        {
+          "scene": "SC_M0370_00_M0371_00",
+          "translation": false,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "MISSING",
+          "error": "no translation, no QC, and no canonical exclusion"
+        },
+        {
+          "scene": "SC_M0371_00_M0372_00",
+          "translation": false,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "MISSING",
+          "error": "no translation, no QC, and no canonical exclusion"
+        },
+        {
+          "scene": "SC_M0372_00_M0373_00",
+          "translation": false,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "MISSING",
+          "error": "no translation, no QC, and no canonical exclusion"
+        }
+      ]
+    },
+    "31": {
+      "ledger_status": "CLAIMED",
+      "claim": "w200-31",
+      "ready": false,
+      "scenes": [
+        {
+          "scene": "SC_M0373_00_M0374_00",
+          "translation": false,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "MISSING",
+          "error": "no translation, no QC, and no canonical exclusion"
+        },
+        {
+          "scene": "SC_M0374_00_M0375_00",
+          "translation": false,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "MISSING",
+          "error": "no translation, no QC, and no canonical exclusion"
+        },
+        {
+          "scene": "SC_M0375_00_M0380_00",
+          "translation": false,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "MISSING",
+          "error": "no translation, no QC, and no canonical exclusion"
+        },
+        {
+          "scene": "SC_M0380_00_M0381_00",
+          "translation": false,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "MISSING",
+          "error": "no translation, no QC, and no canonical exclusion"
+        }
+      ]
+    },
+    "32": {
+      "ledger_status": "CLAIMED",
+      "claim": "w200-32",
+      "ready": false,
+      "scenes": [
+        {
+          "scene": "SC_M0381_00_M0382_00",
+          "translation": false,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "MISSING",
+          "error": "no translation, no QC, and no canonical exclusion"
+        },
+        {
+          "scene": "SC_M0382_00_M0383_00",
+          "translation": false,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "MISSING",
+          "error": "no translation, no QC, and no canonical exclusion"
+        },
+        {
+          "scene": "SC_M0383_00_M0384_00",
+          "translation": false,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "MISSING",
+          "error": "no translation, no QC, and no canonical exclusion"
+        },
+        {
+          "scene": "SC_M0384_00_M0390_00",
+          "translation": false,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "MISSING",
+          "error": "no translation, no QC, and no canonical exclusion"
+        }
+      ]
+    },
+    "33": {
+      "ledger_status": "CLAIMED",
+      "claim": "w200-33",
+      "ready": false,
+      "scenes": [
+        {
+          "scene": "SC_M0390_00_M0391_00",
+          "translation": false,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "MISSING",
+          "error": "no translation, no QC, and no canonical exclusion"
+        },
+        {
+          "scene": "SC_M0391_00_M0392_00",
+          "translation": false,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "MISSING",
+          "error": "no translation, no QC, and no canonical exclusion"
+        },
+        {
+          "scene": "SC_M0392_00_M0400_00",
+          "translation": false,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "MISSING",
+          "error": "no translation, no QC, and no canonical exclusion"
+        },
+        {
+          "scene": "SC_M0400_00_M0410_00",
+          "translation": false,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "MISSING",
+          "error": "no translation, no QC, and no canonical exclusion"
+        }
+      ]
+    },
+    "34": {
+      "ledger_status": "CLAIMED",
+      "claim": "w200-34",
+      "ready": false,
+      "scenes": [
+        {
+          "scene": "SC_M0410_00_M0411_00",
+          "translation": false,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "MISSING",
+          "error": "no translation, no QC, and no canonical exclusion"
+        },
+        {
+          "scene": "SC_M0411_00_M0412_00",
+          "translation": false,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "MISSING",
+          "error": "no translation, no QC, and no canonical exclusion"
+        },
+        {
+          "scene": "SC_M0412_00_M0420_00",
+          "translation": false,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "MISSING",
+          "error": "no translation, no QC, and no canonical exclusion"
+        },
+        {
+          "scene": "SC_M0420_00_M0430_00",
+          "translation": false,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "MISSING",
+          "error": "no translation, no QC, and no canonical exclusion"
+        }
+      ]
+    },
+    "35": {
+      "ledger_status": "CLAIMED",
+      "claim": "w200-35",
+      "ready": false,
+      "scenes": [
+        {
+          "scene": "SC_M0430_00_M0431_00",
+          "translation": false,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "MISSING",
+          "error": "no translation, no QC, and no canonical exclusion"
+        },
+        {
+          "scene": "SC_M0431_00_M0432_00",
+          "translation": false,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "MISSING",
+          "error": "no translation, no QC, and no canonical exclusion"
+        },
+        {
+          "scene": "SC_M0432_00_M0440_00",
+          "translation": false,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "MISSING",
+          "error": "no translation, no QC, and no canonical exclusion"
+        },
+        {
+          "scene": "SC_M0440_00_M0450_00",
+          "translation": false,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "MISSING",
+          "error": "no translation, no QC, and no canonical exclusion"
+        }
+      ]
+    },
+    "36": {
+      "ledger_status": "CLAIMED",
+      "claim": "w200-36",
+      "ready": false,
+      "scenes": [
+        {
+          "scene": "SC_M0450_00_M0460_00",
+          "translation": false,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "MISSING",
+          "error": "no translation, no QC, and no canonical exclusion"
+        },
+        {
+          "scene": "SC_M0460_00_M0470_00",
+          "translation": false,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "MISSING",
+          "error": "no translation, no QC, and no canonical exclusion"
+        },
+        {
+          "scene": "SC_M0470_00_M0471_00",
+          "translation": false,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "MISSING",
+          "error": "no translation, no QC, and no canonical exclusion"
+        },
+        {
+          "scene": "SC_M0471_00_M0480_00",
+          "translation": false,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "MISSING",
+          "error": "no translation, no QC, and no canonical exclusion"
+        }
+      ]
+    },
+    "37": {
+      "ledger_status": "CLAIMED",
+      "claim": "w200-37",
+      "ready": false,
+      "scenes": [
+        {
+          "scene": "SC_M0480_00_M0490_00",
+          "translation": false,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "MISSING",
+          "error": "no translation, no QC, and no canonical exclusion"
+        },
+        {
+          "scene": "SC_M0490_00_M0500_00",
+          "translation": false,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "MISSING",
+          "error": "no translation, no QC, and no canonical exclusion"
+        },
+        {
+          "scene": "SC_M0500_00_M0501_00",
+          "translation": false,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "MISSING",
+          "error": "no translation, no QC, and no canonical exclusion"
+        },
+        {
+          "scene": "SC_M0501_00_M0510_00",
+          "translation": false,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "MISSING",
+          "error": "no translation, no QC, and no canonical exclusion"
+        }
+      ]
+    },
+    "38": {
+      "ledger_status": "CLAIMED",
+      "claim": "w200-38",
+      "ready": false,
+      "scenes": [
+        {
+          "scene": "SC_M0510_00_M0520_00",
+          "translation": false,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "MISSING",
+          "error": "no translation, no QC, and no canonical exclusion"
+        },
+        {
+          "scene": "SC_M0520_00_M0530_00",
+          "translation": false,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "MISSING",
+          "error": "no translation, no QC, and no canonical exclusion"
+        },
+        {
+          "scene": "SC_M0530_00_M0540_00",
+          "translation": false,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "MISSING",
+          "error": "no translation, no QC, and no canonical exclusion"
+        },
+        {
+          "scene": "SC_M0540_00_M0550_00",
+          "translation": false,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "MISSING",
+          "error": "no translation, no QC, and no canonical exclusion"
+        }
+      ]
+    },
+    "39": {
+      "ledger_status": "CLAIMED",
+      "claim": "w200-39",
+      "ready": false,
+      "scenes": [
+        {
+          "scene": "SC_M0550_00_M0551_00",
+          "translation": false,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "MISSING",
+          "error": "no translation, no QC, and no canonical exclusion"
+        },
+        {
+          "scene": "SC_M0551_00_M0552_00",
+          "translation": false,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "MISSING",
+          "error": "no translation, no QC, and no canonical exclusion"
+        },
+        {
+          "scene": "SC_M0552_00_M0553_00",
+          "translation": false,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "MISSING",
+          "error": "no translation, no QC, and no canonical exclusion"
+        },
+        {
+          "scene": "SC_M0553_00_M0554_00",
+          "translation": false,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "MISSING",
+          "error": "no translation, no QC, and no canonical exclusion"
+        }
+      ]
+    },
+    "40": {
+      "ledger_status": "CLAIMED",
+      "claim": "w200-40",
+      "ready": false,
+      "scenes": [
+        {
+          "scene": "SC_M0554_00_M0555_00",
+          "translation": false,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "MISSING",
+          "error": "no translation, no QC, and no canonical exclusion"
+        },
+        {
+          "scene": "SC_M0555_00_M0556_00",
+          "translation": false,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "MISSING",
+          "error": "no translation, no QC, and no canonical exclusion"
+        },
+        {
+          "scene": "SC_M0556_00_M0557_00",
+          "translation": false,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "MISSING",
+          "error": "no translation, no QC, and no canonical exclusion"
+        },
+        {
+          "scene": "SC_M0557_00_M0558_00",
+          "translation": false,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "MISSING",
+          "error": "no translation, no QC, and no canonical exclusion"
+        }
+      ]
+    },
+    "41": {
+      "ledger_status": "CLAIMED",
+      "claim": "w200-41",
+      "ready": false,
+      "scenes": [
+        {
+          "scene": "SC_M0558_00_M0559_00",
+          "translation": false,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "MISSING",
+          "error": "no translation, no QC, and no canonical exclusion"
+        },
+        {
+          "scene": "SC_M0559_00_M0560_00",
+          "translation": false,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "MISSING",
+          "error": "no translation, no QC, and no canonical exclusion"
+        },
+        {
+          "scene": "SC_M0560_00_M0561_00",
+          "translation": false,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "MISSING",
+          "error": "no translation, no QC, and no canonical exclusion"
+        },
+        {
+          "scene": "SC_M0561_00_M0562_00",
+          "translation": false,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "MISSING",
+          "error": "no translation, no QC, and no canonical exclusion"
+        }
+      ]
+    },
+    "42": {
+      "ledger_status": "CLAIMED",
+      "claim": "w200-42",
+      "ready": false,
+      "scenes": [
+        {
+          "scene": "SC_M0562_00_M0563_00",
+          "translation": false,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "MISSING",
+          "error": "no translation, no QC, and no canonical exclusion"
+        },
+        {
+          "scene": "SC_M0563_00_M0564_00",
+          "translation": false,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "MISSING",
+          "error": "no translation, no QC, and no canonical exclusion"
+        },
+        {
+          "scene": "SC_M0564_00_M0565_00",
+          "translation": false,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "MISSING",
+          "error": "no translation, no QC, and no canonical exclusion"
+        },
+        {
+          "scene": "SC_M0565_00_M0566_00",
+          "translation": false,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "MISSING",
+          "error": "no translation, no QC, and no canonical exclusion"
+        }
+      ]
+    },
+    "43": {
+      "ledger_status": "CLAIMED",
+      "claim": "w200-43",
+      "ready": false,
+      "scenes": [
+        {
+          "scene": "SC_M0566_00_M0567_00",
+          "translation": false,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "MISSING",
+          "error": "no translation, no QC, and no canonical exclusion"
+        },
+        {
+          "scene": "SC_M0567_00_M0568_00",
+          "translation": false,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "MISSING",
+          "error": "no translation, no QC, and no canonical exclusion"
+        },
+        {
+          "scene": "SC_M0568_00_M0569_00",
+          "translation": false,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "MISSING",
+          "error": "no translation, no QC, and no canonical exclusion"
+        },
+        {
+          "scene": "SC_M0569_00_M0570_00",
+          "translation": false,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "MISSING",
+          "error": "no translation, no QC, and no canonical exclusion"
+        }
+      ]
+    },
+    "44": {
+      "ledger_status": "CLAIMED",
+      "claim": "w200-44",
+      "ready": false,
+      "scenes": [
+        {
+          "scene": "SC_M0570_00_M0571_00",
+          "translation": false,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "MISSING",
+          "error": "no translation, no QC, and no canonical exclusion"
+        },
+        {
+          "scene": "SC_M0571_00_M0572_00",
+          "translation": false,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "MISSING",
+          "error": "no translation, no QC, and no canonical exclusion"
+        },
+        {
+          "scene": "SC_M0572_00_M0573_00",
+          "translation": false,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "MISSING",
+          "error": "no translation, no QC, and no canonical exclusion"
+        },
+        {
+          "scene": "SC_M0573_00_M0580_00",
+          "translation": false,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "MISSING",
+          "error": "no translation, no QC, and no canonical exclusion"
+        }
+      ]
+    },
+    "45": {
+      "ledger_status": "CLAIMED",
+      "claim": "w200-45",
+      "ready": false,
+      "scenes": [
+        {
+          "scene": "SC_M0580_00_M0581_00",
+          "translation": false,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "MISSING",
+          "error": "no translation, no QC, and no canonical exclusion"
+        },
+        {
+          "scene": "SC_M0581_00_M0590_00",
+          "translation": false,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "MISSING",
+          "error": "no translation, no QC, and no canonical exclusion"
+        },
+        {
+          "scene": "SC_M0590_00_M0600_00",
+          "translation": false,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "MISSING",
+          "error": "no translation, no QC, and no canonical exclusion"
+        },
+        {
+          "scene": "SC_M0600_00_M0601_00",
+          "translation": false,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "MISSING",
+          "error": "no translation, no QC, and no canonical exclusion"
+        }
+      ]
+    },
+    "46": {
+      "ledger_status": "CLAIMED",
+      "claim": "w200-46",
+      "ready": false,
+      "scenes": [
+        {
+          "scene": "SC_M0601_00_M0602_00",
+          "translation": false,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "MISSING",
+          "error": "no translation, no QC, and no canonical exclusion"
+        },
+        {
+          "scene": "SC_M0602_00_M0603_00",
+          "translation": false,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "MISSING",
+          "error": "no translation, no QC, and no canonical exclusion"
+        },
+        {
+          "scene": "SC_M0603_00_M0604_00",
+          "translation": false,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "MISSING",
+          "error": "no translation, no QC, and no canonical exclusion"
+        },
+        {
+          "scene": "SC_M0604_00_M0605_00",
+          "translation": false,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "MISSING",
+          "error": "no translation, no QC, and no canonical exclusion"
+        }
+      ]
+    },
+    "47": {
+      "ledger_status": "CLAIMED",
+      "claim": "w200-47",
+      "ready": false,
+      "scenes": [
+        {
+          "scene": "SC_M0605_00_M0606_00",
+          "translation": false,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "MISSING",
+          "error": "no translation, no QC, and no canonical exclusion"
+        },
+        {
+          "scene": "SC_M0606_00_M0607_00",
+          "translation": false,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "MISSING",
+          "error": "no translation, no QC, and no canonical exclusion"
+        },
+        {
+          "scene": "SC_M0607_00_M0608_00",
+          "translation": false,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "MISSING",
+          "error": "no translation, no QC, and no canonical exclusion"
+        },
+        {
+          "scene": "SC_M0608_00_M0609_00",
+          "translation": false,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "MISSING",
+          "error": "no translation, no QC, and no canonical exclusion"
+        }
+      ]
+    },
+    "48": {
+      "ledger_status": "CLAIMED",
+      "claim": "w200-48",
+      "ready": false,
+      "scenes": [
+        {
+          "scene": "SC_M0609_00_M0610_00",
+          "translation": false,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "MISSING",
+          "error": "no translation, no QC, and no canonical exclusion"
+        },
+        {
+          "scene": "SC_M0610_00_M0611_00",
+          "translation": false,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "MISSING",
+          "error": "no translation, no QC, and no canonical exclusion"
+        },
+        {
+          "scene": "SC_M0611_00_M0612_00",
+          "translation": false,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "MISSING",
+          "error": "no translation, no QC, and no canonical exclusion"
+        },
+        {
+          "scene": "SC_M0612_00_M0615_00",
+          "translation": false,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "MISSING",
+          "error": "no translation, no QC, and no canonical exclusion"
+        }
+      ]
+    },
+    "49": {
+      "ledger_status": "CLAIMED",
+      "claim": "w200-49",
+      "ready": false,
+      "scenes": [
+        {
+          "scene": "SC_M0615_10_M0615_50",
+          "translation": false,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "MISSING",
+          "error": "no translation, no QC, and no canonical exclusion"
+        },
+        {
+          "scene": "SC_M0615_20_M0615_50",
+          "translation": false,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "MISSING",
+          "error": "no translation, no QC, and no canonical exclusion"
+        },
+        {
+          "scene": "SC_M0615_50_M0615_70",
+          "translation": false,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "MISSING",
+          "error": "no translation, no QC, and no canonical exclusion"
+        },
+        {
+          "scene": "SC_M0615_70_M0615_80",
+          "translation": false,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "MISSING",
+          "error": "no translation, no QC, and no canonical exclusion"
+        }
+      ]
+    },
+    "50": {
+      "ledger_status": "CLAIMED",
+      "claim": "w200-50",
+      "ready": false,
+      "scenes": [
+        {
+          "scene": "SC_M0615_80_M0620_00",
+          "translation": false,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "MISSING",
+          "error": "no translation, no QC, and no canonical exclusion"
+        },
+        {
+          "scene": "SC_M0620_00_M0621_00",
+          "translation": false,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "MISSING",
+          "error": "no translation, no QC, and no canonical exclusion"
+        },
+        {
+          "scene": "SC_M0621_00_M0622_00",
+          "translation": false,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "MISSING",
+          "error": "no translation, no QC, and no canonical exclusion"
+        },
+        {
+          "scene": "SC_M0622_00_M0630_00",
+          "translation": false,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "MISSING",
+          "error": "no translation, no QC, and no canonical exclusion"
+        }
+      ]
+    },
+    "51": {
+      "ledger_status": "CLAIMED",
+      "claim": "w200-51",
+      "ready": false,
+      "scenes": [
+        {
+          "scene": "SC_M0630_10_M0640_00",
+          "translation": false,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "MISSING",
+          "error": "no translation, no QC, and no canonical exclusion"
+        },
+        {
+          "scene": "SC_M0630_20_M0640_00",
+          "translation": false,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "MISSING",
+          "error": "no translation, no QC, and no canonical exclusion"
+        },
+        {
+          "scene": "SC_M0640_00_M0650_00",
+          "translation": false,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "MISSING",
+          "error": "no translation, no QC, and no canonical exclusion"
+        },
+        {
+          "scene": "SC_M0650_00_M0660_00",
+          "translation": false,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "MISSING",
+          "error": "no translation, no QC, and no canonical exclusion"
+        }
+      ]
+    },
+    "52": {
+      "ledger_status": "CLAIMED",
+      "claim": "w200-52",
+      "ready": false,
+      "scenes": [
+        {
+          "scene": "SC_M0660_00_M0661_00",
+          "translation": false,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "MISSING",
+          "error": "no translation, no QC, and no canonical exclusion"
+        },
+        {
+          "scene": "SC_M0661_00_M0662_00",
+          "translation": false,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "MISSING",
+          "error": "no translation, no QC, and no canonical exclusion"
+        },
+        {
+          "scene": "SC_M0662_00_M0663_00",
+          "translation": false,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "MISSING",
+          "error": "no translation, no QC, and no canonical exclusion"
+        },
+        {
+          "scene": "SC_M0663_00_M0664_00",
+          "translation": false,
+          "accuracy_qc": false,
+          "literary_qc": false,
+          "canonical_exclusion": false,
+          "canonical_ranges": [],
+          "canonical_indexes": [],
+          "status": "MISSING",
+          "error": "no translation, no QC, and no canonical exclusion"
+        }
+      ]
+    }
+  },
+  "totals": {
+    "scenes": 200,
+    "banked": 88,
+    "fully_excluded": 7,
+    "ambiguous_exclusion_only": 0,
+    "missing": 100,
+    "invalid": 5,
+    "translation_rows": 4574,
+    "ready_shards": 24
+  },
+  "actionable_gaps": [
+    {
+      "shard": 12,
+      "scene": "SC_J0100_16_J0100_20",
+      "problem": "no translation, no QC, and no canonical exclusion"
+    },
+    {
+      "shard": 13,
+      "scene": "SC_J0100_17_J0100_20",
+      "problem": "no translation, no QC, and no canonical exclusion"
+    },
+    {
+      "shard": 13,
+      "scene": "SC_J0100_18_J0100_20",
+      "problem": "no translation, no QC, and no canonical exclusion"
+    },
+    {
+      "shard": 13,
+      "scene": "SC_J0100_20_Z9999_99",
+      "problem": "no translation, no QC, and no canonical exclusion"
+    },
+    {
+      "shard": 27,
+      "scene": "SC_M0301_00_M0310_00",
+      "problem": "literary QC contains FAIL"
+    },
+    {
+      "shard": 28,
+      "scene": "SC_M0310_00_M0320_00",
+      "problem": "missing accuracy and literary QC"
+    },
+    {
+      "shard": 28,
+      "scene": "SC_M0320_00_M0330_00",
+      "problem": "missing accuracy and literary QC"
+    },
+    {
+      "shard": 28,
+      "scene": "SC_M0330_10_M0340_00",
+      "problem": "missing accuracy and literary QC"
+    },
+    {
+      "shard": 28,
+      "scene": "SC_M0330_20_M0340_00",
+      "problem": "missing accuracy and literary QC"
+    },
+    {
+      "shard": 29,
+      "scene": "SC_M0340_00_M0341_00",
+      "problem": "no translation, no QC, and no canonical exclusion"
+    },
+    {
+      "shard": 29,
+      "scene": "SC_M0341_00_M0350_00",
+      "problem": "no translation, no QC, and no canonical exclusion"
+    },
+    {
+      "shard": 29,
+      "scene": "SC_M0350_10_M0360_00",
+      "problem": "no translation, no QC, and no canonical exclusion"
+    },
+    {
+      "shard": 29,
+      "scene": "SC_M0350_20_M0360_00",
+      "problem": "no translation, no QC, and no canonical exclusion"
+    },
+    {
+      "shard": 30,
+      "scene": "SC_M0360_00_M0370_00",
+      "problem": "no translation, no QC, and no canonical exclusion"
+    },
+    {
+      "shard": 30,
+      "scene": "SC_M0370_00_M0371_00",
+      "problem": "no translation, no QC, and no canonical exclusion"
+    },
+    {
+      "shard": 30,
+      "scene": "SC_M0371_00_M0372_00",
+      "problem": "no translation, no QC, and no canonical exclusion"
+    },
+    {
+      "shard": 30,
+      "scene": "SC_M0372_00_M0373_00",
+      "problem": "no translation, no QC, and no canonical exclusion"
+    },
+    {
+      "shard": 31,
+      "scene": "SC_M0373_00_M0374_00",
+      "problem": "no translation, no QC, and no canonical exclusion"
+    },
+    {
+      "shard": 31,
+      "scene": "SC_M0374_00_M0375_00",
+      "problem": "no translation, no QC, and no canonical exclusion"
+    },
+    {
+      "shard": 31,
+      "scene": "SC_M0375_00_M0380_00",
+      "problem": "no translation, no QC, and no canonical exclusion"
+    },
+    {
+      "shard": 31,
+      "scene": "SC_M0380_00_M0381_00",
+      "problem": "no translation, no QC, and no canonical exclusion"
+    },
+    {
+      "shard": 32,
+      "scene": "SC_M0381_00_M0382_00",
+      "problem": "no translation, no QC, and no canonical exclusion"
+    },
+    {
+      "shard": 32,
+      "scene": "SC_M0382_00_M0383_00",
+      "problem": "no translation, no QC, and no canonical exclusion"
+    },
+    {
+      "shard": 32,
+      "scene": "SC_M0383_00_M0384_00",
+      "problem": "no translation, no QC, and no canonical exclusion"
+    },
+    {
+      "shard": 32,
+      "scene": "SC_M0384_00_M0390_00",
+      "problem": "no translation, no QC, and no canonical exclusion"
+    },
+    {
+      "shard": 33,
+      "scene": "SC_M0390_00_M0391_00",
+      "problem": "no translation, no QC, and no canonical exclusion"
+    },
+    {
+      "shard": 33,
+      "scene": "SC_M0391_00_M0392_00",
+      "problem": "no translation, no QC, and no canonical exclusion"
+    },
+    {
+      "shard": 33,
+      "scene": "SC_M0392_00_M0400_00",
+      "problem": "no translation, no QC, and no canonical exclusion"
+    },
+    {
+      "shard": 33,
+      "scene": "SC_M0400_00_M0410_00",
+      "problem": "no translation, no QC, and no canonical exclusion"
+    },
+    {
+      "shard": 34,
+      "scene": "SC_M0410_00_M0411_00",
+      "problem": "no translation, no QC, and no canonical exclusion"
+    },
+    {
+      "shard": 34,
+      "scene": "SC_M0411_00_M0412_00",
+      "problem": "no translation, no QC, and no canonical exclusion"
+    },
+    {
+      "shard": 34,
+      "scene": "SC_M0412_00_M0420_00",
+      "problem": "no translation, no QC, and no canonical exclusion"
+    },
+    {
+      "shard": 34,
+      "scene": "SC_M0420_00_M0430_00",
+      "problem": "no translation, no QC, and no canonical exclusion"
+    },
+    {
+      "shard": 35,
+      "scene": "SC_M0430_00_M0431_00",
+      "problem": "no translation, no QC, and no canonical exclusion"
+    },
+    {
+      "shard": 35,
+      "scene": "SC_M0431_00_M0432_00",
+      "problem": "no translation, no QC, and no canonical exclusion"
+    },
+    {
+      "shard": 35,
+      "scene": "SC_M0432_00_M0440_00",
+      "problem": "no translation, no QC, and no canonical exclusion"
+    },
+    {
+      "shard": 35,
+      "scene": "SC_M0440_00_M0450_00",
+      "problem": "no translation, no QC, and no canonical exclusion"
+    },
+    {
+      "shard": 36,
+      "scene": "SC_M0450_00_M0460_00",
+      "problem": "no translation, no QC, and no canonical exclusion"
+    },
+    {
+      "shard": 36,
+      "scene": "SC_M0460_00_M0470_00",
+      "problem": "no translation, no QC, and no canonical exclusion"
+    },
+    {
+      "shard": 36,
+      "scene": "SC_M0470_00_M0471_00",
+      "problem": "no translation, no QC, and no canonical exclusion"
+    },
+    {
+      "shard": 36,
+      "scene": "SC_M0471_00_M0480_00",
+      "problem": "no translation, no QC, and no canonical exclusion"
+    },
+    {
+      "shard": 37,
+      "scene": "SC_M0480_00_M0490_00",
+      "problem": "no translation, no QC, and no canonical exclusion"
+    },
+    {
+      "shard": 37,
+      "scene": "SC_M0490_00_M0500_00",
+      "problem": "no translation, no QC, and no canonical exclusion"
+    },
+    {
+      "shard": 37,
+      "scene": "SC_M0500_00_M0501_00",
+      "problem": "no translation, no QC, and no canonical exclusion"
+    },
+    {
+      "shard": 37,
+      "scene": "SC_M0501_00_M0510_00",
+      "problem": "no translation, no QC, and no canonical exclusion"
+    },
+    {
+      "shard": 38,
+      "scene": "SC_M0510_00_M0520_00",
+      "problem": "no translation, no QC, and no canonical exclusion"
+    },
+    {
+      "shard": 38,
+      "scene": "SC_M0520_00_M0530_00",
+      "problem": "no translation, no QC, and no canonical exclusion"
+    },
+    {
+      "shard": 38,
+      "scene": "SC_M0530_00_M0540_00",
+      "problem": "no translation, no QC, and no canonical exclusion"
+    },
+    {
+      "shard": 38,
+      "scene": "SC_M0540_00_M0550_00",
+      "problem": "no translation, no QC, and no canonical exclusion"
+    },
+    {
+      "shard": 39,
+      "scene": "SC_M0550_00_M0551_00",
+      "problem": "no translation, no QC, and no canonical exclusion"
+    },
+    {
+      "shard": 39,
+      "scene": "SC_M0551_00_M0552_00",
+      "problem": "no translation, no QC, and no canonical exclusion"
+    },
+    {
+      "shard": 39,
+      "scene": "SC_M0552_00_M0553_00",
+      "problem": "no translation, no QC, and no canonical exclusion"
+    },
+    {
+      "shard": 39,
+      "scene": "SC_M0553_00_M0554_00",
+      "problem": "no translation, no QC, and no canonical exclusion"
+    },
+    {
+      "shard": 40,
+      "scene": "SC_M0554_00_M0555_00",
+      "problem": "no translation, no QC, and no canonical exclusion"
+    },
+    {
+      "shard": 40,
+      "scene": "SC_M0555_00_M0556_00",
+      "problem": "no translation, no QC, and no canonical exclusion"
+    },
+    {
+      "shard": 40,
+      "scene": "SC_M0556_00_M0557_00",
+      "problem": "no translation, no QC, and no canonical exclusion"
+    },
+    {
+      "shard": 40,
+      "scene": "SC_M0557_00_M0558_00",
+      "problem": "no translation, no QC, and no canonical exclusion"
+    },
+    {
+      "shard": 41,
+      "scene": "SC_M0558_00_M0559_00",
+      "problem": "no translation, no QC, and no canonical exclusion"
+    },
+    {
+      "shard": 41,
+      "scene": "SC_M0559_00_M0560_00",
+      "problem": "no translation, no QC, and no canonical exclusion"
+    },
+    {
+      "shard": 41,
+      "scene": "SC_M0560_00_M0561_00",
+      "problem": "no translation, no QC, and no canonical exclusion"
+    },
+    {
+      "shard": 41,
+      "scene": "SC_M0561_00_M0562_00",
+      "problem": "no translation, no QC, and no canonical exclusion"
+    },
+    {
+      "shard": 42,
+      "scene": "SC_M0562_00_M0563_00",
+      "problem": "no translation, no QC, and no canonical exclusion"
+    },
+    {
+      "shard": 42,
+      "scene": "SC_M0563_00_M0564_00",
+      "problem": "no translation, no QC, and no canonical exclusion"
+    },
+    {
+      "shard": 42,
+      "scene": "SC_M0564_00_M0565_00",
+      "problem": "no translation, no QC, and no canonical exclusion"
+    },
+    {
+      "shard": 42,
+      "scene": "SC_M0565_00_M0566_00",
+      "problem": "no translation, no QC, and no canonical exclusion"
+    },
+    {
+      "shard": 43,
+      "scene": "SC_M0566_00_M0567_00",
+      "problem": "no translation, no QC, and no canonical exclusion"
+    },
+    {
+      "shard": 43,
+      "scene": "SC_M0567_00_M0568_00",
+      "problem": "no translation, no QC, and no canonical exclusion"
+    },
+    {
+      "shard": 43,
+      "scene": "SC_M0568_00_M0569_00",
+      "problem": "no translation, no QC, and no canonical exclusion"
+    },
+    {
+      "shard": 43,
+      "scene": "SC_M0569_00_M0570_00",
+      "problem": "no translation, no QC, and no canonical exclusion"
+    },
+    {
+      "shard": 44,
+      "scene": "SC_M0570_00_M0571_00",
+      "problem": "no translation, no QC, and no canonical exclusion"
+    },
+    {
+      "shard": 44,
+      "scene": "SC_M0571_00_M0572_00",
+      "problem": "no translation, no QC, and no canonical exclusion"
+    },
+    {
+      "shard": 44,
+      "scene": "SC_M0572_00_M0573_00",
+      "problem": "no translation, no QC, and no canonical exclusion"
+    },
+    {
+      "shard": 44,
+      "scene": "SC_M0573_00_M0580_00",
+      "problem": "no translation, no QC, and no canonical exclusion"
+    },
+    {
+      "shard": 45,
+      "scene": "SC_M0580_00_M0581_00",
+      "problem": "no translation, no QC, and no canonical exclusion"
+    },
+    {
+      "shard": 45,
+      "scene": "SC_M0581_00_M0590_00",
+      "problem": "no translation, no QC, and no canonical exclusion"
+    },
+    {
+      "shard": 45,
+      "scene": "SC_M0590_00_M0600_00",
+      "problem": "no translation, no QC, and no canonical exclusion"
+    },
+    {
+      "shard": 45,
+      "scene": "SC_M0600_00_M0601_00",
+      "problem": "no translation, no QC, and no canonical exclusion"
+    },
+    {
+      "shard": 46,
+      "scene": "SC_M0601_00_M0602_00",
+      "problem": "no translation, no QC, and no canonical exclusion"
+    },
+    {
+      "shard": 46,
+      "scene": "SC_M0602_00_M0603_00",
+      "problem": "no translation, no QC, and no canonical exclusion"
+    },
+    {
+      "shard": 46,
+      "scene": "SC_M0603_00_M0604_00",
+      "problem": "no translation, no QC, and no canonical exclusion"
+    },
+    {
+      "shard": 46,
+      "scene": "SC_M0604_00_M0605_00",
+      "problem": "no translation, no QC, and no canonical exclusion"
+    },
+    {
+      "shard": 47,
+      "scene": "SC_M0605_00_M0606_00",
+      "problem": "no translation, no QC, and no canonical exclusion"
+    },
+    {
+      "shard": 47,
+      "scene": "SC_M0606_00_M0607_00",
+      "problem": "no translation, no QC, and no canonical exclusion"
+    },
+    {
+      "shard": 47,
+      "scene": "SC_M0607_00_M0608_00",
+      "problem": "no translation, no QC, and no canonical exclusion"
+    },
+    {
+      "shard": 47,
+      "scene": "SC_M0608_00_M0609_00",
+      "problem": "no translation, no QC, and no canonical exclusion"
+    },
+    {
+      "shard": 48,
+      "scene": "SC_M0609_00_M0610_00",
+      "problem": "no translation, no QC, and no canonical exclusion"
+    },
+    {
+      "shard": 48,
+      "scene": "SC_M0610_00_M0611_00",
+      "problem": "no translation, no QC, and no canonical exclusion"
+    },
+    {
+      "shard": 48,
+      "scene": "SC_M0611_00_M0612_00",
+      "problem": "no translation, no QC, and no canonical exclusion"
+    },
+    {
+      "shard": 48,
+      "scene": "SC_M0612_00_M0615_00",
+      "problem": "no translation, no QC, and no canonical exclusion"
+    },
+    {
+      "shard": 49,
+      "scene": "SC_M0615_10_M0615_50",
+      "problem": "no translation, no QC, and no canonical exclusion"
+    },
+    {
+      "shard": 49,
+      "scene": "SC_M0615_20_M0615_50",
+      "problem": "no translation, no QC, and no canonical exclusion"
+    },
+    {
+      "shard": 49,
+      "scene": "SC_M0615_50_M0615_70",
+      "problem": "no translation, no QC, and no canonical exclusion"
+    },
+    {
+      "shard": 49,
+      "scene": "SC_M0615_70_M0615_80",
+      "problem": "no translation, no QC, and no canonical exclusion"
+    },
+    {
+      "shard": 50,
+      "scene": "SC_M0615_80_M0620_00",
+      "problem": "no translation, no QC, and no canonical exclusion"
+    },
+    {
+      "shard": 50,
+      "scene": "SC_M0620_00_M0621_00",
+      "problem": "no translation, no QC, and no canonical exclusion"
+    },
+    {
+      "shard": 50,
+      "scene": "SC_M0621_00_M0622_00",
+      "problem": "no translation, no QC, and no canonical exclusion"
+    },
+    {
+      "shard": 50,
+      "scene": "SC_M0622_00_M0630_00",
+      "problem": "no translation, no QC, and no canonical exclusion"
+    },
+    {
+      "shard": 51,
+      "scene": "SC_M0630_10_M0640_00",
+      "problem": "no translation, no QC, and no canonical exclusion"
+    },
+    {
+      "shard": 51,
+      "scene": "SC_M0630_20_M0640_00",
+      "problem": "no translation, no QC, and no canonical exclusion"
+    },
+    {
+      "shard": 51,
+      "scene": "SC_M0640_00_M0650_00",
+      "problem": "no translation, no QC, and no canonical exclusion"
+    },
+    {
+      "shard": 51,
+      "scene": "SC_M0650_00_M0660_00",
+      "problem": "no translation, no QC, and no canonical exclusion"
+    },
+    {
+      "shard": 52,
+      "scene": "SC_M0660_00_M0661_00",
+      "problem": "no translation, no QC, and no canonical exclusion"
+    },
+    {
+      "shard": 52,
+      "scene": "SC_M0661_00_M0662_00",
+      "problem": "no translation, no QC, and no canonical exclusion"
+    },
+    {
+      "shard": 52,
+      "scene": "SC_M0662_00_M0663_00",
+      "problem": "no translation, no QC, and no canonical exclusion"
+    },
+    {
+      "shard": 52,
+      "scene": "SC_M0663_00_M0664_00",
+      "problem": "no translation, no QC, and no canonical exclusion"
+    }
+  ],
+  "ambiguous_exclusions": []
+}
