@@ -1,0 +1,12 @@
+{
+  "file": "SC_W0100_10_W0210_00",
+  "speaker_map": {
+    "スバル": "Subaru",
+    "きぬ": "Kinu"
+  },
+  "lines": {
+    "1": "「Welcome to BAR Tutorial.」",
+    "2": "「You know, if you wrote 'tutorial' in kanji, it'd be 'halfway to reality.' Kind of sad, huh?」",
+    "3": "「No, it wouldn't. So, you want to hear how the game works?」"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "file": "SC_W0110_10_Z9999_99",
+  "speaker_map": {
+    "きぬ": "Kinu",
+    "スバル": "Subaru",
+    "良美": "Yoshimi"
+  },
+  "lines": {
+    "1": "「All right, Subaru. Explain what makes this game special in terms even I can understand. I'll pretend to be a total idiot, so make it simple enough even then.」",
+    "2": "「So I can just treat you like usual?」",
+    "3": "「Teach me, Professor Subaru!」",
+    "4": "「Whoa, now that's seriously stupid. All right, lesson time, little crab. Raise your hand if you don't understand.」",
+    "5": "「It's a dating sim. The goal is to get close to the girl you have your eye on.」",
+    "6": "「Yoppi, our stagehand, slide the game screen over.」",
+    "7": "「I told you not to call me Yoppi... There... is this okay?」",
+    "8": "「Thanks. Just check the map, choose the character whose route you want, and click on her. You'll lock into her story in no time.」",
+    "9": "「You don't get many days on the map, so if you run around after too many girls, you'll blow it.」",
+    "10": "「Once you're locked into a character's story, is it all one straight path?」",
+    "11": "「Nope. Some routes can still branch into different endings. Choose your girl and your choices carefully.」",
+    "12": "「Hey, Inori isn't on this screen.」",
+    "13": "「Yoppi isn't there at first either. Apparently, you can unlock their routes by meeting certain conditions.」",
+    "14": "「And what are those conditions?」",
+    "15": "「Easy. If you really can't figure them out, check the manual. It's all in there.」",
+    "16": "「So, Professor Subaru, do you have a recommended route order?」",
+    "17": "「Basically, it sounds like you're free to choose, but there's a note here, so I'll read it.」",
+    "18": "「Let's see... Kinu Kanisawa's route is especially easy to get into, so start there. Then Otome or Erika would be good.」",
+    "19": "「Huh. So I'm batting leadoff.」",
+    "20": "「For things like keyboard settings, click this icon. You can change them here.」",
+    "21": "「Whoa, there are a lot of things you can tweak.」",
+    "22": "「You can control things like screen size and quick-save with a single keystroke. Don't forget.」",
+    "23": "「What's this panic button?」",
+    "24": "「If you want, try pressing the key assigned to it. I think it defaults to F5.」",
+    "25": "「So if someone walks in, you use this to cover your tracks.」",
+    "26": "「That's about it. Come back if you get confused.」",
+    "27": "「Yessir! Thank you for the lesson.」"
+  }
+}
