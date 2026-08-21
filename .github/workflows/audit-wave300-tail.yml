@@ -1,0 +1,187 @@
+name: Audit wave 300 tail
+
+on:
+  push:
+    branches:
+      - codex/wave-300-continuation-20260820
+    paths:
+      - .github/workflows/audit-wave300-tail.yml
+
+permissions:
+  contents: write
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+          fetch-depth: 0
+
+      - name: Audit shards 72 through 77
+        shell: python
+        run: |
+          import json
+          import re
+          import subprocess
+          from pathlib import Path
+
+          shards = {
+              72: [
+                  "SC_G0390_00_G0400_00",
+                  "SC_G0400_00_G0420_00",
+                  "SC_G0420_00_G0440_00",
+                  "SC_G0440_00_G0460_00",
+              ],
+              73: [
+                  "SC_G0460_00_G0480_00",
+                  "SC_G0480_00_G0500_00",
+                  "SC_G0500_00_G0520_00",
+                  "SC_G0520_00_G0540_00",
+              ],
+              74: [
+                  "SC_G0540_00_G0600_00",
+                  "SC_G0600_00_G0650_00",
+                  "SC_G0650_00_G0700_00",
+                  "SC_G0700_00_G0720_00",
+              ],
+              75: [
+                  "SC_G0720_00_G0750_00",
+                  "SC_G0750_00_G0760_00",
+                  "SC_G0760_00_G0800_00",
+                  "SC_G0800_00_G0850_00",
+              ],
+              76: [
+                  "SC_G0850_00_G0860_00",
+                  "SC_G0860_10_G0870_00",
+                  "SC_G0860_20_G0950_00",
+                  "SC_G0870_00_G0900_00",
+              ],
+              77: [
+                  "SC_G0900_00_G0910_00",
+                  "SC_G0910_00_G0920_00",
+                  "SC_G0920_00_G0930_00",
+              ],
+          }
+
+          exclusions = json.loads(Path("content_exclusions.json").read_text(encoding="utf-8"))["entries"]
+          exclusion_map = {entry["scene"]: entry for entry in exclusions}
+
+          def git_lines(*args):
+              proc = subprocess.run(
+                  ["git", *args],
+                  text=True,
+                  stdout=subprocess.PIPE,
+                  stderr=subprocess.DEVNULL,
+                  check=False,
+              )
+              return [line for line in proc.stdout.splitlines() if line]
+
+          def qc_summary(path):
+              if not path.exists():
+                  return []
+              keep = []
+              pattern = re.compile(
+                  r"(?i)(source.*count|excluded.*row|permitted|translation.*coverage|"
+                  r"speaker.*map|json|cp932|verdict|status|\bpass\b|\bfail\b)"
+              )
+              for line in path.read_text(encoding="utf-8").splitlines():
+                  stripped = line.strip()
+                  if stripped and pattern.search(stripped):
+                      keep.append(stripped)
+                  if len(keep) >= 24:
+                      break
+              return keep
+
+          report = {
+              "schema_version": 1,
+              "branch": "codex/wave-300-continuation-20260820",
+              "base_checkpoint": 72,
+              "shards": {},
+              "missing_translations": [],
+              "missing_accuracy_qc": [],
+              "missing_literary_qc": [],
+              "unregistered_qc_exclusions": [],
+          }
+
+          for shard, scenes in shards.items():
+              shard_rows = []
+              for scene in scenes:
+                  tpath = Path("translations") / f"{scene}.json"
+                  apath = Path("qc/accuracy") / f"{scene}.md"
+                  lpath = Path("qc/literary") / f"{scene}.md"
+                  item = {
+                      "scene": scene,
+                      "translation_exists": tpath.exists(),
+                      "accuracy_qc_exists": apath.exists(),
+                      "literary_qc_exists": lpath.exists(),
+                      "canonical_exclusion": exclusion_map.get(scene),
+                      "ever_committed_translation": bool(git_lines("log", "--all", "--format=%H", "--", str(tpath))),
+                      "tracked_references": git_lines("grep", "-l", "--fixed-strings", scene),
+                  }
+                  if tpath.exists():
+                      payload = json.loads(tpath.read_text(encoding="utf-8"))
+                      lines = payload.get("lines", {})
+                      keys = sorted(int(key) for key in lines)
+                      item["translation_row_count"] = len(keys)
+                      item["translation_first_index"] = keys[0] if keys else None
+                      item["translation_last_index"] = keys[-1] if keys else None
+                      item["translation_missing_inside_span"] = (
+                          sorted(set(range(keys[0], keys[-1] + 1)) - set(keys)) if keys else []
+                      )
+                  else:
+                      report["missing_translations"].append(scene)
+                  item["accuracy_summary"] = qc_summary(apath)
+                  item["literary_summary"] = qc_summary(lpath)
+                  if not apath.exists():
+                      report["missing_accuracy_qc"].append(scene)
+                  if not lpath.exists():
+                      report["missing_literary_qc"].append(scene)
+                  accuracy_text = apath.read_text(encoding="utf-8") if apath.exists() else ""
+                  if re.search(r"(?i)excluded.*(?:row|range|index)", accuracy_text) and scene not in exclusion_map:
+                      report["unregistered_qc_exclusions"].append(scene)
+                  shard_rows.append(item)
+              report["shards"][str(shard)] = shard_rows
+
+          Path("state/audit_wave300_tail_20260821.json").write_text(
+              json.dumps(report, ensure_ascii=False, indent=2) + "\n",
+              encoding="utf-8",
+          )
+
+          md = [
+              "# Wave-300 tail audit — 2026-08-21",
+              "",
+              "Machine-generated structural audit of shards 72-77. No retail-source text is included.",
+              "",
+          ]
+          for shard, rows in report["shards"].items():
+              md += [f"## Shard {shard}", "", "| Scene | Translation | Rows | Accuracy | Literary | Canonical exclusion |", "|---|---:|---:|---:|---:|---:|"]
+              for row in rows:
+                  md.append(
+                      f"| `{row['scene']}` | {'yes' if row['translation_exists'] else 'NO'} | "
+                      f"{row.get('translation_row_count', '-')} | {'yes' if row['accuracy_qc_exists'] else 'NO'} | "
+                      f"{'yes' if row['literary_qc_exists'] else 'NO'} | {'yes' if row['canonical_exclusion'] else 'no'} |"
+                  )
+              md.append("")
+          md += [
+              "## Open structural gaps",
+              "",
+              "- Missing translations: " + (", ".join(report["missing_translations"]) or "none"),
+              "- Missing accuracy QC: " + (", ".join(report["missing_accuracy_qc"]) or "none"),
+              "- Missing literary QC: " + (", ".join(report["missing_literary_qc"]) or "none"),
+              "- QC-documented exclusions absent from canonical registry: " + (", ".join(report["unregistered_qc_exclusions"]) or "none"),
+              "",
+          ]
+          Path("state/audit_wave300_tail_20260821.md").write_text("\n".join(md), encoding="utf-8")
+
+      - name: Remove one-shot workflow
+        run: rm .github/workflows/audit-wave300-tail.yml
+
+      - name: Commit audit
+        run: |
+          git config user.name "OpenAI Codex"
+          git config user.email "codex@openai.com"
+          git add state/audit_wave300_tail_20260821.json state/audit_wave300_tail_20260821.md .github/workflows/audit-wave300-tail.yml
+          git commit -m "Audit wave-300 tail artifacts"
+          git push origin "HEAD:${{ github.ref_name }}"
