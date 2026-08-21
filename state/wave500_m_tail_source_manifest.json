@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "campaign": "wave_500_continuation_20260821",
+  "batch": "m_route_tail_after_wave200",
+  "repository": "Mitchobrienpouet/Tsuyokiss",
+  "branch": "codex/wave-300-continuation-20260820",
+  "first_shard": 53,
+  "last_shard": 55,
+  "first_scene": "SC_M0664_00_M0665_00",
+  "last_scene": "SC_M0690_00_Z9999_99",
+  "scene_count": 10,
+  "shard_count": 3,
+  "source_policy": {
+    "raw_output": "scratchpad/jp_dumps",
+    "model_output": "scratchpad/model_sources",
+    "raw_sources_are_immutable": true,
+    "apply_configured_exclusions_before_model_projection": true,
+    "fully_excluded_model_source": "absent"
+  },
+  "shards": [
+    {
+      "shard": 53,
+      "status": "screened",
+      "scenes": [
+        "SC_M0664_00_M0665_00",
+        "SC_M0665_00_M0666_00",
+        "SC_M0666_00_M0670_00",
+        "SC_M0670_00_M0671_00"
+      ]
+    },
+    {
+      "shard": 54,
+      "status": "screened",
+      "scenes": [
+        "SC_M0671_00_M0680_00",
+        "SC_M0680_00_M0681_00",
+        "SC_M0681_00_M0682_00"
+      ]
+    },
+    {
+      "shard": 55,
+      "status": "screened_clean",
+      "scenes": [
+        "SC_M0682_00_M0683_00",
+        "SC_M0683_00_M0690_00",
+        "SC_M0690_00_Z9999_99"
+      ]
+    }
+  ]
+}
