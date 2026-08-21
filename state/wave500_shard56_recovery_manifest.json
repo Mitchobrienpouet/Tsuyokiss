@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "campaign": "wave_500_continuation_20260821",
+  "batch": "legacy_source_recovery_shard56",
+  "repository": "Mitchobrienpouet/Tsuyokiss",
+  "branch": "codex/wave-300-continuation-20260820",
+  "first_shard": 56,
+  "last_shard": 56,
+  "first_scene": "SC_M0184_00_M0190_00",
+  "last_scene": "SC_M0320_00_M0330_00",
+  "scene_count": 5,
+  "shard_count": 1,
+  "source_policy": {
+    "raw_sources_are_immutable": true,
+    "apply_configured_exclusions_before_model_projection": true,
+    "fully_excluded_model_source": "absent"
+  },
+  "shards": [
+    {
+      "shard": 56,
+      "status": "source_recovery_required",
+      "scenes": [
+        "SC_M0184_00_M0190_00",
+        "SC_M0210_00_M0211_00",
+        "SC_M0225_00_M0230_00",
+        "SC_M0301_00_M0310_00",
+        "SC_M0320_00_M0330_00"
+      ]
+    }
+  ]
+}
