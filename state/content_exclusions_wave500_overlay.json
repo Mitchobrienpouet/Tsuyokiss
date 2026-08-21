@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "base_manifest": "content_exclusions.json",
+  "policy": "Fail-closed exclusions discovered while recovering Full Edition M-route source for the rolling wave-500 campaign.",
+  "entries": [
+    {
+      "scene": "SC_M0554_00_M0555_00",
+      "ranges": [
+        [4, 16]
+      ],
+      "reason": "Connected sexualized swimsuit/body appraisal involving high-school students; excluded from model work and builds by policy."
+    }
+  ],
+  "status": "ACTIVE"
+}
