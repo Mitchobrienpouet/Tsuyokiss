@@ -213,5 +213,7 @@ lane-N translation stage.
 - 15 lane-N files under `scratchpad/model_sources/`, one for every permitted
   source scene listed in the hash table.
 
-No translation, QC, arbitration, exclusion manifest, pipeline/configuration,
-source dump, checkpoint, or Git artifact was modified.
+The preflight stage itself modified no translation, QC, arbitration, exclusion
+manifest, pipeline/configuration, source dump, checkpoint, or Git artifact.
+The separately authorized translation stage that followed is documented in
+`scratchpad/contested/final_N_translation_handoff_20260822.md`.
