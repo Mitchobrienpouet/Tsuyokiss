@@ -80,6 +80,34 @@
         [55, 66]
       ],
       "reason": "Restricted content and dependent continuation involving high-school students; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_M0609_00_M0610_00",
+      "ranges": [
+        [1, 20]
+      ],
+      "reason": "Restricted content and dependent continuation involving high-school students; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_M0610_00_M0611_00",
+      "ranges": [
+        [37, 49]
+      ],
+      "reason": "Restricted content and dependent continuation involving high-school students; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_M0611_00_M0612_00",
+      "ranges": [
+        [11, 15]
+      ],
+      "reason": "Dependent continuation of restricted content involving high-school students; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_M0612_00_M0615_00",
+      "ranges": [
+        [1, 363]
+      ],
+      "reason": "Full-scene restricted content involving high-school students; excluded from model work and builds by policy."
     }
   ],
   "status": "ACTIVE"
