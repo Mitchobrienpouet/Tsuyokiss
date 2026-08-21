@@ -972,7 +972,7 @@
     "12": {
       "ledger_status": "CLAIMED",
       "claim": "w200-12",
-      "ready": false,
+      "ready": true,
       "scenes": [
         {
           "scene": "SC_J0100_08_J0100_09",
@@ -1039,15 +1039,17 @@
           "canonical_exclusion": false,
           "canonical_ranges": [],
           "canonical_indexes": [],
-          "status": "MISSING",
-          "error": "no translation, no QC, and no canonical exclusion"
+          "status": "ZERO_TEXT_ROUTING",
+          "known_source_span": 0,
+          "translation_rows": 0,
+          "source_evidence": "authoritative recovered-source inspection"
         }
       ]
     },
     "13": {
       "ledger_status": "CLAIMED",
       "claim": "w200-13",
-      "ready": false,
+      "ready": true,
       "scenes": [
         {
           "scene": "SC_J0100_17_J0100_20",
@@ -1057,8 +1059,10 @@
           "canonical_exclusion": false,
           "canonical_ranges": [],
           "canonical_indexes": [],
-          "status": "MISSING",
-          "error": "no translation, no QC, and no canonical exclusion"
+          "status": "ZERO_TEXT_ROUTING",
+          "known_source_span": 0,
+          "translation_rows": 0,
+          "source_evidence": "authoritative recovered-source inspection"
         },
         {
           "scene": "SC_J0100_18_J0100_20",
@@ -1068,8 +1072,10 @@
           "canonical_exclusion": false,
           "canonical_ranges": [],
           "canonical_indexes": [],
-          "status": "MISSING",
-          "error": "no translation, no QC, and no canonical exclusion"
+          "status": "ZERO_TEXT_ROUTING",
+          "known_source_span": 0,
+          "translation_rows": 0,
+          "source_evidence": "authoritative recovered-source inspection"
         },
         {
           "scene": "SC_J0100_20_Z9999_99",
@@ -1079,8 +1085,10 @@
           "canonical_exclusion": false,
           "canonical_ranges": [],
           "canonical_indexes": [],
-          "status": "MISSING",
-          "error": "no translation, no QC, and no canonical exclusion"
+          "status": "ZERO_TEXT_ROUTING",
+          "known_source_span": 0,
+          "translation_rows": 0,
+          "source_evidence": "authoritative recovered-source inspection"
         }
       ]
     },
@@ -3526,33 +3534,14 @@
     "scenes": 200,
     "banked": 89,
     "fully_excluded": 7,
+    "zero_text_routing": 4,
     "ambiguous_exclusion_only": 0,
-    "missing": 100,
+    "missing": 96,
     "invalid": 4,
     "translation_rows": 4666,
-    "ready_shards": 25
+    "ready_shards": 27
   },
   "actionable_gaps": [
-    {
-      "shard": 12,
-      "scene": "SC_J0100_16_J0100_20",
-      "problem": "no translation, no QC, and no canonical exclusion"
-    },
-    {
-      "shard": 13,
-      "scene": "SC_J0100_17_J0100_20",
-      "problem": "no translation, no QC, and no canonical exclusion"
-    },
-    {
-      "shard": 13,
-      "scene": "SC_J0100_18_J0100_20",
-      "problem": "no translation, no QC, and no canonical exclusion"
-    },
-    {
-      "shard": 13,
-      "scene": "SC_J0100_20_Z9999_99",
-      "problem": "no translation, no QC, and no canonical exclusion"
-    },
     {
       "shard": 28,
       "scene": "SC_M0310_00_M0320_00",
@@ -4055,5 +4044,6 @@
     }
   ],
   "ambiguous_exclusions": [],
-  "audit_revision": "2026-08-21: explicit verdict parsing replaces lexical FAIL scanning; ordinary prose such as 'fail to persuade' no longer triggers a false invalid result."
+  "audit_revision": "2026-08-21: explicit verdict parsing replaces lexical FAIL scanning; ordinary prose such as 'fail to persuade' no longer triggers a false invalid result.",
+  "zero_text_revision": "2026-08-21: authoritative recovered-source inspection closes wave-200 shard 12 routing scene and all shard 13 scenes as zero-text controls."
 }
