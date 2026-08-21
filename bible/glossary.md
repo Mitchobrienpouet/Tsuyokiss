@@ -4,6 +4,7 @@
 |---|---|---|
 | 松笠 | Matsukasa | Coastal city; famous for curry and its preserved battleship. |
 | 烏賊島 | Ikajima | Ryuumeikan-owned remote island/correctional facility; keep the proper name rather than translating it ad hoc. |
+| 竜宮 | Ryugu | Recurring named map/location associated with the executive committee; preserve as a proper name. |
 | 竜鳴館 | Ryuumeikan Academy | Private school; do not shorten to another invented school name. |
 | 対馬レオ | Leo Tsushima | Protagonist and narrator. |
 | 鉄乙女 | Otome Kurogane | Keep identity hidden while source uses 上級生. |
