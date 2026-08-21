@@ -59,6 +59,13 @@
         [13, 18]
       ],
       "reason": "Restricted content and dependent continuation involving high-school students; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_M0590_00_M0600_00",
+      "ranges": [
+        [32, 32]
+      ],
+      "reason": "Dependent continuation of restricted content involving high-school students; excluded from model work and builds by policy."
     }
   ],
   "status": "ACTIVE"
