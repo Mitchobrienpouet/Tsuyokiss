@@ -1,0 +1,282 @@
+name: Audit wave-200 ledger
+
+on:
+  push:
+    branches:
+      - codex/wave-300-continuation-20260820
+    paths:
+      - .github/workflows/audit-wave200-ledger.yml
+
+permissions:
+  contents: write
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+          fetch-depth: 0
+
+      - name: Audit every wave-200 claim
+        shell: python
+        run: |
+          import json
+          import re
+          from pathlib import Path
+
+          ledger_path = Path("state/wave_200_continuation_20260820.md")
+          ledger = ledger_path.read_text(encoding="utf-8")
+          row_re = re.compile(r"^\|\s*(\d+)\s*\|\s*([^|]+?)\s*\|\s*([^|]+?)\s*\|\s*([^|]+?)\s*\|$", re.MULTILINE)
+          shards = {}
+          for match in row_re.finditer(ledger):
+              number = int(match.group(1))
+              if number < 1 or number > 52:
+                  continue
+              scenes = [part.strip() for part in match.group(3).split(";") if part.strip()]
+              shards[number] = {
+                  "ledger_status": match.group(2).strip(),
+                  "scenes": scenes,
+                  "claim": match.group(4).strip(),
+              }
+          if sorted(shards) != list(range(1, 53)):
+              raise SystemExit(f"Could not parse all 52 shards: {sorted(shards)}")
+
+          exclusions = json.loads(Path("content_exclusions.json").read_text(encoding="utf-8"))["entries"]
+          exclusion_map = {entry["scene"]: entry for entry in exclusions}
+
+          def expand_exclusion(entry):
+              values = set()
+              if not entry:
+                  return values
+              for start, end in entry.get("ranges", []):
+                  values.update(range(int(start), int(end) + 1))
+              values.update(int(index) for index in entry.get("indexes", []))
+              return values
+
+          def load_json_no_duplicates(path):
+              def hook(pairs):
+                  out = {}
+                  for key, value in pairs:
+                      if key in out:
+                          raise ValueError(f"duplicate JSON key {key!r}")
+                      out[key] = value
+                  return out
+              return json.loads(path.read_text(encoding="utf-8"), object_pairs_hook=hook)
+
+          def strong_full_exclusion(entry, shard_number, scene):
+              if not entry:
+                  return False, []
+              evidence = []
+              reason = entry.get("reason", "").lower()
+              indicators = (
+                  "fully excluded",
+                  "continuous explicit",
+                  "continuous sexual",
+                  "entire scene",
+                  "zero permitted",
+              )
+              if any(indicator in reason for indicator in indicators):
+                  evidence.append("canonical reason")
+              ranges = entry.get("ranges", [])
+              if ranges and int(ranges[0][0]) == 1:
+                  evidence.append("canonical range starts at index 1")
+              finding = Path(f"state/restricted_findings_wave200_shard{shard_number:02d}.md")
+              if finding.exists():
+                  text = finding.read_text(encoding="utf-8").lower()
+                  if scene.lower() in text and "fully excluded" in text:
+                      evidence.append(finding.as_posix())
+              return bool("canonical reason" in evidence and "canonical range starts at index 1" in evidence), evidence
+
+          report = {
+              "schema_version": 1,
+              "branch": "codex/wave-300-continuation-20260820",
+              "scope": "wave-200 autonomous continuation, shards 1-52",
+              "shards": {},
+              "totals": {
+                  "scenes": 0,
+                  "banked": 0,
+                  "fully_excluded": 0,
+                  "ambiguous_exclusion_only": 0,
+                  "missing": 0,
+                  "invalid": 0,
+                  "translation_rows": 0,
+                  "ready_shards": 0,
+              },
+              "actionable_gaps": [],
+              "ambiguous_exclusions": [],
+          }
+
+          for number, shard in shards.items():
+              scene_rows = []
+              shard_ready = True
+              for scene in shard["scenes"]:
+                  report["totals"]["scenes"] += 1
+                  tpath = Path("translations") / f"{scene}.json"
+                  apath = Path("qc/accuracy") / f"{scene}.md"
+                  lpath = Path("qc/literary") / f"{scene}.md"
+                  exclusion = exclusion_map.get(scene)
+                  excluded = expand_exclusion(exclusion)
+                  row = {
+                      "scene": scene,
+                      "translation": tpath.exists(),
+                      "accuracy_qc": apath.exists(),
+                      "literary_qc": lpath.exists(),
+                      "canonical_exclusion": bool(exclusion),
+                      "canonical_ranges": exclusion.get("ranges", []) if exclusion else [],
+                      "canonical_indexes": exclusion.get("indexes", []) if exclusion else [],
+                  }
+
+                  if not tpath.exists():
+                      if apath.exists() or lpath.exists():
+                          row["status"] = "INVALID"
+                          row["error"] = "QC payload exists without a translation payload"
+                          report["totals"]["invalid"] += 1
+                          report["actionable_gaps"].append({"shard": number, "scene": scene, "problem": row["error"]})
+                          shard_ready = False
+                      elif exclusion:
+                          strong, evidence = strong_full_exclusion(exclusion, number, scene)
+                          row["full_exclusion_evidence"] = evidence
+                          if strong:
+                              row["status"] = "FULLY_EXCLUDED"
+                              report["totals"]["fully_excluded"] += 1
+                          else:
+                              row["status"] = "AMBIGUOUS_EXCLUSION_ONLY"
+                              report["totals"]["ambiguous_exclusion_only"] += 1
+                              report["ambiguous_exclusions"].append({"shard": number, "scene": scene, "evidence": evidence})
+                              shard_ready = False
+                      else:
+                          row["status"] = "MISSING"
+                          row["error"] = "no translation, no QC, and no canonical exclusion"
+                          report["totals"]["missing"] += 1
+                          report["actionable_gaps"].append({"shard": number, "scene": scene, "problem": row["error"]})
+                          shard_ready = False
+                      scene_rows.append(row)
+                      continue
+
+                  try:
+                      if not apath.exists() or not lpath.exists():
+                          missing_qc = []
+                          if not apath.exists():
+                              missing_qc.append("accuracy")
+                          if not lpath.exists():
+                              missing_qc.append("literary")
+                          raise ValueError("missing " + " and ".join(missing_qc) + " QC")
+                      payload = load_json_no_duplicates(tpath)
+                      if payload.get("file") != scene:
+                          raise ValueError(f"file identity is {payload.get('file')!r}")
+                      lines = payload.get("lines")
+                      if not isinstance(lines, dict) or not lines:
+                          raise ValueError("translation payload has no lines")
+                      keys = {int(key) for key in lines}
+                      overlap = sorted(keys & excluded)
+                      if overlap:
+                          raise ValueError(f"excluded indexes leaked into translation: {overlap}")
+                      known_upper = max(keys | excluded)
+                      uncovered = sorted(set(range(1, known_upper + 1)) - keys - excluded)
+                      if uncovered:
+                          raise ValueError(f"unregistered index gaps: {uncovered}")
+                      accuracy = apath.read_text(encoding="utf-8")
+                      literary = lpath.read_text(encoding="utf-8")
+                      if not re.search(r"\bPASS\b", accuracy, flags=re.IGNORECASE):
+                          raise ValueError("accuracy QC lacks PASS verdict")
+                      if re.search(r"\bFAIL\b", accuracy, flags=re.IGNORECASE):
+                          raise ValueError("accuracy QC contains FAIL")
+                      if not literary.strip():
+                          raise ValueError("literary QC is empty")
+                      if re.search(r"\bFAIL\b", literary, flags=re.IGNORECASE):
+                          raise ValueError("literary QC contains FAIL")
+                      for value in payload.get("speaker_map", {}).values():
+                          str(value).encode("cp932")
+                      for value in lines.values():
+                          str(value).encode("cp932")
+                      row.update({
+                          "status": "BANKED",
+                          "translation_rows": len(keys),
+                          "known_source_span": known_upper,
+                          "excluded_index_count": len(excluded),
+                          "json_duplicate_keys": "PASS",
+                          "known_index_coverage": "PASS",
+                          "exclusion_overlap": "PASS",
+                          "cp932": "PASS",
+                          "accuracy_verdict": "PASS",
+                          "literary_verdict": "verified",
+                      })
+                      report["totals"]["banked"] += 1
+                      report["totals"]["translation_rows"] += len(keys)
+                  except Exception as exc:
+                      row["status"] = "INVALID"
+                      row["error"] = str(exc)
+                      report["totals"]["invalid"] += 1
+                      report["actionable_gaps"].append({"shard": number, "scene": scene, "problem": str(exc)})
+                      shard_ready = False
+                  scene_rows.append(row)
+
+              report["shards"][str(number)] = {
+                  "ledger_status": shard["ledger_status"],
+                  "claim": shard["claim"],
+                  "ready": shard_ready,
+                  "scenes": scene_rows,
+              }
+              if shard_ready:
+                  report["totals"]["ready_shards"] += 1
+
+          Path("state/audit_wave200_20260821.json").write_text(
+              json.dumps(report, ensure_ascii=False, indent=2) + "\n",
+              encoding="utf-8",
+          )
+
+          md = [
+              "# Wave-200 completion audit — 2026-08-21",
+              "",
+              "This audit checks all 52 ledger shards against banked translations, both QC lenses, canonical exclusions, exact known index coverage, exclusion disjointness, duplicate-free JSON, and CP932 encodability.",
+              "",
+              "## Totals",
+              "",
+              f"- Ledger scenes: {report['totals']['scenes']}",
+              f"- Banked scenes: {report['totals']['banked']}",
+              f"- Fully excluded scenes: {report['totals']['fully_excluded']}",
+              f"- Ambiguous exclusion-only scenes: {report['totals']['ambiguous_exclusion_only']}",
+              f"- Missing scenes: {report['totals']['missing']}",
+              f"- Invalid scenes: {report['totals']['invalid']}",
+              f"- Banked translation rows: {report['totals']['translation_rows']}",
+              f"- Ready shards: {report['totals']['ready_shards']}/52",
+              "",
+              "## Shards",
+              "",
+              "| Shard | Ready | Banked | Fully excluded | Ambiguous | Missing/invalid |",
+              "|---:|---:|---:|---:|---:|---:|",
+          ]
+          for number, shard in report["shards"].items():
+              statuses = [row["status"] for row in shard["scenes"]]
+              md.append(
+                  f"| {number} | {'yes' if shard['ready'] else 'NO'} | {statuses.count('BANKED')} | "
+                  f"{statuses.count('FULLY_EXCLUDED')} | {statuses.count('AMBIGUOUS_EXCLUSION_ONLY')} | "
+                  f"{statuses.count('MISSING') + statuses.count('INVALID')} |"
+              )
+          md += ["", "## Actionable gaps", ""]
+          if report["actionable_gaps"]:
+              for gap in report["actionable_gaps"]:
+                  md.append(f"- Shard {gap['shard']} `{gap['scene']}` — {gap['problem']}")
+          else:
+              md.append("- none")
+          md += ["", "## Ambiguous exclusion-only scenes", ""]
+          if report["ambiguous_exclusions"]:
+              for gap in report["ambiguous_exclusions"]:
+                  md.append(f"- Shard {gap['shard']} `{gap['scene']}` — evidence: {', '.join(gap['evidence']) or 'none'}")
+          else:
+              md.append("- none")
+          md.append("")
+          Path("state/audit_wave200_20260821.md").write_text("\n".join(md), encoding="utf-8")
+
+      - name: Remove one-shot workflow
+        run: rm .github/workflows/audit-wave200-ledger.yml
+
+      - name: Commit audit
+        run: |
+          git config user.name "OpenAI Codex"
+          git config user.email "codex@openai.com"
+          git add state/audit_wave200_20260821.json state/audit_wave200_20260821.md .github/workflows/audit-wave200-ledger.yml
+          git commit -m "Audit wave-200 completion ledger"
+          git push origin "HEAD:${{ github.ref_name }}"
