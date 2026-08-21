@@ -1,0 +1,219 @@
+{
+  "schema_version": 1,
+  "repository": "Mitchobrienpouet/Tsuyokiss",
+  "branch": "codex/wave-300-continuation-20260820",
+  "inventory_run_id": 32485609858,
+  "workflow_run_count": 13,
+  "retained_artifact_count": 2,
+  "retained_artifacts": [
+    {
+      "run_id": 32485486547,
+      "workflow": "Recover per-scene wave-200 sources from Git history",
+      "id": 9447678665,
+      "name": "tsuyokiss-wave200-scene-sources-32485486547",
+      "size_in_bytes": 454,
+      "expired": false,
+      "created_at": "2026-08-21T13:10:50Z",
+      "expires_at": "2026-08-28T13:10:49Z"
+    },
+    {
+      "run_id": 32485273904,
+      "workflow": "Recover wave-200 sources from Git history",
+      "id": 9447595115,
+      "name": "tsuyokiss-wave200-history-source-32485273904",
+      "size_in_bytes": 28529,
+      "expired": false,
+      "created_at": "2026-08-21T13:08:14Z",
+      "expires_at": "2026-08-28T13:08:13Z"
+    }
+  ],
+  "runs": [
+    {
+      "run_id": 32485609858,
+      "name": "Inventory Tsuyokiss Actions artifacts",
+      "display_title": "Launch Actions artifact inventory for Tsuyokiss closeout",
+      "event": "push",
+      "status": "in_progress",
+      "conclusion": null,
+      "head_branch": "codex/wave-300-continuation-20260820",
+      "head_sha": "50c6b4476dd7a1c33df58b4e4eab768b18956158",
+      "created_at": "2026-08-21T13:12:05Z",
+      "updated_at": "2026-08-21T13:12:09Z",
+      "artifacts": []
+    },
+    {
+      "run_id": 32485542652,
+      "name": "Reconcile wave-200 zero-text routing shards",
+      "display_title": "Launch zero-text ledger reconciliation",
+      "event": "push",
+      "status": "completed",
+      "conclusion": "success",
+      "head_branch": "codex/wave-300-continuation-20260820",
+      "head_sha": "51dfdc12a91225bee2b4ba81ebd640305f7e1053",
+      "created_at": "2026-08-21T13:11:17Z",
+      "updated_at": "2026-08-21T13:11:29Z",
+      "artifacts": []
+    },
+    {
+      "run_id": 32485486547,
+      "name": "Recover per-scene wave-200 sources from Git history",
+      "display_title": "Launch per-scene historical source recovery",
+      "event": "push",
+      "status": "completed",
+      "conclusion": "success",
+      "head_branch": "codex/wave-300-continuation-20260820",
+      "head_sha": "5e207624a92b6389c98395a99d217a9c0d83cbed",
+      "created_at": "2026-08-21T13:10:37Z",
+      "updated_at": "2026-08-21T13:10:56Z",
+      "artifacts": [
+        {
+          "id": 9447678665,
+          "name": "tsuyokiss-wave200-scene-sources-32485486547",
+          "size_in_bytes": 454,
+          "expired": false,
+          "created_at": "2026-08-21T13:10:50Z",
+          "expires_at": "2026-08-28T13:10:49Z"
+        }
+      ]
+    },
+    {
+      "run_id": 32485273904,
+      "name": "Recover wave-200 sources from Git history",
+      "display_title": "Launch historical source recovery for remaining Tsuyokiss scenes",
+      "event": "push",
+      "status": "completed",
+      "conclusion": "success",
+      "head_branch": "codex/wave-300-continuation-20260820",
+      "head_sha": "97ee63396157166f9e8399aa43095a33d12ef4ec",
+      "created_at": "2026-08-21T13:08:02Z",
+      "updated_at": "2026-08-21T13:08:19Z",
+      "artifacts": [
+        {
+          "id": 9447595115,
+          "name": "tsuyokiss-wave200-history-source-32485273904",
+          "size_in_bytes": 28529,
+          "expired": false,
+          "created_at": "2026-08-21T13:08:14Z",
+          "expires_at": "2026-08-28T13:08:13Z"
+        }
+      ]
+    },
+    {
+      "run_id": 32484477146,
+      "name": "Close wave-200 shard 27",
+      "display_title": "Bootstrap wave-200 shard 27 closeout",
+      "event": "push",
+      "status": "completed",
+      "conclusion": "success",
+      "head_branch": "codex/wave-300-continuation-20260820",
+      "head_sha": "b4e02662e776f15b0372265fddbbc0ef7dc87982",
+      "created_at": "2026-08-21T12:58:30Z",
+      "updated_at": "2026-08-21T12:58:43Z",
+      "artifacts": []
+    },
+    {
+      "run_id": 32483991326,
+      "name": "Bank ready wave-200 shards v2",
+      "display_title": "Repair ready wave-200 checkpoint bootstrap",
+      "event": "push",
+      "status": "completed",
+      "conclusion": "success",
+      "head_branch": "codex/wave-300-continuation-20260820",
+      "head_sha": "ed663f1809c30327868efbe6fb23543027404024",
+      "created_at": "2026-08-21T12:52:33Z",
+      "updated_at": "2026-08-21T12:52:45Z",
+      "artifacts": []
+    },
+    {
+      "run_id": 32483733158,
+      "name": "Bank ready wave-200 shards",
+      "display_title": "Bootstrap ready wave-200 checkpoints",
+      "event": "push",
+      "status": "completed",
+      "conclusion": "failure",
+      "head_branch": "codex/wave-300-continuation-20260820",
+      "head_sha": "a4f4f9d574b97e325d13da45544772d4e967a1a9",
+      "created_at": "2026-08-21T12:49:22Z",
+      "updated_at": "2026-08-21T12:49:32Z",
+      "artifacts": []
+    },
+    {
+      "run_id": 32483629648,
+      "name": "Audit wave-200 ledger",
+      "display_title": "Bootstrap wave-200 completion audit",
+      "event": "push",
+      "status": "completed",
+      "conclusion": "success",
+      "head_branch": "codex/wave-300-continuation-20260820",
+      "head_sha": "7710d8e1f696d12f7f6ab686b5b26717a59f6ff0",
+      "created_at": "2026-08-21T12:48:05Z",
+      "updated_at": "2026-08-21T12:48:17Z",
+      "artifacts": []
+    },
+    {
+      "run_id": 32483455382,
+      "name": "Complete wave-300 plan ledger",
+      "display_title": "Bootstrap wave-300 plan completion",
+      "event": "push",
+      "status": "completed",
+      "conclusion": "success",
+      "head_branch": "codex/wave-300-continuation-20260820",
+      "head_sha": "4bc107725c6c71f594d86d7e5f46bb7333c0ed2b",
+      "created_at": "2026-08-21T12:45:56Z",
+      "updated_at": "2026-08-21T12:46:04Z",
+      "artifacts": []
+    },
+    {
+      "run_id": 32483196628,
+      "name": "Close wave-300 tail",
+      "display_title": "Bootstrap wave-300 tail closeout audit",
+      "event": "push",
+      "status": "completed",
+      "conclusion": "success",
+      "head_branch": "codex/wave-300-continuation-20260820",
+      "head_sha": "83be0092231e8a2f522e8d8b04aa15b8ebed73a3",
+      "created_at": "2026-08-21T12:42:51Z",
+      "updated_at": "2026-08-21T12:43:01Z",
+      "artifacts": []
+    },
+    {
+      "run_id": 32482953604,
+      "name": "Consolidate wave-200 exclusion overlay",
+      "display_title": "Bootstrap wave-200 exclusion consolidation",
+      "event": "push",
+      "status": "completed",
+      "conclusion": "success",
+      "head_branch": "codex/wave-300-continuation-20260820",
+      "head_sha": "b0b43c614efc86ccc2503b6070ebce46c83d3d04",
+      "created_at": "2026-08-21T12:39:49Z",
+      "updated_at": "2026-08-21T12:40:00Z",
+      "artifacts": []
+    },
+    {
+      "run_id": 32482801754,
+      "name": "Audit wave 300 tail",
+      "display_title": "Bootstrap wave-300 tail audit",
+      "event": "push",
+      "status": "completed",
+      "conclusion": "success",
+      "head_branch": "codex/wave-300-continuation-20260820",
+      "head_sha": "6d5ebe004d46693c9452d286f809e3b62967d576",
+      "created_at": "2026-08-21T12:37:54Z",
+      "updated_at": "2026-08-21T12:38:03Z",
+      "artifacts": []
+    },
+    {
+      "run_id": 32482305488,
+      "name": "Consolidate shard 72 exclusion",
+      "display_title": "Bootstrap shard 72 exclusion consolidation",
+      "event": "push",
+      "status": "completed",
+      "conclusion": "success",
+      "head_branch": "codex/wave-300-continuation-20260820",
+      "head_sha": "d946ccf2ee2ec92dc3204ee8ea460177cdeceb9c",
+      "created_at": "2026-08-21T12:31:40Z",
+      "updated_at": "2026-08-21T12:31:51Z",
+      "artifacts": []
+    }
+  ]
+}
