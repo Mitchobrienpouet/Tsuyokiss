@@ -2,7 +2,7 @@
 
 Date: 2026-08-22  
 Stage: post-QC critical readthrough only  
-Verdict: **FAIL — 2 blocking and 2 major findings remain open**  
+Verdict: **PASS after repair, independent QC, and arbitration closure**  
 Translation changes: NONE
 
 ## Scope and evidence
@@ -74,7 +74,7 @@ findings below.
   normalize all nine A-route occurrences and the corresponding lock; preserve
   “Shinichi,” “Fukahire,” and “Shark.”
 - systemic: true
-- status: open
+- status: closed by the route-A repair and independent QC
 
 ### A-RT-002 — Leo reverses the rescue roles
 
@@ -96,7 +96,7 @@ findings below.
   artists, while retaining his hesitant “maybe” and without newly naming Nagomi
   if the line itself does not.
 - systemic: false
-- status: open
+- status: closed by the route-A repair and independent QC
 
 ## Major findings
 
@@ -121,7 +121,7 @@ findings below.
 - fix_direction: Change only the three speaker-map values to Tonfa and reconcile
   the stale local locks; retain her lightly clipped, non-caricatured voice.
 - systemic: true
-- status: open
+- status: closed by the route-A repair and independent QC
 
 ### A-RT-004 — Spoken dialogue is emitted as narration
 
@@ -141,7 +141,7 @@ findings below.
 - fix_direction: Restore the corner-quoted dialogue wrapper while preserving the
   incomplete, uneasy thought and exact meaning.
 - systemic: false
-- status: open
+- status: closed by the route-A repair and independent QC
 
 ## Minor findings
 
@@ -164,7 +164,7 @@ findings below.
   consistently; current A precedent favors Burrhead. Do not alter the rustic
   cadence.
 - systemic: true
-- status: open
+- status: closed by the route-A repair and independent QC
 
 ### A-RT-006 — Heizo romanization drift
 
@@ -182,7 +182,7 @@ findings below.
 - fix_direction: Normalize the two target occurrences and speaker-map value to
   Heizo, preserving the full-name order already used.
 - systemic: false
-- status: open
+- status: closed by the route-A repair and independent QC
 
 ### A-RT-007 — Ellie nickname typo
 
@@ -198,7 +198,7 @@ findings below.
 - diagnosis: A single typo breaks a stable intimate nickname.
 - fix_direction: Change Elly to Ellie without altering Yoshimi’s complaint.
 - systemic: false
-- status: open
+- status: closed by the route-A repair and independent QC
 
 ### A-RT-008 — Miss Inori address lock drifts to Ms. Inori
 
@@ -219,7 +219,7 @@ findings below.
 - fix_direction: Normalize these ten occurrences to Miss Inori; do not change
   bare Inori speaker labels.
 - systemic: true
-- status: open
+- status: closed by the route-A repair and independent QC
 
 ### A-RT-009 — Mr. Tsuchinaga loses his established title in one speaker map
 
@@ -237,7 +237,7 @@ findings below.
 - fix_direction: Restore Mr. Tsuchinaga in the speaker map without changing his
   mock-grandiose dialogue.
 - systemic: false
-- status: open
+- status: closed by the route-A repair and independent QC
 
 ### A-RT-010 — Otome toothbrush wordplay is grammatically broken
 
@@ -258,7 +258,7 @@ findings below.
 - fix_direction: Recast the phrase so “a maiden’s” and “Otome’s” can both land
   grammatically, while retaining her warning and not expanding the joke.
 - systemic: false
-- status: open
+- status: closed by the route-A repair and independent QC
 
 ## Continuous-route checks
 
@@ -613,3 +613,27 @@ excluded 1-10, raw count 10.
 
 Coverage checksum: 269 translated scenes; 6,078 permitted rows.
 
+## Repair and closure addendum
+
+All ten findings above were repaired in the route-A repair checkpoint. An
+independent accuracy pass then reviewed all 573 permitted rows in the 20 touched
+scenes and added three source-faithfulness corrections: whispered-delivery
+markers at `SC_A0360_70_A0360_80:7`, fifth-inning mercy-rule timing at
+`SC_A0410_70_A0410_80:15`, and the omitted website reference at index `22`.
+
+An independent literary pass reread the same 573 rows, introduced 24 localized
+prose improvements across 13 scenes, preserved every accuracy lock, and found no
+materially defensible competing reading. The targeted arbitration closure
+therefore records `NONE` for all 20 scenes and makes no further translation
+change.
+
+The corrected finding rows and their immediate continuity blocks were reread
+after both QC stages. Samesuga, Tonfa, Burrhead, Heizo, Ellie, Miss Inori, and
+Mr. Tsuchinaga are stable; the rescue roles, spoken-dialogue wrapper, and
+toothbrush wordplay retain their intended meaning and presentation. Exact joins,
+source hashes, engine IDs, speaker maps, wrappers, CP932 encoding, and project
+validation all pass. No blocking, major, or minor route-A readthrough finding
+remains open.
+
+This closure remains a static-script result. It does not claim runtime textbox,
+backlog, sprite, CG, background, or in-engine rendering verification.
