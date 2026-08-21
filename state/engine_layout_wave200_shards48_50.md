@@ -81,4 +81,3 @@ No scenario injection, FPK repack, or runtime build was performed by this gate.
 
 Final status: portable static engine/layout gates PASS; native GDI/runtime
 visual QA remains OPEN and must not be reported as completed.
-
