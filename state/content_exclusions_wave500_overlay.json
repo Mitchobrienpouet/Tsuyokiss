@@ -143,6 +143,13 @@
         [1, 13]
       ],
       "reason": "Full-scene dependent continuation of restricted content involving high-school students; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_M0630_10_M0640_00",
+      "ranges": [
+        [1, 163]
+      ],
+      "reason": "Full-scene restricted content involving high-school students; excluded from model work and builds by policy."
     }
   ],
   "status": "ACTIVE"
