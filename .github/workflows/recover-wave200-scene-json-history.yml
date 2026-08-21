@@ -1,0 +1,201 @@
+name: Recover per-scene wave-200 sources from Git history
+
+on:
+  push:
+    branches:
+      - codex/wave-300-continuation-20260820
+    paths:
+      - .github/workflows/recover-wave200-scene-json-history.yml
+
+permissions:
+  contents: write
+  actions: write
+
+jobs:
+  recover:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+          fetch-depth: 0
+          lfs: true
+
+      - name: Recover historical JSONL and per-scene source blobs
+        shell: python
+        env:
+          RUN_ID: ${{ github.run_id }}
+          RUN_ATTEMPT: ${{ github.run_attempt }}
+          REF_NAME: ${{ github.ref_name }}
+        run: |
+          import hashlib
+          import json
+          import os
+          import re
+          import subprocess
+          from pathlib import Path
+
+          root = Path.cwd()
+          work = root / "scene-source-recovery-artifact"
+          sources = work / "recovered_scene_sources"
+          sources.mkdir(parents=True, exist_ok=True)
+
+          manifest = json.loads((root / "state/wave200_remaining_source_manifest.json").read_text(encoding="utf-8"))
+          targets = [scene for shard in manifest["shards"] for scene in shard["scenes"]]
+          targets += [
+              "SC_M0310_00_M0320_00",
+              "SC_M0320_00_M0330_00",
+              "SC_M0330_10_M0340_00",
+              "SC_M0330_20_M0340_00",
+          ]
+          target_set = set(targets)
+          target_bytes = {scene: scene.encode("ascii") for scene in targets}
+          japanese_re = re.compile(r"[\u3040-\u30ff\u3400-\u9fff]")
+
+          lines = subprocess.check_output(["git", "rev-list", "--objects", "--all"], text=True).splitlines()
+          paths_by_sha = {}
+          shas = []
+          for line in lines:
+              sha, *rest = line.split(" ", 1)
+              if sha not in paths_by_sha:
+                  paths_by_sha[sha] = []
+                  shas.append(sha)
+              if rest:
+                  paths_by_sha[sha].append(rest[0])
+
+          checked = subprocess.check_output(
+              ["git", "cat-file", "--batch-check=%(objectname) %(objecttype) %(objectsize)"],
+              input="".join(f"{sha}\n" for sha in shas).encode(),
+          ).decode().splitlines()
+          sizes = {}
+          for line in checked:
+              parts = line.split()
+              if len(parts) == 3 and parts[1] == "blob":
+                  sizes[parts[0]] = int(parts[2])
+
+          candidates = []
+          recovered = {}
+          jsonl_candidates = []
+          inspected = 0
+          for sha in shas:
+              size = sizes.get(sha)
+              if size is None or size > 50_000_000:
+                  continue
+              try:
+                  data = subprocess.check_output(["git", "cat-file", "blob", sha])
+              except subprocess.CalledProcessError:
+                  continue
+              inspected += 1
+              matched = [scene for scene, needle in target_bytes.items() if needle in data]
+              if not matched:
+                  continue
+              head = data[:4_000_000]
+              per_scene_schema = all(token in head for token in (b'"scene"', b'"rows"', b'"japanese"', b'"source_sha256"'))
+              jsonl_schema = all(token in head for token in (b'"scene"', b'"ordinal"', b'"source"', b'"source_sha256"'))
+              if not (per_scene_schema or jsonl_schema):
+                  continue
+              try:
+                  text = data.decode("utf-8")
+              except UnicodeDecodeError:
+                  continue
+              if not japanese_re.search(text):
+                  continue
+
+              row = {
+                  "sha": sha,
+                  "size": size,
+                  "paths": paths_by_sha.get(sha, [])[:30],
+                  "matched_scenes": matched,
+                  "per_scene_schema": per_scene_schema,
+                  "jsonl_schema": jsonl_schema,
+                  "sha256": hashlib.sha256(data).hexdigest(),
+              }
+              candidates.append(row)
+
+              if per_scene_schema:
+                  try:
+                      value = json.loads(text)
+                  except json.JSONDecodeError:
+                      value = None
+                  if isinstance(value, dict) and str(value.get("scene")) in target_set and isinstance(value.get("rows"), list):
+                      scene = str(value["scene"])
+                      prior = recovered.get(scene)
+                      if prior is None or len(value["rows"]) > prior[0]:
+                          recovered[scene] = (len(value["rows"]), sha, data)
+              if jsonl_schema:
+                  jsonl_candidates.append((len(matched), size, sha, data))
+
+          for scene, (row_count, sha, data) in sorted(recovered.items()):
+              (sources / f"{scene}.json").write_bytes(data)
+
+          jsonl_candidates.sort(reverse=True)
+          if jsonl_candidates:
+              _, _, sha, data = jsonl_candidates[0]
+              (work / f"recovered_translation_template_{sha[:12]}.jsonl").write_bytes(data)
+
+          extraction = {"attempted": False, "success": False}
+          if recovered:
+              extraction["attempted"] = True
+              report_path = work / "wave200_remaining_extraction_report.json"
+              raw_dir = work / "jp_dumps"
+              model_dir = work / "model_sources"
+              cmd = [
+                  "python", "tools/translation/extract_wave200_remaining_sources.py",
+                  "--repo", str(root),
+                  "--source-dir", str(sources),
+                  "--raw-output", str(raw_dir),
+                  "--model-output", str(model_dir),
+                  "--report", str(report_path),
+              ]
+              completed = subprocess.run(cmd, text=True, capture_output=True)
+              extraction.update({
+                  "success": completed.returncode == 0,
+                  "returncode": completed.returncode,
+                  "stdout": completed.stdout[-4000:],
+                  "stderr": completed.stderr[-4000:],
+              })
+
+          report = {
+              "schema_version": 1,
+              "branch": os.environ["REF_NAME"],
+              "run_id": int(os.environ["RUN_ID"]),
+              "run_attempt": int(os.environ["RUN_ATTEMPT"]),
+              "artifact_name": f"tsuyokiss-wave200-scene-sources-{os.environ['RUN_ID']}",
+              "reachable_objects": len(shas),
+              "inspected_blobs": inspected,
+              "target_scene_count": len(targets),
+              "candidate_count": len(candidates),
+              "recovered_scene_count": len(recovered),
+              "recovered_scenes": [
+                  {"scene": scene, "row_count": value[0], "blob_sha": value[1]}
+                  for scene, value in sorted(recovered.items())
+              ],
+              "jsonl_candidate_count": len(jsonl_candidates),
+              "candidates": candidates,
+              "extraction": extraction,
+          }
+          (work / "history_scene_source_recovery_report.json").write_text(
+              json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+          )
+          (root / "state/history_scene_source_recovery_20260821.json").write_text(
+              json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+          )
+
+      - name: Upload recovered sources outside Git history
+        uses: actions/upload-artifact@v4
+        with:
+          name: tsuyokiss-wave200-scene-sources-${{ github.run_id }}
+          path: scene-source-recovery-artifact
+          if-no-files-found: error
+          retention-days: 7
+          compression-level: 6
+
+      - name: Publish locator and remove one-shot workflow
+        run: |
+          git config user.name "OpenAI Codex"
+          git config user.email "codex@openai.com"
+          rm .github/workflows/recover-wave200-scene-json-history.yml
+          git add state/history_scene_source_recovery_20260821.json .github/workflows/recover-wave200-scene-json-history.yml
+          git commit -m "Publish per-scene source recovery locator"
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
