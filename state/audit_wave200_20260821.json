@@ -2166,7 +2166,7 @@
     "27": {
       "ledger_status": "CLAIMED",
       "claim": "w200-27",
-      "ready": false,
+      "ready": true,
       "scenes": [
         {
           "scene": "SC_M0290_00_M0291_00",
@@ -2233,8 +2233,16 @@
           "canonical_exclusion": false,
           "canonical_ranges": [],
           "canonical_indexes": [],
-          "status": "INVALID",
-          "error": "literary QC contains FAIL"
+          "status": "BANKED",
+          "translation_rows": 92,
+          "known_source_span": 92,
+          "excluded_index_count": 0,
+          "json_duplicate_keys": "PASS",
+          "known_index_coverage": "PASS",
+          "exclusion_overlap": "PASS",
+          "cp932": "PASS",
+          "accuracy_verdict": "PASS",
+          "literary_verdict": "verified"
         }
       ]
     },
@@ -3516,13 +3524,13 @@
   },
   "totals": {
     "scenes": 200,
-    "banked": 88,
+    "banked": 89,
     "fully_excluded": 7,
     "ambiguous_exclusion_only": 0,
     "missing": 100,
-    "invalid": 5,
-    "translation_rows": 4574,
-    "ready_shards": 24
+    "invalid": 4,
+    "translation_rows": 4666,
+    "ready_shards": 25
   },
   "actionable_gaps": [
     {
@@ -3544,11 +3552,6 @@
       "shard": 13,
       "scene": "SC_J0100_20_Z9999_99",
       "problem": "no translation, no QC, and no canonical exclusion"
-    },
-    {
-      "shard": 27,
-      "scene": "SC_M0301_00_M0310_00",
-      "problem": "literary QC contains FAIL"
     },
     {
       "shard": 28,
@@ -4051,5 +4054,6 @@
       "problem": "no translation, no QC, and no canonical exclusion"
     }
   ],
-  "ambiguous_exclusions": []
+  "ambiguous_exclusions": [],
+  "audit_revision": "2026-08-21: explicit verdict parsing replaces lexical FAIL scanning; ordinary prose such as 'fail to persuade' no longer triggers a false invalid result."
 }
