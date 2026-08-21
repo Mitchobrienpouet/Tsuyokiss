@@ -1,30 +1,367 @@
 {
   "schema_version": 1,
   "base_manifest": "content_exclusions.json",
-  "policy": "Additive fail-closed findings for the active 200-scene recovery wave. Read together with the canonical manifest until consolidated.",
+  "policy": "Historical record of fail-closed findings consolidated into the canonical manifest; do not apply this file as a second active overlay.",
   "entries": [
-    {"scene":"SC_G0390_00_G0400_00","ranges":[[1,2]],"reason":"Connected explicit sexual self-stimulation aftermath involving a high-school student; fully excluded from model work and builds by policy."},
-    {"scene":"SC_G0460_00_G0480_00","ranges":[[98,116]],"reason":"Connected sexual proposition and escalation involving high-school students; excluded from model work and builds by policy."},
-    {"scene":"SC_G0480_00_G0500_00","ranges":[[1,518]],"reason":"Continuous explicit sexual activity involving high-school students; fully excluded from model work and builds by policy."},
-    {"scene":"SC_G0500_00_G0520_00","ranges":[[27,40]],"reason":"Continuous explicit sexual activity involving high-school students; excluded from model work and builds by policy."},
-    {"scene":"SC_G0520_00_G0540_00","ranges":[[1,126]],"reason":"Continuous explicit sexual aftermath and connected intimate aftermath involving high-school students; fully excluded from model work and builds by policy."},
-    {"scene":"SC_G0540_00_G0600_00","ranges":[[1,62],[86,86],[112,132],[353,375],[380,384]],"reason":"Explicit sexual aftermath, sexual recap, sexual setup/activity, and masturbation involving high-school students; excluded from model work and builds by policy."},
-    {"scene":"SC_G0650_00_G0700_00","ranges":[[35,39],[61,111],[241,242],[290,306]],"reason":"Sexual relationship disclosure, explicit oral sexual activity, explicit sex recap, and sexualized body/innuendo sequence involving high-school students; excluded from model work and builds by policy."},
-    {"scene":"SC_G0700_00_G0720_00","ranges":[[1,38]],"reason":"Continuous sexualized body appraisal, arousal framing, and sexual invitation involving school-age characters; excluded from model work and builds by policy."},
-    {"scene":"SC_G0720_00_G0750_00","ranges":[[4,4]],"reason":"Sexual relationship implication involving high-school students; excluded from model work and builds by policy."},
-    {"scene":"SC_G0750_00_G0760_00","ranges":[[1,362]],"reason":"Continuous explicit sexual activity involving high-school students; fully excluded from model work and builds by policy."},
-    {"scene":"SC_G0760_00_G0800_00","ranges":[[1,7],[96,97],[115,116],[124,124]],"reason":"Explicit sexual aftermath, sexualized contact, and sexual-desire references involving high-school students; excluded from model work and builds by policy."},
-    {"scene":"SC_G0800_00_G0850_00","ranges":[[1,52],[91,94],[113,117],[132,141],[149,150],[158,171],[189,190],[202,203],[290,292],[372,384],[433,434],[481,481],[506,516]],"reason":"Explicit sexual activity and aftermath, masturbation, sexualized body contact, genital-focused content, explicit sexual discussion, and directly dependent bridge lines involving high-school students; excluded from model work and builds by policy."},
-    {"scene":"SC_G0850_00_G0860_00","ranges":[[99,101]],"reason":"Sexualized voyeuristic setup involving high-school students; excluded from model work and builds by policy."},
-    {"scene":"SC_G0860_20_G0950_00","ranges":[[33,59]],"reason":"Explicit sexual discussion and sexualized setup involving high-school students; excluded from model work and builds by policy."},
-    {"scene":"SC_G0870_00_G0900_00","ranges":[[122,125],[191,191]],"reason":"Sexual desire/masturbation disclosure and explicit sexual-activity reference involving a high-school student; excluded from model work and builds by policy."},
-    {"scene":"SC_G0900_00_G0910_00","ranges":[[79,84]],"reason":"Sexual proposition involving high-school students; excluded from model work and builds by policy."},
-    {"scene":"SC_G0910_00_G0920_00","ranges":[[1,99]],"reason":"Continuous explicit sexual activity and fetishized bodily-function content involving high-school students; fully excluded from model work and builds by policy."},
-    {"scene":"SC_G0920_00_G0930_00","ranges":[[1,5],[41,43],[49,53]],"reason":"Explicit sexual aftermath, fetishized bodily-function recap, and masturbation/sexualized contact discussion involving high-school students; excluded from model work and builds by policy."},
-    {"scene":"SC_G0950_00_G0960_00","ranges":[[1,191]],"reason":"Continuous explicit sexual activity involving high-school students; fully excluded from model work and builds by policy."},
-    {"scene":"SC_G0960_00_G0970_00","ranges":[[1,5]],"reason":"Direct connected aftermath of the preceding explicit sexual scene involving high-school students; fully excluded from model work and builds by policy."},
-    {"scene":"SC_G0970_00_Z9999_99","ranges":[[1,90],[102,116]],"reason":"Connected explicit sexual aftermath and sexualized punishment/recap involving high-school students; only the non-sexual reconciliation coda remains eligible."},
-    {"scene":"SC_G0990_00_Z9999_99","ranges":[[42,45]],"reason":"Explicit sexual invitation and sexualized relationship remarks involving high-school students; excluded from model work and builds by policy."},
-    {"scene":"SC_J0100_04_J0100_05","ranges":[[11,37]],"reason":"Adult flirtation and sexualized proposition toward a high-school student, including suggestive appraisal; excluded from model work and builds by policy."}
+    {
+      "scene": "SC_G0390_00_G0400_00",
+      "ranges": [
+        [
+          1,
+          2
+        ]
+      ],
+      "reason": "Connected explicit sexual self-stimulation aftermath involving a high-school student; fully excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_G0460_00_G0480_00",
+      "ranges": [
+        [
+          98,
+          116
+        ]
+      ],
+      "reason": "Connected sexual proposition and escalation involving high-school students; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_G0480_00_G0500_00",
+      "ranges": [
+        [
+          1,
+          518
+        ]
+      ],
+      "reason": "Continuous explicit sexual activity involving high-school students; fully excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_G0500_00_G0520_00",
+      "ranges": [
+        [
+          27,
+          40
+        ]
+      ],
+      "reason": "Continuous explicit sexual activity involving high-school students; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_G0520_00_G0540_00",
+      "ranges": [
+        [
+          1,
+          126
+        ]
+      ],
+      "reason": "Continuous explicit sexual aftermath and connected intimate aftermath involving high-school students; fully excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_G0540_00_G0600_00",
+      "ranges": [
+        [
+          1,
+          62
+        ],
+        [
+          86,
+          86
+        ],
+        [
+          112,
+          132
+        ],
+        [
+          353,
+          375
+        ],
+        [
+          380,
+          384
+        ]
+      ],
+      "reason": "Explicit sexual aftermath, sexual recap, sexual setup/activity, and masturbation involving high-school students; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_G0650_00_G0700_00",
+      "ranges": [
+        [
+          35,
+          39
+        ],
+        [
+          61,
+          111
+        ],
+        [
+          241,
+          242
+        ],
+        [
+          290,
+          306
+        ]
+      ],
+      "reason": "Sexual relationship disclosure, explicit oral sexual activity, explicit sex recap, and sexualized body/innuendo sequence involving high-school students; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_G0700_00_G0720_00",
+      "ranges": [
+        [
+          1,
+          38
+        ]
+      ],
+      "reason": "Continuous sexualized body appraisal, arousal framing, and sexual invitation involving school-age characters; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_G0720_00_G0750_00",
+      "ranges": [
+        [
+          4,
+          4
+        ]
+      ],
+      "reason": "Sexual relationship implication involving high-school students; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_G0750_00_G0760_00",
+      "ranges": [
+        [
+          1,
+          362
+        ]
+      ],
+      "reason": "Continuous explicit sexual activity involving high-school students; fully excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_G0760_00_G0800_00",
+      "ranges": [
+        [
+          1,
+          7
+        ],
+        [
+          96,
+          97
+        ],
+        [
+          115,
+          116
+        ],
+        [
+          124,
+          124
+        ]
+      ],
+      "reason": "Explicit sexual aftermath, sexualized contact, and sexual-desire references involving high-school students; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_G0800_00_G0850_00",
+      "ranges": [
+        [
+          1,
+          52
+        ],
+        [
+          91,
+          94
+        ],
+        [
+          113,
+          117
+        ],
+        [
+          132,
+          141
+        ],
+        [
+          149,
+          150
+        ],
+        [
+          158,
+          171
+        ],
+        [
+          189,
+          190
+        ],
+        [
+          202,
+          203
+        ],
+        [
+          290,
+          292
+        ],
+        [
+          372,
+          384
+        ],
+        [
+          433,
+          434
+        ],
+        [
+          481,
+          481
+        ],
+        [
+          506,
+          516
+        ]
+      ],
+      "reason": "Explicit sexual activity and aftermath, masturbation, sexualized body contact, genital-focused content, explicit sexual discussion, and directly dependent bridge lines involving high-school students; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_G0850_00_G0860_00",
+      "ranges": [
+        [
+          99,
+          101
+        ]
+      ],
+      "reason": "Sexualized voyeuristic setup involving high-school students; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_G0860_20_G0950_00",
+      "ranges": [
+        [
+          33,
+          59
+        ]
+      ],
+      "reason": "Explicit sexual discussion and sexualized setup involving high-school students; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_G0870_00_G0900_00",
+      "ranges": [
+        [
+          122,
+          125
+        ],
+        [
+          191,
+          191
+        ]
+      ],
+      "reason": "Sexual desire/masturbation disclosure and explicit sexual-activity reference involving a high-school student; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_G0900_00_G0910_00",
+      "ranges": [
+        [
+          79,
+          84
+        ]
+      ],
+      "reason": "Sexual proposition involving high-school students; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_G0910_00_G0920_00",
+      "ranges": [
+        [
+          1,
+          99
+        ]
+      ],
+      "reason": "Continuous explicit sexual activity and fetishized bodily-function content involving high-school students; fully excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_G0920_00_G0930_00",
+      "ranges": [
+        [
+          1,
+          5
+        ],
+        [
+          41,
+          43
+        ],
+        [
+          49,
+          53
+        ]
+      ],
+      "reason": "Explicit sexual aftermath, fetishized bodily-function recap, and masturbation/sexualized contact discussion involving high-school students; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_G0950_00_G0960_00",
+      "ranges": [
+        [
+          1,
+          191
+        ]
+      ],
+      "reason": "Continuous explicit sexual activity involving high-school students; fully excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_G0960_00_G0970_00",
+      "ranges": [
+        [
+          1,
+          5
+        ]
+      ],
+      "reason": "Direct connected aftermath of the preceding explicit sexual scene involving high-school students; fully excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_G0970_00_Z9999_99",
+      "ranges": [
+        [
+          1,
+          90
+        ],
+        [
+          102,
+          116
+        ]
+      ],
+      "reason": "Connected explicit sexual aftermath and sexualized punishment/recap involving high-school students; only the non-sexual reconciliation coda remains eligible."
+    },
+    {
+      "scene": "SC_G0990_00_Z9999_99",
+      "ranges": [
+        [
+          42,
+          45
+        ]
+      ],
+      "reason": "Explicit sexual invitation and sexualized relationship remarks involving high-school students; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_J0100_04_J0100_05",
+      "ranges": [
+        [
+          11,
+          37
+        ]
+      ],
+      "reason": "Adult flirtation and sexualized proposition toward a high-school student, including suggestive appraisal; excluded from model work and builds by policy."
+    }
+  ],
+  "status": "CONSOLIDATED",
+  "consolidated_into": "content_exclusions.json",
+  "new_entries_added": [
+    "SC_G0460_00_G0480_00",
+    "SC_G0480_00_G0500_00",
+    "SC_G0500_00_G0520_00",
+    "SC_G0520_00_G0540_00",
+    "SC_G0540_00_G0600_00",
+    "SC_G0650_00_G0700_00",
+    "SC_G0700_00_G0720_00",
+    "SC_G0720_00_G0750_00",
+    "SC_G0750_00_G0760_00",
+    "SC_G0760_00_G0800_00",
+    "SC_G0800_00_G0850_00",
+    "SC_G0850_00_G0860_00",
+    "SC_G0860_20_G0950_00",
+    "SC_G0870_00_G0900_00",
+    "SC_G0900_00_G0910_00",
+    "SC_G0910_00_G0920_00",
+    "SC_G0920_00_G0930_00",
+    "SC_G0950_00_G0960_00",
+    "SC_G0960_00_G0970_00",
+    "SC_G0970_00_Z9999_99",
+    "SC_G0990_00_Z9999_99",
+    "SC_J0100_04_J0100_05"
   ]
 }
