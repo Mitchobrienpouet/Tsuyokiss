@@ -108,6 +108,34 @@
         [1, 363]
       ],
       "reason": "Full-scene restricted content involving high-school students; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_M0615_10_M0615_50",
+      "ranges": [
+        [1, 13]
+      ],
+      "reason": "Full-scene restricted content involving high-school students; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_M0615_20_M0615_50",
+      "ranges": [
+        [1, 10]
+      ],
+      "reason": "Full-scene restricted content involving high-school students; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_M0615_50_M0615_70",
+      "ranges": [
+        [1, 13]
+      ],
+      "reason": "Full-scene restricted content involving high-school students; excluded from model work and builds by policy."
+    },
+    {
+      "scene": "SC_M0615_70_M0615_80",
+      "ranges": [
+        [1, 28]
+      ],
+      "reason": "Full-scene restricted content involving high-school students; excluded from model work and builds by policy."
     }
   ],
   "status": "ACTIVE"
