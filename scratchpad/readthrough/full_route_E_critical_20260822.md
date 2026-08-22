@@ -2,8 +2,8 @@
 
 Date: 2026-08-22  
 Stage: post-QC critical readthrough only  
-Verdict: **FAIL — 2 major and 1 minor finding remain open**  
-Translation changes: NONE
+Verdict: **PASS / closed after repair, independent QC, and targeted arbitration**
+Translation changes after audit: 15 targeted line values plus 2 speaker-map values
 
 ## Scope and evidence
 
@@ -46,10 +46,10 @@ pipeline state, or Git. The only artifact written is this report.
 | Japanese script in English targets | PASS: 0 rows |
 | Placeholder scan | PASS: no TODO, TBD, FIXME, replacement character, templating token, or obvious untranslated marker |
 | Control sequences | PASS: 0 source/translation token mismatches |
-| Dialogue wrappers | **FAIL: 1 of 6,280 permitted dialogue rows; E-RT-002** |
+| Dialogue wrappers | PASS after repair: 0 of 6,280 permitted dialogue rows mismatched |
 
-The deterministic gates do not override the open naming, wrapper/meaning, and
-event-terminology findings below.
+The findings below record the original audit evidence; every status and the
+closure section now reflect the completed repair and recertification lanes.
 
 ## Major findings
 
@@ -79,7 +79,7 @@ event-terminology findings below.
   `Touka` -> `Tonfa` at E0580:41 and E0700:167. Preserve her lightly clipped,
   non-caricatured English and all surrounding prose.
 - systemic: true
-- status: open
+- status: closed
 
 ### E-RT-002 — Erika's spoken victory aside loses meaning and breaks its wrapper
 
@@ -102,7 +102,7 @@ event-terminology findings below.
   e.g. `「Hmph, victory! (← triumphant smile)」`. Do not turn the aside into a
   separate narration row.
 - systemic: false
-- status: open
+- status: closed
 
 ## Minor findings
 
@@ -137,7 +137,7 @@ event-terminology findings below.
   - E0490:39 and E0710:1 -> `Matsukasa Port Opening Festival`, preserving the
     surrounding syntax.
 - systemic: true
-- status: open
+- status: closed
 
 ## Continuous-route checks
 
@@ -176,12 +176,12 @@ event-terminology findings below.
 - **Systemic names:** `Samesuga` is correct in every surname occurrence;
   `Heizo`, `Ellie`, `Mr. Tsuchinaga`, `Ryuumeikan`, `Ikajima`, and `Ryuumei
   Festival` remain stable. `Igaguri` is internally stable under the E-route
-  lock. Tonfa alone fails route consistency as E-RT-001.
+  lock. The Tonfa inconsistency identified as E-RT-001 is repaired and closed.
 - **Events:** The score progression, East/West army identities, Dragon Cup,
   tied score, deciding dodgeball match, Port Opening Festival curry, and
-  Ryuumei Festival setup remain coherent. Only the six naming variants in
-  E-RT-003 remain open.
-- **Placeholders and engine surface:** PASS apart from E-RT-002. No placeholder,
+  Ryuumei Festival setup remain coherent. The six naming variants in E-RT-003
+  are repaired and closed.
+- **Placeholders and engine surface:** PASS after closure of E-RT-002. No placeholder,
   untranslated target, control-token drift, missing speaker-map coverage, or
   file-identity defect was found.
 
@@ -329,3 +329,15 @@ repack assets, inspect textbox/backlog rendering, or verify any story image in
 runtime. No runtime or scene-image correctness claim is made. Findings and PASS
 statements above apply only to the filtered text, metadata, and deterministic
 artifact checks described here.
+
+## Closure
+
+E-RT-001 through E-RT-003 were repaired in the seven affected scenes. Full-scene
+accuracy recertification then found and corrected four additional meaning
+defects; full-scene literary recertification found the remaining `Ika Island`
+terminology drift, repaired it to locked `Ikajima` at indexes 55 and 84, and
+returned all seven scenes PASS. A final independent accuracy pass reread all 260
+permitted E0490 rows after that change. Targeted arbitration found no competing
+accuracy/literary reading and adopted no further translation change. The route-E
+critical narrative gate is therefore **PASS / closed** within the static-text
+scope and the runtime/story-image limitations above.
