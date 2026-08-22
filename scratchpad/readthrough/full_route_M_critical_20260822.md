@@ -2,11 +2,11 @@
 
 - Date: 2026-08-22
 - Stage: post-QC critical readthrough (read-only)
-- Verdict: **FAIL - targeted translation repair and recertification required**
+- Verdict: **PASS / closed after repair, independent QC, and targeted arbitration**
 - Reviewed corpus: **156 translation files / 6,366 permitted rows**
 - Filtered projection ledger: **156 projections / 6,366 permitted rows / 270 opaque excluded gap rows**
 - Fully excluded zero-debt boundary: **10 scenes / 895 opaque rows**
-- Finding count: **5 open** (**2 major, 3 minor**)
+- Finding count: **5 closed** (**2 major, 3 minor**)
 - Runtime or story-image claim: **NONE**
 
 ## Scope and method
@@ -33,8 +33,8 @@ This is a static text/projection audit. No engine was executed; textbox, backlog
 | CP932 | PASS | All translated lines and speaker-map values encode successfully |
 | Forbidden target typography | PASS | No curly quotes, em dashes, or Unicode ellipses |
 | Japanese-script residue/placeholders | PASS | No residual Japanese script, TODO/TBD/FIXME, replacement characters, or template placeholders in target lines |
-| Dialogue wrappers | **FAIL** | One mismatch: `SC_M0430_00_M0431_00:37` |
-| Source control markers | **FAIL** | One mismatch: `SC_M0270_00_M0271_00:27` loses `$L` |
+| Dialogue wrappers | PASS after repair | Zero mismatches; `SC_M0430_00_M0431_00:37` restored |
+| Source control markers | PASS after repair | `$L` restored at `SC_M0270_00_M0271_00:27` |
 | Stale Shinichi surnames | PASS | Zero `Samehyo`, `Samehyou`, or `Samejima`; `Samesuga` is stable |
 | Accuracy/literary report inventory | PASS | 156 accuracy and 156 literary reports exactly cover the translated scene set |
 
@@ -51,7 +51,7 @@ The public mutating pipeline entrypoint was not invoked because this lane forbid
 - Diagnosis: the target drops the mandatory `「...」` dialogue wrapper, causing a spoken Leo line to present as narration. It also flattens the rough `村田の奴` register.
 - Minimal repair direction: `「That Murata took off without a second's hesitation.」`
 - Systemic: no. This is the only route-M wrapper mismatch.
-- Status: OPEN.
+- Status: CLOSED.
 
 ### M-RT-002 - Major - lost engine control marker
 
@@ -61,7 +61,7 @@ The public mutating pipeline entrypoint was not invoked because this lane forbid
 - Diagnosis: the leading `$L` control marker is absent. Other certified route files preserve this marker byte-for-byte, and no route-M spec authorizes stripping it.
 - Minimal repair direction: retain the current wording but restore the prefix: `$LA lecture hell!`
 - Systemic: no. This is the only source/target control-token mismatch in route M.
-- Status: OPEN.
+- Status: CLOSED.
 
 ### M-RT-003 - Minor - locked event-name capitalization
 
@@ -76,7 +76,7 @@ Four source references to `体育武道祭` use the generic lowercase phrase ins
 
 - Repair direction: capitalize only the event name in these four rows: `Sports and Martial Arts Festival`.
 - Systemic: yes, four rows. Shortened source `体育祭` at `M0263:1,11` is not included; those are not full-name occurrences.
-- Status: OPEN.
+- Status: CLOSED.
 
 ### M-RT-004 - Minor - Tsuchinaga speaker-map drift
 
@@ -92,7 +92,7 @@ The same Japanese speaker key `土永さん` is canonically mapped as `Mr. Tsuch
 - Diagnosis: this is display-name metadata drift, not a source speaker mismatch. Seventeen displayed speaker rows are affected through four map values.
 - Repair direction: normalize only those four map values to `Mr. Tsuchinaga`.
 - Systemic: yes, four translation files / 17 displayed speaker rows.
-- Status: OPEN.
+- Status: CLOSED.
 
 ### M-RT-005 - Minor - obvious literary ambiguity
 
@@ -103,7 +103,7 @@ The same Japanese speaker key `土永さん` is canonically mapped as `Mr. Tsuch
 - Diagnosis: although capitalized, sentence-initial `Go` reads like an imperative before it reads as the board game, and the construction is unnaturally terse for Kinu's stated trauma.
 - Minimal repair direction: `「I'm traumatized by Go.」`
 - Systemic: no.
-- Status: OPEN.
+- Status: CLOSED.
 
 ## Source-checked suspicions cleared
 
@@ -124,7 +124,7 @@ The same Japanese speaker key `土永さん` is canonically mapped as `Mr. Tsuch
 | Chronology | PASS | June school arc, festival preparation, examinations, summer/island boundaries, Port Opening Festival, and September Ryuumei Festival progress coherently |
 | Branches and opaque boundaries | PASS | Sparse joins remain visibly discontinuous; fully excluded scenes carry zero translation debt |
 | Names and lore | PASS with minor metadata drift | Samesuga, Matsukasa Port Opening Festival, and Ryuumei Festival are stable; official event capitalization and Tsuchinaga display maps require normalization |
-| Engine presentation | **FAIL** | One dialogue-wrapper loss and one `$L` loss |
+| Engine presentation | PASS after repair | Dialogue wrapper and `$L` control restored |
 | Ending | PASS | The script-contest sequence and open coda remain unresolved where the source remains unresolved |
 
 ## Exact permitted coverage
@@ -334,11 +334,14 @@ Totals: **156 scenes / 6,366 permitted rows / 270 excluded gap rows in projected
 
 Combined authoritative route ledger: **166 scene identities / 7,531 rows = 6,366 permitted + 270 partial-scene excluded + 895 fully excluded**. Excluded text was neither opened nor reconstructed.
 
-## Required follow-up
+## Closure
 
-1. Apply the five targeted finding groups above in a translation-repair lane.
-2. Re-run exact joins, source-control, dialogue-wrapper, file-identity, speaker-map, CP932, and stale-term gates.
-3. Recertify affected accuracy/literary reports as appropriate.
-4. Keep runtime textbox/backlog and story-image verification explicitly pending until a separate authorized runtime/visual-QA lane exists.
-
-No translations, QC reports, arbitration records, projections, sources, exclusion manifests, configuration, pipeline/state files, or Git metadata were modified by this readthrough.
+All five finding groups were repaired. The 11 affected scenes then passed
+complete 579-row accuracy and literary recertification; literary QC made six
+additional source-faithful prose refinements, and a final 306-row accuracy pass
+recertified every scene changed by those refinements. Targeted arbitration found
+no competing permitted reading and made no further translation change. Exact
+joins, source controls, wrappers, file identity, speaker maps, terminology,
+exclusions, controls, and CP932 pass. Route M is **PASS / closed** within this
+static-text scope. Runtime textbox/backlog/layout and story-image correctness
+remain explicitly unproven.
