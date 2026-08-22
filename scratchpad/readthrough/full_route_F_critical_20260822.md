@@ -75,8 +75,8 @@ Evidence reviewed: the complete current F translation sequence; all eleven
 route-F continuity preflight specifications; `bible/characters.md`,
 `bible/glossary.md`, and `bible/style.md`; the active canonical exclusions and
 configured overlay; `narrative_gates.json`; all 35 accuracy records, all 35
-literary records, and all 35 contested/no-op records. There are no route-F
-arbitration artifacts in the current tree. Source-dependent checks used only
+literary records, and all 35 contested/no-op records. At the initial readthrough
+snapshot, no route-F arbitration artifact had yet been created. Source-dependent checks used only
 the 35 overlay-aware filtered projections in
 `scratchpad/model_sources/SC_F*.json`.
 
@@ -156,8 +156,9 @@ the 35 overlay-aware filtered projections in
   64-hex form; scene/source identity and internal translation `file` values
   match their filenames.
 - **QC/contested inventory:** `PASS` — exactly 35 accuracy, 35 literary, and 35
-  contested/no-op records, with no missing or extra translated F scene. No
-  route-F arbitration artifact exists to review.
+  scene-level contested records, with no missing or extra translated F scene.
+  `SC_F0630_00_F0640_00.md` now records the targeted post-repair arbitration;
+  the other 34 records remain no-op/NONE decisions.
 - **Speaker maps and wrappers:** `PASS` — every permitted non-null source
   speaker has a nonempty localized map entry, dialogue/narration wrappers agree
   with source kinds, and paired corner quotes and parentheses balance.
