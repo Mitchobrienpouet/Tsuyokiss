@@ -2,14 +2,14 @@
 
 ## Verdict
 
-**FAIL / BLOCKED.** All 775 permitted rows in all 15 route-J translation files
-were read continuously in narrative order, including a fresh route-context
-read of the four final-J scenes. The review found `1` blocking finding, `0`
-major findings, and `1` minor finding. The critical narrative gate cannot pass
-until the false client-gender assertion is corrected and the affected reveal
-chain is revalidated and reread. This audit changed no translation, QC,
-arbitration, source, projection, exclusion, manifest, configuration, pipeline,
-or Git artifact.
+**PASS / closed after repair, independent QC, and targeted arbitration.** All
+775 permitted rows in all 15 route-J translation files were read continuously
+in narrative order, including a fresh route-context read of the four final-J
+scenes. The original review found `1` blocking and `1` minor finding; both are
+now repaired, and the two affected scenes have passed complete post-repair
+accuracy and literary recertification. The audit itself changed no translation,
+QC, arbitration, source, projection, exclusion, manifest, configuration,
+pipeline, or Git artifact.
 
 ## Scope and exact coverage
 
@@ -73,7 +73,7 @@ Samesuga arbitration closure. No raw source dump was opened.
   Keep the client gender-neutral before the reveal, using `their daughter` or
   an equivalent construction at both indexes. Do not name or imply the mother
   early.
-- **Systemic/status:** `false (two-line local referent chain) / open`
+- **Systemic/status:** `false (two-line local referent chain) / closed`
 
 ## Minor finding
 
@@ -89,7 +89,7 @@ Samesuga arbitration closure. No raw source dump was opened.
 - **Diagnosis/fix direction:** restore `Ryugu` while preserving the sentence's
   room/appositive structure; for example, `The Ryuumeikan student-council room,
   also known as Ryugu.`
-- **Systemic/status:** `false / open`
+- **Systemic/status:** `false / closed`
 
 ## Narrative and route-wide checks
 
@@ -168,8 +168,8 @@ Samesuga arbitration closure. No raw source dump was opened.
 - **Manifest narrative gates:** `PASS` — no source mirror or repeated-choice
   group is declared. The three structurally exclusive answer branches also
   pass their manual outcome/convergence check.
-- **Terminology continuity:** `FAIL` only at J-m01.
-- **Critical narrative gate:** `FAIL` because J-B01 remains open.
+- **Terminology continuity:** `PASS` after closure of J-m01.
+- **Critical narrative gate:** `PASS` after closure of J-B01 and both QC lanes.
 
 ## Story-image and runtime limitations
 
@@ -184,14 +184,13 @@ No live engine, textbox, nameplate, backlog, wordwrap, build, image-trigger, or
 reinjection proof was available. Static joins, wrappers, metadata, and CP932
 checks do not establish runtime fit or visual correctness.
 
-## Required routing
+## Closure
 
-1. Route J-B01 through a two-index accuracy correction that removes the
-   unsupported masculine client possessive while preserving the mother reveal
-   at J0100_20:68.
-2. Route J-m01 through a one-index glossary/continuity correction to `Ryugu`.
-3. Revalidate both scenes, then reread the J0100_08 client discussion through
-   the J0100_20 mother reveal and the immediate J0100_03 location block.
-
-No broader rewrite is indicated. Route J remains **FAIL / BLOCKED** until the
-blocking referent/reveal finding is closed.
+J-B01 and J-m01 were repaired, and accuracy recertification corrected the
+remaining imitator/target reversal at J0100_03:13. Literary QC then routed four
+minor prose defects at J0100_03:54,70 and J0100_08:16,34. Both complete scenes
+were reread again through independent accuracy and literary lanes after those
+changes: 123/123 permitted rows PASS, with `Ryugu`, the neutral client referent,
+and the later mother reveal preserved. Targeted arbitration found no competing
+reading and made no further translation change. Route J is **PASS / closed**
+within the static-text and runtime/story-image limitations above.
