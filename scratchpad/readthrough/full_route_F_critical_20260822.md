@@ -2,7 +2,7 @@
 
 ## Verdict
 
-**PASS at the critical narrative gate, with one minor open finding.** All 1,174
+**PASS after repair, independent QC, and targeted arbitration.** All 1,174
 permitted rows in the 35 translated route-F scenes were read continuously in
 scene order. The review found `0` blocking, `0` major, and `1` minor issue. The
 minor issue is narrowly routable and does not compromise route meaning,
@@ -101,7 +101,7 @@ the 35 overlay-aware filtered projections in
   `「Then let's have the Tsushima family, who've known him for years, come
   along too.」` Route this as one narrow source-faithful correction and reread
   the immediate block.
-- **Systemic/status:** `false / open`
+- **Systemic/status:** `false / closed`
 
 ## Narrative and route-wide checks
 
@@ -180,9 +180,11 @@ No live engine, textbox, nameplate, backlog, wordwrap, build, image trigger, or
 reinjection proof was available. Static joins, wrappers, metadata, and CP932
 checks do not establish runtime fit or visual correctness.
 
-## Required routing
+## Closure
 
-Route only F-m01 through the narrowest accuracy/literary correction lane, then
-revalidate and reread `SC_F0630_00_F0640_00:6-9`. No broader rewrite or route
-arbitration is indicated. The route remains **PASS** at the critical narrative
-gate while this minor prose/relationship attachment debt is open.
+F-m01 was repaired at `SC_F0630_00_F0640_00:7`, then the full 23-row scene was
+recertified independently through both accuracy and literary QC. Accuracy
+confirmed the relationship attachment and the `Tsushima family` label;
+literary QC found no remaining voice, pacing, or naturalness defect. Targeted
+arbitration recorded no competing reading and made no further translation
+change. The route-F critical narrative gate is therefore **PASS / closed**.
