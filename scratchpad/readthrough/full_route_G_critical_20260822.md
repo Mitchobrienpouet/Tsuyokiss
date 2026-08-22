@@ -2,8 +2,8 @@
 
 Date: 2026-08-22  
 Stage: post-QC critical readthrough only  
-Verdict: **FAIL — 3 major and 4 minor findings remain open**  
-Translation changes: NONE
+Verdict: **PASS / closed after repair, independent QC, and targeted arbitration**
+Translation changes after audit: targeted repairs plus two literary rounds
 
 ## Scope and evidence
 
@@ -50,10 +50,10 @@ configuration, pipeline, or Git artifact. This report is its only output.
 | Japanese script in English targets | PASS: 0 rows |
 | Placeholder scan | PASS: no TODO, TBD, FIXME, untranslated, placeholder, missing, or replacement-character markers |
 | Control-sequence audit | PASS: no control-bearing permitted G row |
-| Dialogue/narration wrapper audit | **FAIL: 2 mismatches across 1,625 dialogue and 802 narration rows** |
+| Dialogue/narration wrapper audit | PASS after repair: 0 mismatches across 1,625 dialogue and 802 narration rows |
 
-Static integrity does not override the open meaning, naming, reveal, and
-literary findings below.
+The findings below preserve the original audit evidence; their statuses and the
+closure section reflect the completed repair and recertification lanes.
 
 ## Blocking findings
 
@@ -87,7 +87,7 @@ NONE.
   and silently loses his chewing delivery. Both existing accuracy and literary
   reports incorrectly passed the wrappers.
 - systemic: false
-- status: OPEN
+- status: CLOSED
 
 ### G-RT-002 — Four uses of Kinu's locked nickname drift to `Kani`
 
@@ -114,7 +114,7 @@ NONE.
   error by expressly certifying `Kani` as route-consistent despite the bible,
   scene spec, and route precedent.
 - systemic: true
-- status: OPEN
+- status: CLOSED
 
 ### G-RT-003 — Yoshimi is given an unsupported posture and hallucination-like perception
 
@@ -138,7 +138,7 @@ NONE.
 - fix_direction: Use a source-bounded line such as `She groaned in the corner
   of the room, apologizing to something unseen.`
 - systemic: false
-- status: OPEN
+- status: CLOSED
 
 ## Minor findings
 
@@ -158,7 +158,7 @@ NONE.
 - fix_direction: Change only the name order: `「Hold on. Leo Tsushima isn't the
   kind of cold-blooded guy who ignores someone who needs help.」`
 - systemic: false
-- status: OPEN
+- status: CLOSED
 
 ### G-RT-005 — The source's `JoySta 2 = game console` gloss is omitted
 
@@ -176,7 +176,7 @@ NONE.
 - fix_direction: Restore the identification without inventing a brand, e.g.
   `「Oh, you have a JoySta 2 game console in here. That's unexpected.」`
 - systemic: false
-- status: OPEN
+- status: CLOSED
 
 ### G-RT-006 — Two emotional/domestic lines retain conspicuous translationese
 
@@ -200,7 +200,7 @@ NONE.
 - diagnosis: Meaning is recoverable, but both lines visibly break otherwise
   natural late-route dialogue at important emotional/comic beats.
 - systemic: false
-- status: OPEN
+- status: CLOSED
 
 ### G-RT-007 — Two backstory lines add unsupported referential/temporal cues
 
@@ -227,14 +227,14 @@ NONE.
   in the immediate English. `anymore` can imply a prior local presence or death,
   neither of which the line states.
 - systemic: false
-- status: OPEN
+- status: CLOSED
 
 ## Continuous-route checks
 
-- **Hallucinations and omissions:** FAIL only for G-RT-001, G-RT-003, and
-  G-RT-005. No other unsupported event, motive, object, material omission, or
-  source expansion survived verification.
-- **Voice and characterization:** PASS apart from G-RT-002 and G-RT-006.
+- **Hallucinations and omissions:** PASS after closure of G-RT-001, G-RT-003,
+  and G-RT-005. No other unsupported event, motive, object, material omission,
+  or source expansion survived verification.
+- **Voice and characterization:** PASS after closure of G-RT-002 and G-RT-006.
   Leo's brash but protective narration, Yoshimi's gentle public register and
   anxious private repetition, Erika's confident directness, Otome's formal
   bluntness, Kinu's forceful comedy, Subaru's laconic steadiness, Shinichi's
@@ -247,11 +247,11 @@ NONE.
   remains during the collapse, pursues her in the rain, and offers reassurance.
   Erika independently refuses Yoshimi's demand, maintains their friendship, and
   later asks Leo to protect Yoshimi emotionally.
-- **Reveal timing:** PASS except G-RT-007 at G0870:144. Yoshimi's distrust,
+- **Reveal timing:** PASS after closure of G-RT-007 at G0870:144. Yoshimi's distrust,
   family conditioning, performed smile, friendship origin, and clover memory
   unfold in their source order. The `良美？` speaker uncertainty at G0850:15-20
   remains intact until Erika is identified.
-- **Chronology and locations:** PASS except G-RT-007 at G0870:187. The route's
+- **Chronology and locations:** PASS after closure of G-RT-007 at G0870:187. The route's
   school days, one-week cohabitation, Sports and Martial Arts Festival,
   confrontation, overnight family disclosure, rain crisis, reconciliation,
   and Sweden coda remain ordered. `Matsukasa`, `Tokyo Bay`, `Ryuumeikan`, and
@@ -263,17 +263,16 @@ NONE.
   filtered branch result is imported into another branch.
 - **Scene boundaries:** PASS at the JSON/index layer. Every sparse scene starts,
   stops, and resumes at exact permitted keys, and all 14 fully excluded scenes
-  have zero downstream artifacts. Presentation still fails at the two wrapper
-  rows in G-RT-001.
+  have zero downstream artifacts. Both wrapper rows in G-RT-001 are repaired.
 - **Systemic names and lore:** `Samesuga` is source- and bible-correct at its
   sole G surname occurrence. `Yoppi`, `Ellie`, `Princess`, `Fukahire`,
   `Igaguri`, `Kurogane-senpai`, `Mr. Tsuchinaga`, `Ryuumeikan`, and `Sports and
   Martial Arts Festival` remain stable. Kinu's nickname and Leo's full-name
-  order fail only at G-RT-002 and G-RT-004.
+  order are restored after closure of G-RT-002 and G-RT-004.
 - **Existing arbitration:** G0130:14 remains correctly closed as `Maaji Jima
   Baranga!!`; G0200:28 remains correctly closed as `Reions Mansion`. The other
-  36 G arbitration records are no-op/NONE records. None resolves the new open
-  findings.
+  36 G arbitration records are no-op/NONE records. The post-readthrough
+  aggregate arbitration closes G-RT-001 through G-RT-007 and later QC findings.
 
 ## Exclusion boundaries
 
@@ -338,23 +337,18 @@ presentation, branch execution, and story-image synchronization therefore
 remain unresolved limitations despite the static joins, hashes, IDs, maps, and
 CP932 checks.
 
-## Correction routing and pass condition
+## Closure
 
-Route G does not pass the mandatory critical readthrough gate in its current
-state. Reopen only the 13 listed permitted indexes across five translation
-files:
-
-- translation accuracy/engine repair: G0500:46; G0650:10,13,14,24,50,223;
-  G0800:54,96; G0870:144,187;
-- literary repair: G0760:93; G0800:77;
-- then independently recertify the affected full scenes through accuracy and
-  literary QC as appropriate, target arbitration only if a documented conflict
-  remains, rerun all deterministic gates, and reread the corrected blocks in
-  route context.
-
-No broad rewrite is warranted. The route can pass when G-RT-001 through
-G-RT-007 are closed, both wrapper mismatches are zero, all 2,427 joins still
-pass, and the corrected blocks preserve every exclusion and branch boundary.
+G-RT-001 through G-RT-007 were repaired and their five complete scenes passed
+independent accuracy and literary QC. Literary review then routed 41 prose
+repairs and a seven-line second round; each round was followed by complete
+accuracy and literary recertification of every changed scene. The final G0800
+and G0870 passes cover 598/598 permitted rows, keep G0870:191 opaque, and retain
+the `strange tastes` / `like you` wordplay. Targeted arbitration found no
+competing permitted reading and made no further translation change. All 2,427
+joins, wrappers, IDs, hashes, file identities, maps, controls, exclusions, and
+CP932 pass. Route G is **PASS / closed** within the static-text and runtime/
+story-image limitations above.
 
 ## Exact translated-scene coverage
 
